@@ -1,0 +1,21 @@
+{
+  "packageName": "com.eternalnexus.simkl_matcher",
+  "name": "Simkl Matcher",
+  "version": 1,
+  "description": "Automatically resolve seanime's unmatched movies/series by searching SIMKL and matching them with one click. Skips anime.",
+  "author": "eternalnexus",
+  "authors": [
+    "eternalnexus"
+  ],
+  "baseUrl": "https://example.com",
+  "type": "other",
+  "rating": "All",
+  "isAdult": false,
+  "language": "en",
+  "languages": [
+    "en"
+  ],
+  "icon": "icon.png",
+  "iconUrl": "./icon.png",
+  "manifestVersion": 1
+}

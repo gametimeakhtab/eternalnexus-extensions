@@ -1,0 +1,21 @@
+{
+  "packageName": "com.eternalnexus.dipland_name",
+  "name": "dipland_name",
+  "version": 1,
+  "description": "dipland_name plugin by eternalnexus",
+  "author": "eternalnexus",
+  "authors": [
+    "eternalnexus"
+  ],
+  "baseUrl": "https://example.com",
+  "type": "video",
+  "rating": "All",
+  "isAdult": false,
+  "language": "en",
+  "languages": [
+    "en"
+  ],
+  "icon": "icon.png",
+  "iconUrl": "./icon.png",
+  "manifestVersion": 1
+}

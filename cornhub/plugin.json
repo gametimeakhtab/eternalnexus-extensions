@@ -1,0 +1,21 @@
+{
+  "packageName": "com.eternalnexus.cornhub",
+  "name": "CornHub (18+)",
+  "version": 1,
+  "description": "Online streaming provider for PornHub (18+) videos.",
+  "author": "eternalnexus",
+  "authors": [
+    "eternalnexus"
+  ],
+  "baseUrl": "https://example.com",
+  "type": "video",
+  "rating": "18",
+  "isAdult": true,
+  "language": "en",
+  "languages": [
+    "en"
+  ],
+  "icon": "icon.png",
+  "iconUrl": "./icon.png",
+  "manifestVersion": 1
+}

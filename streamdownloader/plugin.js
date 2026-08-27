@@ -1,0 +1,765 @@
+(function() {
+    var manifest = {"packageName":"com.eternalnexus.streamdownloader","name":"Stream Downloader","version":1,"description":"Download online-streaming (HLS/mp4) sources for anime episodes to disk. Search any installed streaming provider, pick an episode, and save it to your Downloads folder (or a custom directory).","author":"eternalnexus","authors":["eternalnexus"],"baseUrl":"https://example.com","type":"other","rating":"All","isAdult":false,"language":"en","languages":["en"],"icon":"icon.png","iconUrl":"./icon.png","manifestVersion":1};
+
+
+
+
+// Stream Downloader
+//
+// Downloads episode sources from installed online-streaming providers to disk.
+//
+// Flow:
+//   1. Pick a provider (GET /api/v1/extensions/list/onlinestream-provider)
+//   2. Search AniList (GraphQL) for an anime -> pick it (mediaId)
+//   3. episode-list  POST /api/v1/onlinestream/episode-list  { mediaId, provider, dubbed }
+//   4. Pick an episode
+//   5. episode-source POST /api/v1/onlinestream/episode-source { mediaId, provider, episodeNumber, dubbed }
+//   6. Pick a source -> download (mp4 via ctx.downloader / m3u8 via ffmpeg $osExtra.asyncCmd)
+//
+// All app data flows through Seanime's own loopback HTTP API:
+//   base URL defaults to http://127.0.0.1:43211 (configurable: "server-base-url").
+//
+// Notes:
+//   - Requires the "system" scope (downloader + $osExtra) and non-strict security mode.
+//   - Requires the app's online streaming feature enabled and at least one
+//     online-streaming provider extension installed.
+//   - m3u8 downloads need ffmpeg available via PATH (the manifest grants a
+//     command scope for it).
+
+function init() {
+	$ui.register((ctx) => {
+		const TRAY_ICON = "https://raw.githubusercontent.com/aor-rex/seanime-extensions/master/src/StreamDownloader/icon.png";
+
+		const DEFAULT_BASE_URL = "http://127.0.0.1:43211";
+
+		// ------------------------------------------------------------------
+		// Config
+		// ------------------------------------------------------------------
+
+		function baseUrl(): string {
+			const v = ($getUserPreference("server-base-url") || "").trim();
+			return v.length > 0 ? v.replace(/\/+$/, "") : DEFAULT_BASE_URL;
+		}
+
+		function downloadDirPref(): string {
+			return ($getUserPreference("download-dir") || "").trim();
+		}
+
+		// ------------------------------------------------------------------
+		// Async helpers (the whole runtime is the UI VM, so state lives here)
+		// ------------------------------------------------------------------
+
+		// API request to the Seanime loopback server. Returns res.json().data.
+		async function api<T = any>(path, body?): Promise<T> {
+			const res = await fetch(baseUrl() + path, {
+				method: body !== undefined ? "POST" : "GET",
+				headers: { "Content-Type": "application/json" },
+				body,
+				timeout,
+				noCloudflareBypass,
+			});
+			if (!res.ok) {
+				throw new Error(`HTTP ${res.status} ${res.statusText}`);
+			}
+			const data = res.json();
+			if (data && data.error) {
+				throw new Error(data.error);
+			}
+			return data.data ?? data;
+		}
+
+		// ------------------------------------------------------------------
+		// Local types
+		// ------------------------------------------------------------------
+
+		
+
+		;
+			coverImage?: { extraLarge?: string; large?: string; medium?: string };
+			format?: string;
+			seasonYear?: number;
+			episodes?: number;
+			status?: string;
+		}
+
+		
+
+		
+
+		
+
+		// ------------------------------------------------------------------
+		// State
+		// ------------------------------------------------------------------
+
+		const providers = ctx.state<ProviderItem[]>([]);
+		const providerSelected = ctx.state<string>("");
+		const view = ctx.state<"search" | "episodes" | "sources" | "downloads">("search");
+		const searchResults = ctx.state<AnilistSearchHit[]>([]);
+		const searching = ctx.state<boolean>(false);
+		const status = ctx.state<string>("");
+		const loading = ctx.state<boolean>(false);
+
+		const mediaTitle = ctx.state<string>("");
+		const mediaId = ctx.state<number>(0);
+		const episodes = ctx.state<EpisodeItem[]>([]);
+		const episodeSelected = ctx.state<EpisodeItem | null>(null);
+		const sources = ctx.state<VideoSource[]>([]);
+		const selectedServer = ctx.state<string>("");
+		const selectedQuality = ctx.state<string>("");
+		const dubbed = ctx.state<boolean>(false);
+
+		const downloads = ctx.state<DownloadsEntry[]>([]);
+
+		const searchRef = ctx.fieldRef<string>("");
+
+		// ------------------------------------------------------------------
+		// Download helpers
+		// ------------------------------------------------------------------
+
+		function sanitizeName(name): string {
+			return name.replace(/[\\/:*?"<>|]/g, "").replace(/\s+/g, " ").trim() || "anime";
+		}
+
+		function buildDest(ext): { dir: string; full: string } {
+			const dir = downloadDirPref().length > 0 ? downloadDirPref() : $osExtra.downloadDir();
+			const title = sanitizeName(mediaTitle.get());
+			const ep = episodeSelected.get();
+			const epLabel = ep && ep.number > 0 ? ` - Episode ${ep.number}` : "";
+			const file = `${title}${epLabel}.${ext}`;
+			return { dir, full: dir + "/" + file };
+		}
+
+		function formatBytes(n): string {
+			if (!n || n <= 0) return "0 B";
+			const units = ["B", "KB", "MB", "GB", "TB"];
+			const i = Math.min(Math.floor(Math.log(n) / Math.log(1024)), units.length - 1);
+			return (n / Math.pow(1024, i)).toFixed(1) + " " + units[i];
+		}
+
+		function updateDownloadsEntry(id, patch): void {
+			downloads.set((prev) => prev.map((d) => (d.id === id ? { ...d, ...patch } )));
+			tray.update();
+		}
+
+		async function startMp4Download(src, label): Promise<void> {
+			const { dir, full } = buildDest("mp4");
+			$os.mkdirAll(dir, 0o755);
+
+			const downloadId = ctx.downloader.download(src.url, full, {
+				headers: src.headers,
+				timeout,
+			});
+
+			const entryId = `dl-${downloadId}`;
+			downloads.set((prev) => [
+				{ id, label, dest, status: "downloading", pct, speed: 0 },
+				...prev,
+			]);
+
+			const progress = ctx.downloader.watch(downloadId, (p: $ui.DownloadProgress) => {
+				updateDownloadsEntry(entryId, {
+					status: p.status,
+					pct: p.percentage,
+					speed: p.speed,
+					error: p.status === "error" ? p.error ,
+				});
+				if (p.status === "completed") {
+					ctx.toast.success(`Downloaded: ${label}`);
+				} else if (p.status === "error") {
+					ctx.toast.error(`Download failed: ${p.error || "unknown error"}`);
+				}
+			});
+
+			downloads.set((prev) => prev.map((d) => (d.id === entryId ? { ...d, cancel: () => { ctx.downloader.cancel(downloadId); progress(); } } )));
+			tray.update();
+		}
+
+		async function startHlsDownload(src, label): Promise<void> {
+			const { dir, full } = buildDest("mkv");
+			$os.mkdirAll(dir, 0o755);
+
+			const entryId = `hls-${Date.now()}`;
+			downloads.set((prev) => [
+				{ id, label, dest, status: "downloading", pct, speed: 0 },
+				...prev,
+			]);
+			tray.update();
+
+			// ffmpeg -headers requires a CRLF-separated block. Build it from the source headers.
+			const headersBlock = Object.entries(src.headers ?? {})
+				.map(([k, v]) => `${k}: ${v}\r\n`)
+				.join("");
+
+			const args = ["-headers", headersBlock, "-i", src.url, "-c", "copy", "-y", full];
+
+			let duration = 0;
+			let lastTime = 0;
+			const startTs = Date.now();
+
+			const cmd = $osExtra.asyncCmd("ffmpeg", args);
+
+			cmd.run((stdout, stderr, exitCode, signal) => {
+				if (stderr !== undefined) {
+					const line = $toString(stderr);
+					const durMatch = line.match(/Duration:\s*(\d+):(\d+):(\d+\.\d+)/);
+					if (durMatch) {
+						duration = (+durMatch[1] * 3600 + +durMatch[2] * 60) * 1000 + +durMatch[3].replace(".", "") * 10;
+					}
+					const timeMatch = line.match(/time=\s*(\d+):(\d+):(\d+\.\d+)/);
+					if (timeMatch) {
+						lastTime = (+timeMatch[1] * 3600 + +timeMatch[2] * 60) * 1000 + +timeMatch[3].replace(".", "") * 10;
+						const pct = duration > 0 ? Math.min(100, (lastTime / duration) * 100) : 0;
+						updateDownloadsEntry(entryId, { status: "downloading", pct, speed: lastTime / Math.max(1, (Date.now() - startTs) / 1000) });
+					}
+				}
+
+				if (typeof exitCode === "number") {
+					if (exitCode === 0) {
+						updateDownloadsEntry(entryId, { status: "completed", pct, speed: 0 });
+						ctx.toast.success(`Downloaded: ${label}`);
+					} else {
+						updateDownloadsEntry(entryId, { status: "error", error: `ffmpeg exited with code ${exitCode}${signal ? ` (${signal})` : ""}` });
+						ctx.toast.error(`Download failed (ffmpeg code ${exitCode})`);
+					}
+				}
+			});
+		}
+
+		async function startDownload(src, label): Promise<void> {
+			try {
+				if (src.
+				} else {
+					await startMp4Download(src, label);
+				}
+			} catch (err) {
+				status.set(`Download error: ${(err as Error).message}`);
+				ctx.toast.error(`Download error: ${(err as Error).message}`);
+				tray.update();
+			}
+		}
+
+		// ------------------------------------------------------------------
+		// Data loading
+		// ------------------------------------------------------------------
+
+		async function loadProviders(): Promise<void> {
+			try {
+				const items = await api<ProviderItem[]>("/api/v1/extensions/list/onlinestream-provider");
+				providers.set(Array.isArray(items) ? items );
+				if (providers.get().length === 0) {
+					status.set("No online-streaming providers installed. Install one (e.g. HiAnime) first.");
+				} else if (!providerSelected.get()) {
+					providerSelected.set(providers.get()[0].id);
+				}
+				tray.update();
+			} catch (err) {
+				status.set(`Failed to load providers: ${(err as Error).message}`);
+				tray.update();
+			}
+		}
+
+		async function runSearch(): Promise<void> {
+			const query = searchRef.current?.toString()?.trim() || "";
+			if (!query) return;
+
+			searching.set(true);
+			status.set("");
+			tray.update();
+
+			try {
+				// AniList GraphQL search (graphql.anilist.co is a whitelisted domain for plugin fetch).
+				const res = await fetch("https://graphql.anilist.co", {
+					method: "POST",
+					headers: { "Content-Type": "application/json" },
+					body: {
+						query: `query ($search, $page, $perPage) {
+							Page(page: $page, perPage: $perPage) {
+								media(type, search: $search, sort) {
+									id
+									title { romaji english native }
+									coverImage { extraLarge large medium }
+									format
+									seasonYear
+									episodes
+									status
+								}
+							}
+						}`,
+						variables: { search, page, perPage: 12 },
+					},
+					timeout,
+				});
+				if (!res.ok) {
+					throw new Error(`AniList HTTP ${res.status}`);
+				}
+				const json = res.json();
+				const hits = json?.data?.Page?.media ?? [];
+				searchResults.set(hits);
+				if (hits.length === 0) {
+					status.set("No results on AniList. Try a different title.");
+				}
+			} catch (err) {
+				status.set(`Search error: ${(err as Error).message}`);
+			} finally {
+				searching.set(false);
+				tray.update();
+			}
+		}
+
+		async function selectMedia(hit): Promise<void> {
+			mediaId.set(hit.id);
+			mediaTitle.set(hit.title?.english || hit.title?.romaji || hit.title?.native || `Anime ${hit.id}`);
+			loading.set(true);
+			status.set("");
+			tray.update();
+
+			try {
+				const data = await api<{ episodes?: EpisodeItem[] }>("/api/v1/onlinestream/episode-list", {
+					mediaId: hit.id,
+					provider: providerSelected.get(),
+					dubbed: dubbed.get(),
+				});
+				const eps = (data?.episodes ?? []).sort((a, b) => a.number - b.number);
+				episodes.set(eps);
+				if (eps.length === 0) {
+					status.set("No episodes found for this provider/anime.");
+				}
+				episodeSelected.set(null);
+				sources.set([]);
+				view.set("episodes");
+			} catch (err) {
+				status.set(`Episode list error: ${(err as Error).message}`);
+			} finally {
+				loading.set(false);
+				tray.update();
+			}
+		}
+
+		async function selectEpisode(ep): Promise<void> {
+			episodeSelected.set(ep);
+			loading.set(true);
+			status.set("");
+			tray.update();
+
+			try {
+				const data = await api<{ videoSources?: VideoSource[] }>("/api/v1/onlinestream/episode-source", {
+					mediaId: mediaId.get(),
+					provider: providerSelected.get(),
+					episodeNumber: ep.number,
+					dubbed: dubbed.get(),
+				});
+				sources.set(data?.videoSources ?? []);
+				if (sources.get().length === 0) {
+					status.set("No video sources returned for this episode.");
+				} else {
+					const servers = groupServers();
+					selectedServer.set(servers[0]);
+					selectedQuality.set(groupQualities(servers[0])[0] ?? "");
+				}
+				view.set("sources");
+			} catch (err) {
+				status.set(`Source error: ${(err as Error).message}`);
+			} finally {
+				loading.set(false);
+				tray.update();
+			}
+		}
+
+		// ------------------------------------------------------------------
+		// UI
+		// ------------------------------------------------------------------
+
+		function sourceLabel(src): string {
+			const q = src.quality || "auto";
+			const t = src.
+			return `${q} · ${t}${src.label ? " · " + src.label : ""}`;
+		}
+
+		// Unique server names, in order of first appearance.
+		function groupServers(): string[] {
+			const seen, boolean> = {};
+			return sources.get().filter((s) => (seen[s.server] ? false : (seen[s.server] = true))).map((s) => s.server);
+		}
+
+		// Unique quality labels for a given server, in order of first appearance.
+		function groupQualities(server): string[] {
+			const seen, boolean> = {};
+			return sources.get().filter((s) => s.server === server && (seen[s.quality] ? false : (seen[s.quality] = true))).map((s) => s.quality);
+		}
+
+		// The source matching the current server + quality selection.
+		function selectedSource(): VideoSource | undefined {
+			const srv = selectedServer.get();
+			const q = selectedQuality.get();
+			return sources.get().find((s) => s.server === srv && s.quality === q);
+		}
+
+		function formatSpeed(n): string {
+			return n >= 1000 ? `${(n / 1000).toFixed(1)} KB/s` : `${Math.round(n)} B/s`;
+		}
+
+		function searchView(): any[] {
+			const items = [];
+
+			items.push(
+				tray.text("Search anime (AniList)", { className: "text-xs opacity-70" }),
+				tray.input("Search title", { placeholder: "e.g. Frieren: Beyond Journey's End", fieldRef, size: "md" }),
+				tray.button("Search", {
+					intent: "primary",
+					loading: searching.get(),
+					onClick: ctx.eventHandler("streamdownloader:search", () => {
+						runSearch();
+					}),
+				})
+			);
+
+			if (searching.get()) {
+				items.push(tray.text("Searching...", { className: "text-xs opacity-60" }));
+				return items;
+			}
+
+			const hits = searchResults.get();
+			if (hits.length === 0) {
+				return items;
+			}
+
+			items.push(tray.text(`${hits.length} result(s) — pick one to load episodes:`, { className: "text-xs opacity-70" }));
+
+			for (const hit of hits.slice(0, 8)) {
+				const t = hit.title?.english || hit.title?.romaji || hit.title?.native || `Anime ${hit.id}`;
+				const meta = [hit.seasonYear ? String(hit.seasonYear) : "", hit.format || "", hit.episodes ? `${hit.episodes} eps` : ""]
+					.filter(Boolean)
+					.join(" · ");
+				items.push(
+					tray.button(t, {
+						size: "sm",
+						loading: loading.get() && mediaId.get() === hit.id,
+						onClick: ctx.eventHandler(`streamdownloader:media:${hit.id}`, () => {
+							selectMedia(hit);
+						}),
+					})
+				);
+				if (meta) {
+					items.push(tray.text(meta, { className: "text-[10px] opacity-50 -mt-1" }));
+				}
+			}
+
+			return items;
+		}
+
+		function episodesView(): any[] {
+			const items = [];
+			items.push(
+				tray.text(mediaTitle.get(), { className: "font-medium" }),
+				tray.flex(
+					[
+						tray.button("← Back to search", {
+							size: "sm",
+							intent: "gray-subtle",
+							onClick: ctx.eventHandler("streamdownloader:back-search", () => {
+								view.set("search");
+								tray.update();
+							}),
+						}),
+					],
+					{ gap: 4 }
+				)
+			);
+
+			const eps = episodes.get();
+			if (eps.length === 0) {
+				items.push(tray.text("No episodes to show.", { className: "text-xs opacity-60" }));
+				return items;
+			}
+
+			items.push(tray.text(`Provider: ${providerSelected.get()} — choose an episode:`, { className: "text-xs opacity-70" }));
+
+			for (const ep of eps) {
+				const label = ep.title && ep.title.length > 0 && !ep.title.startsWith("[") ? `Ep ${ep.number} · ${ep.title}` : `Episode ${ep.number}`;
+				items.push(
+					tray.button(label, {
+						size: "sm",
+						loading: loading.get() && episodeSelected.get()?.number === ep.number,
+						onClick: ctx.eventHandler(`streamdownloader:episode:${ep.number}`, () => {
+							selectEpisode(ep);
+						}),
+					})
+				);
+			}
+
+			return items;
+		}
+
+		function sourcesView(): any[] {
+			const items = [];
+			items.push(
+				tray.text(`${mediaTitle.get()} — Episode ${episodeSelected.get()?.number ?? "?"}`, { className: "font-medium" }),
+				tray.flex(
+					[
+						tray.button("← Episodes", {
+							size: "sm",
+							intent: "gray-subtle",
+							onClick: ctx.eventHandler("streamdownloader:back-episodes", () => {
+								view.set("episodes");
+								tray.update();
+							}),
+						}),
+					],
+					{ gap: 4 }
+				)
+			);
+
+			const srcs = sources.get();
+			if (srcs.length === 0) {
+				items.push(tray.text("No video sources. Try a different episode.", { className: "text-xs opacity-60" }));
+				return items;
+			}
+
+			const servers = groupServers();
+			if (servers.length === 0) {
+				items.push(tray.text("No servers available.", { className: "text-xs opacity-60" }));
+				return items;
+			}
+
+			const srv = selectedServer.get();
+			const qualities = groupQualities(srv);
+			const src = selectedSource();
+
+			items.push(
+				tray.flex(
+					[
+						tray.select("Server", {
+							options: servers.map((v) => ({ label, value: v })),
+							value,
+							size: "sm",
+							onChange: ctx.eventHandler("streamdownloader:server", (e) => {
+								selectedServer.set(e?.value ?? srv);
+								const qs = groupQualities(selectedServer.get());
+								selectedQuality.set(qs[0] ?? "");
+								tray.update();
+							}),
+						}),
+						tray.select("Quality", {
+							options: qualities.map((v) => ({ label, value: v })),
+							value: selectedQuality.get(),
+							size: "sm",
+							onChange: ctx.eventHandler("streamdownloader:quality", (e) => {
+								selectedQuality.set(e?.value ?? selectedQuality.get());
+								tray.update();
+							}),
+						}),
+					],
+					{ gap, direction: "column" }
+				)
+			);
+
+			if (src) {
+				items.push(
+					tray.button(`Download ${src.quality || "source"}`, {
+						size: "sm",
+						intent: src.
+						}),
+					})
+				);
+			} else {
+				items.push(tray.text("No matching source for this server/quality.", { className: "text-xs opacity-60" }));
+			}
+
+			items.push(
+				tray.text("Tip: HLS (.m3u8) sources are remuxed with ffmpeg; MP4 sources stream directly.", { className: "text-[10px] opacity-50" })
+			);
+
+			return items;
+		}
+
+		function downloadsView(): any[] {
+			const items = [];
+			const active = downloads.get();
+
+			if (active.length === 0) {
+				items.push(tray.text("No active downloads.", { className: "text-sm opacity-60" }));
+				return items;
+			}
+
+			for (const d of active) {
+				const pct = Math.round(d.pct);
+				const statusLine =
+					d.status === "completed" ? "Done" : d.status === "error" ? (d.error || "Failed") : `${pct}% · ${formatSpeed(d.speed)}`;
+
+				items.push(
+					tray.stack(
+						[
+							tray.flex(
+								[
+									tray.text(d.label, { className: "text-xs font-medium truncate" }),
+									tray.badge(d.status === "completed" ? "Done" : d.status === "error" ? "Error" : "DL", {
+										intent: d.status === "completed" ? "success" : d.status === "error" ? "alert" : "info",
+										size: "sm",
+									}),
+								],
+								{ gap: 6 }
+							),
+							tray.text(statusLine, { className: "text-[11px] opacity-60" }),
+							tray.text(d.dest, { className: "text-[10px] opacity-40 truncate" }),
+						],
+						{ gap: 2 }
+					)
+				);
+
+				if ((d as DownloadsEntry & { cancel?: () => void }).cancel) {
+					items.push(
+						tray.button("Cancel", {
+							size: "xs",
+							intent: "danger-subtle",
+							onClick: ctx.eventHandler(`streamdownloader:cancel:${d.id}`, () => {
+								(d as DownloadsEntry & { cancel?: () => void }).cancel?.();
+							}),
+						})
+					);
+				}
+			}
+
+			return items;
+		}
+
+		// ------------------------------------------------------------------
+		// Tray
+		// ------------------------------------------------------------------
+
+		const tray = ctx.newTray({
+			iconUrl,
+			withContent,
+			width: "26rem",
+			minHeight: "20rem",
+		});
+
+		tray.onOpen(() => {
+			loadProviders();
+		});
+
+		tray.render(() => {
+			const items = [
+				tray.text("Stream Downloader", { className: "font-semibold text-lg" }),
+				tray.text("Download online-streaming episode sources to disk.", { className: "text-sm opacity-70" }),
+				tray.text("", { className: "border-t border-zinc-800 my-1 w-full" }),
+			];
+
+			// Provider picker + dubbed toggle (persistent across views).
+			const providerOpts = providers.get().map((p) => ({ label: p.name, value: p.id }));
+			if (providerOpts.length > 0) {
+				items.push(
+					tray.flex(
+						[
+							tray.select("Provider", {
+								options,
+								value: providerSelected.get(),
+								size: "sm",
+								onChange: ctx.eventHandler("streamdownloader:provider", (e) => {
+									const val = e?.value ?? (e as any)?.target?.value ?? "";
+									if (val) providerSelected.set(val);
+									tray.update();
+								}),
+							}),
+							tray.switch("Dubbed", {
+								value: dubbed.get(),
+								onChange: ctx.eventHandler("streamdownloader:dubbed", (e) => {
+									dubbed.set(Boolean(e?.value ?? e));
+									tray.update();
+								}),
+							}),
+						],
+						{ gap: 8 }
+					)
+				);
+			} else {
+				items.push(tray.text("No streaming providers installed.", { className: "text-xs opacity-60" }));
+			}
+
+			items.push(tray.text("", { className: "border-t border-zinc-800 my-1 w-full" }));
+
+			switch (view.get()) {
+				case "search":
+					items.push(...searchView());
+					break;
+				case "episodes":
+					items.push(...episodesView());
+					break;
+				case "sources":
+					items.push(...sourcesView());
+					break;
+				case "downloads":
+					items.push(...downloadsView());
+					break;
+			}
+
+			// Global status line.
+			if (status.get()) {
+				items.push(
+					tray.text("", { className: "border-t border-zinc-800 my-1 w-full" }),
+					tray.text(status.get(), { className: "text-[11px] opacity-70" })
+				);
+			}
+
+			if (downloads.get().length > 0 && view.get() !== "downloads") {
+				items.push(
+					tray.text("", { className: "border-t border-zinc-800 my-1 w-full" }),
+					tray.button("View downloads", {
+						size: "sm",
+						intent: "gray-subtle",
+						onClick: ctx.eventHandler("streamdownloader:view-downloads", () => {
+							view.set("downloads");
+							tray.update();
+						}),
+					})
+				);
+			}
+
+			if (view.get() !== "search") {
+				items.push(
+					tray.button("New search", {
+						size: "sm",
+						intent: "gray-subtle",
+						onClick: ctx.eventHandler("streamdownloader:new-search", () => {
+							view.set("search");
+							tray.update();
+						}),
+					})
+				);
+			}
+
+			return tray.stack(items, { gap: 8 });
+		});
+
+		tray.open();
+	});
+}
+    async function getHome(cb) {
+      try {
+        if (typeof globalThis.getHomeImpl === 'function') return await globalThis.getHomeImpl(cb);
+        cb({ success: true, data: { "Latest": [new MultimediaItem({ title: "Stream Downloader", url: manifest.baseUrl, posterUrl: "./icon.png", type: manifest.type })] } });
+      } catch (e) { cb({ success: false, message: String(e) }); }
+    }
+    async function search(query, page, cb) {
+      try {
+        if (typeof globalThis.searchImpl === 'function') return await globalThis.searchImpl(query, page, cb);
+        cb({ success: true, data: [] });
+      } catch (e) { cb({ success: false, message: String(e) }); }
+    }
+    async function load(url, cb) {
+      try {
+        if (typeof globalThis.loadImpl === 'function') return await globalThis.loadImpl(url, cb);
+        cb({ success: true, data: new MultimediaItem({ title: "Stream Downloader", url, type: manifest.type }) });
+      } catch (e) { cb({ success: false, message: String(e) }); }
+    }
+    async function loadStreams(url, cb) {
+      try {
+        if (typeof globalThis.loadStreamsImpl === 'function') return await globalThis.loadStreamsImpl(url, cb);
+        cb({ success: true, data: [] });
+      } catch (e) { cb({ success: false, message: String(e) }); }
+    }
+    globalThis.getHome = globalThis.getHome || getHome;
+    globalThis.search = globalThis.search || search;
+    globalThis.load = globalThis.load || load;
+    globalThis.loadStreams = globalThis.loadStreams || loadStreams;
+})();

@@ -1,0 +1,21 @@
+{
+  "packageName": "com.eternalnexus.mynimeku",
+  "name": "MyNimeKu",
+  "version": 1,
+  "description": "MyNimeKu is an online streaming provider for indonesian subs.",
+  "author": "eternalnexus",
+  "authors": [
+    "eternalnexus"
+  ],
+  "baseUrl": "https://example.com",
+  "type": "video",
+  "rating": "All",
+  "isAdult": false,
+  "language": "en",
+  "languages": [
+    "en"
+  ],
+  "icon": "icon.png",
+  "iconUrl": "./icon.png",
+  "manifestVersion": 1
+}

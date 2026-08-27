@@ -1,0 +1,21 @@
+{
+  "packageName": "com.eternalnexus.yts",
+  "name": "YTS",
+  "version": 1,
+  "description": "YTS torrent provider for movies (720p/1080p/4K).",
+  "author": "eternalnexus",
+  "authors": [
+    "eternalnexus"
+  ],
+  "baseUrl": "https://example.com",
+  "type": "anime",
+  "rating": "All",
+  "isAdult": false,
+  "language": "en",
+  "languages": [
+    "en"
+  ],
+  "icon": "icon.png",
+  "iconUrl": "./icon.png",
+  "manifestVersion": 1
+}

@@ -1,0 +1,21 @@
+{
+  "packageName": "com.eternalnexus.dev_akash_stars_hdhub4u",
+  "name": "HDHub4U",
+  "version": 1,
+  "description": "Bollywood, Hollywood and Hindi Dubbed Movies & Web Series",
+  "author": "eternalnexus",
+  "authors": [
+    "eternalnexus"
+  ],
+  "baseUrl": "https://new2.hdhub4u.limo",
+  "type": "video",
+  "rating": "All",
+  "isAdult": false,
+  "language": "en",
+  "languages": [
+    "en"
+  ],
+  "icon": "icon.png",
+  "iconUrl": "./icon.png",
+  "manifestVersion": 1
+}

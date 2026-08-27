@@ -1,0 +1,21 @@
+{
+  "packageName": "com.eternalnexus.anibd",
+  "name": "AniBD",
+  "version": 1,
+  "description": "AniBD is an online streaming provider for subbed BD anime in english",
+  "author": "eternalnexus",
+  "authors": [
+    "eternalnexus"
+  ],
+  "baseUrl": "https://example.com",
+  "type": "video",
+  "rating": "All",
+  "isAdult": false,
+  "language": "en",
+  "languages": [
+    "en"
+  ],
+  "icon": "icon.png",
+  "iconUrl": "./icon.png",
+  "manifestVersion": 1
+}

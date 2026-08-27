@@ -1,0 +1,1753 @@
+{
+  "name": "eternalnexus extensions",
+  "packageName": "com.eternalnexus.extensions",
+  "author": "eternalnexus",
+  "description": "Extension repository by eternalnexus",
+  "iconUrl": "icon.png",
+  "manifestVersion": 1,
+  "plugins": [
+    {
+      "packageName": "com.eternalnexus.mal_friend_stats",
+      "name": "MAL Friend Stats",
+      "version": 1,
+      "description": "Shows which of your MyAnimeList friends are watching or have rated the anime you're viewing",
+      "author": "eternalnexus",
+      "authors": [
+        "eternalnexus"
+      ],
+      "baseUrl": "https://example.com",
+      "type": "other",
+      "rating": "All",
+      "isAdult": false,
+      "language": "en",
+      "languages": [
+        "en"
+      ],
+      "icon": "icon.png",
+      "iconUrl": "./icon.png",
+      "manifestVersion": 1
+    },
+    {
+      "packageName": "com.eternalnexus.dev_nivincnc_cncverse_cncverse",
+      "name": "CNCVerse",
+      "version": 1,
+      "description": "Netflix, PrimeVideo, Disney+ Hotstar Contents in Multiple Languages",
+      "author": "eternalnexus",
+      "authors": [
+        "eternalnexus"
+      ],
+      "baseUrl": "https://net52.cc",
+      "type": "video",
+      "rating": "All",
+      "isAdult": false,
+      "language": "en",
+      "languages": [
+        "en"
+      ],
+      "icon": "icon.png",
+      "iconUrl": "./icon.png",
+      "manifestVersion": 1
+    },
+    {
+      "packageName": "com.eternalnexus.l337x",
+      "name": "1337x",
+      "version": 1,
+      "description": "1337x torrent provider for movies and series.",
+      "author": "eternalnexus",
+      "authors": [
+        "eternalnexus"
+      ],
+      "baseUrl": "https://example.com",
+      "type": "anime",
+      "rating": "All",
+      "isAdult": false,
+      "language": "en",
+      "languages": [
+        "en"
+      ],
+      "icon": "icon.png",
+      "iconUrl": "./icon.png",
+      "manifestVersion": 1
+    },
+    {
+      "packageName": "com.eternalnexus.batcave",
+      "name": "BatCave",
+      "version": 1,
+      "description": "BatCave.biz comics reader ",
+      "author": "eternalnexus",
+      "authors": [
+        "eternalnexus"
+      ],
+      "baseUrl": "https://example.com",
+      "type": "manga",
+      "rating": "All",
+      "isAdult": false,
+      "language": "en",
+      "languages": [
+        "en"
+      ],
+      "icon": "icon.png",
+      "iconUrl": "./icon.png",
+      "manifestVersion": 1
+    },
+    {
+      "packageName": "com.eternalnexus.comicvine",
+      "name": "ComicVine",
+      "version": 1,
+      "description": "Implements ComicVine as a custom source for Western comics/manga.",
+      "author": "eternalnexus",
+      "authors": [
+        "eternalnexus"
+      ],
+      "baseUrl": "https://example.com",
+      "type": "video",
+      "rating": "All",
+      "isAdult": false,
+      "language": "en",
+      "languages": [
+        "en"
+      ],
+      "icon": "icon.png",
+      "iconUrl": "./icon.png",
+      "manifestVersion": 1
+    },
+    {
+      "packageName": "com.eternalnexus.cornhub",
+      "name": "CornHub (18+)",
+      "version": 1,
+      "description": "Online streaming provider for PornHub (18+) videos.",
+      "author": "eternalnexus",
+      "authors": [
+        "eternalnexus"
+      ],
+      "baseUrl": "https://example.com",
+      "type": "video",
+      "rating": "18",
+      "isAdult": true,
+      "language": "en",
+      "languages": [
+        "en"
+      ],
+      "icon": "icon.png",
+      "iconUrl": "./icon.png",
+      "manifestVersion": 1
+    },
+    {
+      "packageName": "com.eternalnexus.ext",
+      "name": "EXT Torrents",
+      "version": 1,
+      "description": "EXT Torrents (extto.com) torrent provider for movies and series.",
+      "author": "eternalnexus",
+      "authors": [
+        "eternalnexus"
+      ],
+      "baseUrl": "https://example.com",
+      "type": "anime",
+      "rating": "All",
+      "isAdult": false,
+      "language": "en",
+      "languages": [
+        "en"
+      ],
+      "icon": "icon.png",
+      "iconUrl": "./icon.png",
+      "manifestVersion": 1
+    },
+    {
+      "packageName": "com.eternalnexus.eztv",
+      "name": "EZTV",
+      "version": 1,
+      "description": "EZTV torrent provider for TV series episodes (SxxExx).",
+      "author": "eternalnexus",
+      "authors": [
+        "eternalnexus"
+      ],
+      "baseUrl": "https://example.com",
+      "type": "anime",
+      "rating": "All",
+      "isAdult": false,
+      "language": "en",
+      "languages": [
+        "en"
+      ],
+      "icon": "icon.png",
+      "iconUrl": "./icon.png",
+      "manifestVersion": 1
+    },
+    {
+      "packageName": "com.eternalnexus.listsync",
+      "name": "ListSync",
+      "version": 1,
+      "description": "Two-way sync between your SIMKL watchlist and TMDB/SIMKL custom-source entries: push status/score to SIMKL and pull your watchlist back into your library.",
+      "author": "eternalnexus",
+      "authors": [
+        "eternalnexus"
+      ],
+      "baseUrl": "https://example.com",
+      "type": "other",
+      "rating": "All",
+      "isAdult": false,
+      "language": "en",
+      "languages": [
+        "en"
+      ],
+      "icon": "icon.png",
+      "iconUrl": "./icon.png",
+      "manifestVersion": 1
+    },
+    {
+      "packageName": "com.eternalnexus.simklv2",
+      "name": "Simkl V2",
+      "version": 1,
+      "description": "Implements SIMKL as a custom source with watchlist support.",
+      "author": "eternalnexus",
+      "authors": [
+        "eternalnexus"
+      ],
+      "baseUrl": "https://example.com",
+      "type": "video",
+      "rating": "All",
+      "isAdult": false,
+      "language": "en",
+      "languages": [
+        "en"
+      ],
+      "icon": "icon.png",
+      "iconUrl": "./icon.png",
+      "manifestVersion": 1
+    },
+    {
+      "packageName": "com.eternalnexus.simkl_matcher",
+      "name": "Simkl Matcher",
+      "version": 1,
+      "description": "Automatically resolve seanime's unmatched movies/series by searching SIMKL and matching them with one click. Skips anime.",
+      "author": "eternalnexus",
+      "authors": [
+        "eternalnexus"
+      ],
+      "baseUrl": "https://example.com",
+      "type": "other",
+      "rating": "All",
+      "isAdult": false,
+      "language": "en",
+      "languages": [
+        "en"
+      ],
+      "icon": "icon.png",
+      "iconUrl": "./icon.png",
+      "manifestVersion": 1
+    },
+    {
+      "packageName": "com.eternalnexus.streamdownloader",
+      "name": "Stream Downloader",
+      "version": 1,
+      "description": "Download online-streaming (HLS/mp4) sources for anime episodes to disk. Search any installed streaming provider, pick an episode, and save it to your Downloads folder (or a custom directory).",
+      "author": "eternalnexus",
+      "authors": [
+        "eternalnexus"
+      ],
+      "baseUrl": "https://example.com",
+      "type": "other",
+      "rating": "All",
+      "isAdult": false,
+      "language": "en",
+      "languages": [
+        "en"
+      ],
+      "icon": "icon.png",
+      "iconUrl": "./icon.png",
+      "manifestVersion": 1
+    },
+    {
+      "packageName": "com.eternalnexus.streamed",
+      "name": "Streamed (Sports)",
+      "version": 1,
+      "description": "Browse live and upcoming sports matches (football, basketball, UFC, tennis and more) as a Custom Source.",
+      "author": "eternalnexus",
+      "authors": [
+        "eternalnexus"
+      ],
+      "baseUrl": "https://example.com",
+      "type": "video",
+      "rating": "All",
+      "isAdult": false,
+      "language": "en",
+      "languages": [
+        "en"
+      ],
+      "icon": "icon.png",
+      "iconUrl": "./icon.png",
+      "manifestVersion": 1
+    },
+    {
+      "packageName": "com.eternalnexus.streamedprovider",
+      "name": "Streamed (Sports)",
+      "version": 1,
+      "description": "Online streaming provider for Streamed (sports). Resolves live sports streams from Streamed's embed player.",
+      "author": "eternalnexus",
+      "authors": [
+        "eternalnexus"
+      ],
+      "baseUrl": "https://example.com",
+      "type": "video",
+      "rating": "All",
+      "isAdult": false,
+      "language": "en",
+      "languages": [
+        "en"
+      ],
+      "icon": "icon.png",
+      "iconUrl": "./icon.png",
+      "manifestVersion": 1
+    },
+    {
+      "packageName": "com.eternalnexus.tmdbv2",
+      "name": "TMDB V2",
+      "version": 1,
+      "description": "Implements TMDb as a custom source with per-season media entries.",
+      "author": "eternalnexus",
+      "authors": [
+        "eternalnexus"
+      ],
+      "baseUrl": "https://example.com",
+      "type": "video",
+      "rating": "All",
+      "isAdult": false,
+      "language": "en",
+      "languages": [
+        "en"
+      ],
+      "icon": "icon.png",
+      "iconUrl": "./icon.png",
+      "manifestVersion": 1
+    },
+    {
+      "packageName": "com.eternalnexus.torrentiov2",
+      "name": "Torrentio V2",
+      "version": 1,
+      "description": "Uses Torrentio to find anime torrents. Supports TMDB custom-source media via IMDb resolution.",
+      "author": "eternalnexus",
+      "authors": [
+        "eternalnexus"
+      ],
+      "baseUrl": "https://example.com",
+      "type": "anime",
+      "rating": "All",
+      "isAdult": false,
+      "language": "en",
+      "languages": [
+        "en"
+      ],
+      "icon": "icon.png",
+      "iconUrl": "./icon.png",
+      "manifestVersion": 1
+    },
+    {
+      "packageName": "com.eternalnexus.thepiratebayv2",
+      "name": "ThePirateBay V2",
+      "version": 1,
+      "description": "The Pirate Bay torrent provider for movies and series, with smart search.",
+      "author": "eternalnexus",
+      "authors": [
+        "eternalnexus"
+      ],
+      "baseUrl": "https://example.com",
+      "type": "anime",
+      "rating": "All",
+      "isAdult": false,
+      "language": "en",
+      "languages": [
+        "en"
+      ],
+      "icon": "icon.png",
+      "iconUrl": "./icon.png",
+      "manifestVersion": 1
+    },
+    {
+      "packageName": "com.eternalnexus.vidsrc",
+      "name": "VidSrc",
+      "version": 1,
+      "description": "Streams anime, series and movies from vidsrc (https://vidsrc.mov/). Requires a SIMKL Client ID for title matching.",
+      "author": "eternalnexus",
+      "authors": [
+        "eternalnexus"
+      ],
+      "baseUrl": "https://example.com",
+      "type": "video",
+      "rating": "All",
+      "isAdult": false,
+      "language": "en",
+      "languages": [
+        "en"
+      ],
+      "icon": "icon.png",
+      "iconUrl": "./icon.png",
+      "manifestVersion": 1
+    },
+    {
+      "packageName": "com.eternalnexus.webtor_downloader",
+      "name": "Webtor.io Downloader",
+      "version": 1,
+      "description": "Download torrents via Webtor.io (cloud torrent client) directly to your library. Toggle ON to capture torrent searches and add 'Download via Webtor.io' actions in tray.",
+      "author": "eternalnexus",
+      "authors": [
+        "eternalnexus"
+      ],
+      "baseUrl": "https://example.com",
+      "type": "other",
+      "rating": "All",
+      "isAdult": false,
+      "language": "en",
+      "languages": [
+        "en"
+      ],
+      "icon": "icon.png",
+      "iconUrl": "./icon.png",
+      "manifestVersion": 1
+    },
+    {
+      "packageName": "com.eternalnexus.yts",
+      "name": "YTS",
+      "version": 1,
+      "description": "YTS torrent provider for movies (720p/1080p/4K).",
+      "author": "eternalnexus",
+      "authors": [
+        "eternalnexus"
+      ],
+      "baseUrl": "https://example.com",
+      "type": "anime",
+      "rating": "All",
+      "isAdult": false,
+      "language": "en",
+      "languages": [
+        "en"
+      ],
+      "icon": "icon.png",
+      "iconUrl": "./icon.png",
+      "manifestVersion": 1
+    },
+    {
+      "packageName": "com.eternalnexus.dev_akash_stars_anichi",
+      "name": "Anichi",
+      "version": 1,
+      "description": "Anichi (AllAnime) plugin for SkyStream. GraphQL-powered anime provider.",
+      "author": "eternalnexus",
+      "authors": [
+        "eternalnexus"
+      ],
+      "baseUrl": "https://allmanga.to",
+      "type": "video",
+      "rating": "All",
+      "isAdult": false,
+      "language": "en",
+      "languages": [
+        "en"
+      ],
+      "icon": "icon.png",
+      "iconUrl": "./icon.png",
+      "manifestVersion": 1
+    },
+    {
+      "packageName": "com.eternalnexus.dev_akash_stars_animedekho",
+      "name": "Anime Dekho",
+      "version": 1,
+      "description": "Anime Dekho plugin for SkyStream - Ported from CloudStream",
+      "author": "eternalnexus",
+      "authors": [
+        "eternalnexus"
+      ],
+      "baseUrl": "https://animedekho.app",
+      "type": "video",
+      "rating": "All",
+      "isAdult": false,
+      "language": "en",
+      "languages": [
+        "en"
+      ],
+      "icon": "icon.png",
+      "iconUrl": "./icon.png",
+      "manifestVersion": 1
+    },
+    {
+      "packageName": "com.eternalnexus.dev_akash_stars_animesalt",
+      "name": "Animesalt",
+      "version": 1,
+      "description": "Port of CloudStream Animesalt extension",
+      "author": "eternalnexus",
+      "authors": [
+        "eternalnexus"
+      ],
+      "baseUrl": "https://animesalt.ac",
+      "type": "video",
+      "rating": "All",
+      "isAdult": false,
+      "language": "en",
+      "languages": [
+        "en"
+      ],
+      "icon": "icon.png",
+      "iconUrl": "./icon.png",
+      "manifestVersion": 1
+    },
+    {
+      "packageName": "com.eternalnexus.dev_akash_stars_bollyflix",
+      "name": "BollyFlix",
+      "version": 1,
+      "description": "BDIX TV Live Channels",
+      "author": "eternalnexus",
+      "authors": [
+        "eternalnexus"
+      ],
+      "baseUrl": "https://bollyflix.sarl",
+      "type": "video",
+      "rating": "All",
+      "isAdult": false,
+      "language": "en",
+      "languages": [
+        "en"
+      ],
+      "icon": "icon.png",
+      "iconUrl": "./icon.png",
+      "manifestVersion": 1
+    },
+    {
+      "packageName": "com.eternalnexus.dev_akash_stars_4khd",
+      "name": "4K HD",
+      "version": 1,
+      "description": "4K Movies and TV Shows (VOD)",
+      "author": "eternalnexus",
+      "authors": [
+        "eternalnexus"
+      ],
+      "baseUrl": "https://4khdhub.link",
+      "type": "video",
+      "rating": "All",
+      "isAdult": false,
+      "language": "en",
+      "languages": [
+        "en"
+      ],
+      "icon": "icon.png",
+      "iconUrl": "./icon.png",
+      "manifestVersion": 1
+    },
+    {
+      "packageName": "com.eternalnexus.dev_akash_stars_hdhub4u",
+      "name": "HDHub4U",
+      "version": 1,
+      "description": "Bollywood, Hollywood and Hindi Dubbed Movies & Web Series",
+      "author": "eternalnexus",
+      "authors": [
+        "eternalnexus"
+      ],
+      "baseUrl": "https://new2.hdhub4u.limo",
+      "type": "video",
+      "rating": "All",
+      "isAdult": false,
+      "language": "en",
+      "languages": [
+        "en"
+      ],
+      "icon": "icon.png",
+      "iconUrl": "./icon.png",
+      "manifestVersion": 1
+    },
+    {
+      "packageName": "com.eternalnexus.dev_akash_stars_moviesdrive",
+      "name": "Movies Drive",
+      "version": 1,
+      "description": "Premium VOD Scraper with metadata sync",
+      "author": "eternalnexus",
+      "authors": [
+        "eternalnexus"
+      ],
+      "baseUrl": "https://new2.moviesdrives.my",
+      "type": "video",
+      "rating": "All",
+      "isAdult": false,
+      "language": "en",
+      "languages": [
+        "en"
+      ],
+      "icon": "icon.png",
+      "iconUrl": "./icon.png",
+      "manifestVersion": 1
+    },
+    {
+      "packageName": "com.eternalnexus.dev_akash_stars_ringz",
+      "name": "RingZ",
+      "version": 1,
+      "description": "RingZ Movies & Series Provider",
+      "author": "eternalnexus",
+      "authors": [
+        "eternalnexus"
+      ],
+      "baseUrl": "https://dataapi.yomoviesapk.com",
+      "type": "video",
+      "rating": "All",
+      "isAdult": false,
+      "language": "en",
+      "languages": [
+        "en"
+      ],
+      "icon": "icon.png",
+      "iconUrl": "./icon.png",
+      "manifestVersion": 1
+    },
+    {
+      "packageName": "com.eternalnexus.dev_akash_stars_streamflix",
+      "name": "StreamFlix 2.0",
+      "version": 1,
+      "description": "StreamFlix Provider",
+      "author": "eternalnexus",
+      "authors": [
+        "eternalnexus"
+      ],
+      "baseUrl": "https://api.streamflix.app",
+      "type": "video",
+      "rating": "All",
+      "isAdult": false,
+      "language": "en",
+      "languages": [
+        "en"
+      ],
+      "icon": "icon.png",
+      "iconUrl": "./icon.png",
+      "manifestVersion": 1
+    },
+    {
+      "packageName": "com.eternalnexus.dev_akash_stars_yflix",
+      "name": "Yflix",
+      "version": 1,
+      "description": "Yflix Movie Provider",
+      "author": "eternalnexus",
+      "authors": [
+        "eternalnexus"
+      ],
+      "baseUrl": "https://yflix.to",
+      "type": "video",
+      "rating": "All",
+      "isAdult": false,
+      "language": "en",
+      "languages": [
+        "en"
+      ],
+      "icon": "icon.png",
+      "iconUrl": "./icon.png",
+      "manifestVersion": 1
+    },
+    {
+      "packageName": "com.eternalnexus.dev_akash_stars_yts",
+      "name": "YTS",
+      "version": 1,
+      "description": "YTS Provider",
+      "author": "eternalnexus",
+      "authors": [
+        "eternalnexus"
+      ],
+      "baseUrl": "https://yts.gg",
+      "type": "video",
+      "rating": "All",
+      "isAdult": false,
+      "language": "en",
+      "languages": [
+        "en"
+      ],
+      "icon": "icon.png",
+      "iconUrl": "./icon.png",
+      "manifestVersion": 1
+    },
+    {
+      "packageName": "com.eternalnexus.kai_delta_anichin",
+      "name": "Anichin",
+      "version": 1,
+      "description": "Nonton donghua subtitle Indonesia gratis",
+      "author": "eternalnexus",
+      "authors": [
+        "eternalnexus"
+      ],
+      "baseUrl": "https://anichin.moe",
+      "type": "video",
+      "rating": "All",
+      "isAdult": false,
+      "language": "en",
+      "languages": [
+        "en"
+      ],
+      "icon": "icon.png",
+      "iconUrl": "./icon.png",
+      "manifestVersion": 1
+    },
+    {
+      "packageName": "com.eternalnexus.kai_delta_dizigom104",
+      "name": "Dizigom104",
+      "version": 1,
+      "description": "Dizigom104 scraper with direct HLS extraction from watch API and embed player pages.",
+      "author": "eternalnexus",
+      "authors": [
+        "eternalnexus"
+      ],
+      "baseUrl": "https://dizigom104.com",
+      "type": "video",
+      "rating": "All",
+      "isAdult": false,
+      "language": "en",
+      "languages": [
+        "en"
+      ],
+      "icon": "icon.png",
+      "iconUrl": "./icon.png",
+      "manifestVersion": 1
+    },
+    {
+      "packageName": "com.eternalnexus.kai_delta_lk21",
+      "name": "LK21",
+      "version": 1,
+      "description": "Lk21 Layarkaca21 movie and series streaming",
+      "author": "eternalnexus",
+      "authors": [
+        "eternalnexus"
+      ],
+      "baseUrl": "https://tv9.lk21official.cc",
+      "type": "video",
+      "rating": "All",
+      "isAdult": false,
+      "language": "en",
+      "languages": [
+        "en"
+      ],
+      "icon": "icon.png",
+      "iconUrl": "./icon.png",
+      "manifestVersion": 1
+    },
+    {
+      "packageName": "com.eternalnexus.kai_delta_missav",
+      "name": "MissAV",
+      "version": 1,
+      "description": "Direct MissAV scraper with adaptive HLS stream extraction.",
+      "author": "eternalnexus",
+      "authors": [
+        "eternalnexus"
+      ],
+      "baseUrl": "https://missav.ws",
+      "type": "video",
+      "rating": "All",
+      "isAdult": false,
+      "language": "en",
+      "languages": [
+        "en"
+      ],
+      "icon": "icon.png",
+      "iconUrl": "./icon.png",
+      "manifestVersion": 1
+    },
+    {
+      "packageName": "com.eternalnexus.dipland_mangafire",
+      "name": "MangaFire",
+      "version": 1,
+      "description": "Multi language manga provider.",
+      "author": "eternalnexus",
+      "authors": [
+        "eternalnexus"
+      ],
+      "baseUrl": "https://example.com",
+      "type": "manga",
+      "rating": "All",
+      "isAdult": false,
+      "language": "en",
+      "languages": [
+        "en"
+      ],
+      "icon": "icon.png",
+      "iconUrl": "./icon.png",
+      "manifestVersion": 1
+    },
+    {
+      "packageName": "com.eternalnexus.dipland_name",
+      "name": "dipland_name",
+      "version": 1,
+      "description": "dipland_name plugin by eternalnexus",
+      "author": "eternalnexus",
+      "authors": [
+        "eternalnexus"
+      ],
+      "baseUrl": "https://example.com",
+      "type": "video",
+      "rating": "All",
+      "isAdult": false,
+      "language": "en",
+      "languages": [
+        "en"
+      ],
+      "icon": "icon.png",
+      "iconUrl": "./icon.png",
+      "manifestVersion": 1
+    },
+    {
+      "packageName": "com.eternalnexus.agefans",
+      "name": "AgeFans",
+      "version": 1,
+      "description": "AgeFans is an online streaming provider for subbed anime in chinese",
+      "author": "eternalnexus",
+      "authors": [
+        "eternalnexus"
+      ],
+      "baseUrl": "https://example.com",
+      "type": "video",
+      "rating": "All",
+      "isAdult": false,
+      "language": "en",
+      "languages": [
+        "en"
+      ],
+      "icon": "icon.png",
+      "iconUrl": "./icon.png",
+      "manifestVersion": 1
+    },
+    {
+      "packageName": "com.eternalnexus.allmangaanime",
+      "name": "AllManga (Anime)",
+      "version": 1,
+      "description": "AllManga (Anime) streaming provider for Seanime",
+      "author": "eternalnexus",
+      "authors": [
+        "eternalnexus"
+      ],
+      "baseUrl": "https://example.com",
+      "type": "video",
+      "rating": "All",
+      "isAdult": false,
+      "language": "en",
+      "languages": [
+        "en"
+      ],
+      "icon": "icon.png",
+      "iconUrl": "./icon.png",
+      "manifestVersion": 1
+    },
+    {
+      "packageName": "com.eternalnexus.anibd",
+      "name": "AniBD",
+      "version": 1,
+      "description": "AniBD is an online streaming provider for subbed BD anime in english",
+      "author": "eternalnexus",
+      "authors": [
+        "eternalnexus"
+      ],
+      "baseUrl": "https://example.com",
+      "type": "video",
+      "rating": "All",
+      "isAdult": false,
+      "language": "en",
+      "languages": [
+        "en"
+      ],
+      "icon": "icon.png",
+      "iconUrl": "./icon.png",
+      "manifestVersion": 1
+    },
+    {
+      "packageName": "com.eternalnexus.anidb",
+      "name": "AniDB",
+      "version": 1,
+      "description": "AniDB is an online streaming provider for subbed & dubbed anime in english",
+      "author": "eternalnexus",
+      "authors": [
+        "eternalnexus"
+      ],
+      "baseUrl": "https://example.com",
+      "type": "video",
+      "rating": "All",
+      "isAdult": false,
+      "language": "en",
+      "languages": [
+        "en"
+      ],
+      "icon": "icon.png",
+      "iconUrl": "./icon.png",
+      "manifestVersion": 1
+    },
+    {
+      "packageName": "com.eternalnexus.animeav1",
+      "name": "AnimeAV1",
+      "version": 1,
+      "description": "Online streaming provider with hard subs and dubs in Spanish.",
+      "author": "eternalnexus",
+      "authors": [
+        "eternalnexus"
+      ],
+      "baseUrl": "https://example.com",
+      "type": "video",
+      "rating": "All",
+      "isAdult": false,
+      "language": "en",
+      "languages": [
+        "en"
+      ],
+      "icon": "icon.png",
+      "iconUrl": "./icon.png",
+      "manifestVersion": 1
+    },
+    {
+      "packageName": "com.eternalnexus.animegg",
+      "name": "AnimeGG",
+      "version": 1,
+      "description": "AnimeGG is an online streaming provider for sub/dub anime in english",
+      "author": "eternalnexus",
+      "authors": [
+        "eternalnexus"
+      ],
+      "baseUrl": "https://example.com",
+      "type": "video",
+      "rating": "All",
+      "isAdult": false,
+      "language": "en",
+      "languages": [
+        "en"
+      ],
+      "icon": "icon.png",
+      "iconUrl": "./icon.png",
+      "manifestVersion": 1
+    },
+    {
+      "packageName": "com.eternalnexus.animeheaven",
+      "name": "AnimeHeaven",
+      "version": 1,
+      "description": "AnimeHeaven is an online streaming provider for subbed anime in english",
+      "author": "eternalnexus",
+      "authors": [
+        "eternalnexus"
+      ],
+      "baseUrl": "https://example.com",
+      "type": "video",
+      "rating": "All",
+      "isAdult": false,
+      "language": "en",
+      "languages": [
+        "en"
+      ],
+      "icon": "icon.png",
+      "iconUrl": "./icon.png",
+      "manifestVersion": 1
+    },
+    {
+      "packageName": "com.eternalnexus.animesaturnmirror",
+      "name": "AnimeSaturn (Mirror)",
+      "version": 1,
+      "description": "AnimeSaturn mirror",
+      "author": "eternalnexus",
+      "authors": [
+        "eternalnexus"
+      ],
+      "baseUrl": "https://example.com",
+      "type": "video",
+      "rating": "All",
+      "isAdult": false,
+      "language": "en",
+      "languages": [
+        "en"
+      ],
+      "icon": "icon.png",
+      "iconUrl": "./icon.png",
+      "manifestVersion": 1
+    },
+    {
+      "packageName": "com.eternalnexus.animetoast",
+      "name": "AnimeToast",
+      "version": 1,
+      "description": "AnimeToast is an online streaming provider for german sub/dubs.",
+      "author": "eternalnexus",
+      "authors": [
+        "eternalnexus"
+      ],
+      "baseUrl": "https://example.com",
+      "type": "video",
+      "rating": "All",
+      "isAdult": false,
+      "language": "en",
+      "languages": [
+        "en"
+      ],
+      "icon": "icon.png",
+      "iconUrl": "./icon.png",
+      "manifestVersion": 1
+    },
+    {
+      "packageName": "com.eternalnexus.animeunitymirror",
+      "name": "AnimeUnity (Mirror)",
+      "version": 1,
+      "description": "AnimeUnity mirror",
+      "author": "eternalnexus",
+      "authors": [
+        "eternalnexus"
+      ],
+      "baseUrl": "https://example.com",
+      "type": "video",
+      "rating": "All",
+      "isAdult": false,
+      "language": "en",
+      "languages": [
+        "en"
+      ],
+      "icon": "icon.png",
+      "iconUrl": "./icon.png",
+      "manifestVersion": 1
+    },
+    {
+      "packageName": "com.eternalnexus.anitube",
+      "name": "AniTube",
+      "version": 1,
+      "description": "AniTube is an online streaming provider for portugese subs.",
+      "author": "eternalnexus",
+      "authors": [
+        "eternalnexus"
+      ],
+      "baseUrl": "https://example.com",
+      "type": "video",
+      "rating": "All",
+      "isAdult": false,
+      "language": "en",
+      "languages": [
+        "en"
+      ],
+      "icon": "icon.png",
+      "iconUrl": "./icon.png",
+      "manifestVersion": 1
+    },
+    {
+      "packageName": "com.eternalnexus.aniworld",
+      "name": "AniWorld",
+      "version": 1,
+      "description": "AniWorld is an online streaming provider for german dubs.",
+      "author": "eternalnexus",
+      "authors": [
+        "eternalnexus"
+      ],
+      "baseUrl": "https://example.com",
+      "type": "video",
+      "rating": "All",
+      "isAdult": false,
+      "language": "en",
+      "languages": [
+        "en"
+      ],
+      "icon": "icon.png",
+      "iconUrl": "./icon.png",
+      "manifestVersion": 1
+    },
+    {
+      "packageName": "com.eternalnexus.donghuastream",
+      "name": "DonghuaStream",
+      "version": 1,
+      "description": "DonghuaStream streaming provider for Seanime",
+      "author": "eternalnexus",
+      "authors": [
+        "eternalnexus"
+      ],
+      "baseUrl": "https://example.com",
+      "type": "video",
+      "rating": "All",
+      "isAdult": false,
+      "language": "en",
+      "languages": [
+        "en"
+      ],
+      "icon": "icon.png",
+      "iconUrl": "./icon.png",
+      "manifestVersion": 1
+    },
+    {
+      "packageName": "com.eternalnexus.hentaisaturn",
+      "name": "HentaiSaturn",
+      "version": 1,
+      "description": "HentaiSaturn is an online streaming provider for subbed/dubbed Hentai in Italian",
+      "author": "eternalnexus",
+      "authors": [
+        "eternalnexus"
+      ],
+      "baseUrl": "https://example.com",
+      "type": "video",
+      "rating": "18",
+      "isAdult": true,
+      "language": "en",
+      "languages": [
+        "en"
+      ],
+      "icon": "icon.png",
+      "iconUrl": "./icon.png",
+      "manifestVersion": 1
+    },
+    {
+      "packageName": "com.eternalnexus.hentaiworld",
+      "name": "HentaiWorld",
+      "version": 1,
+      "description": "HentaiWorld is an online streaming provider for subbed/dubbed Hentai in Italian",
+      "author": "eternalnexus",
+      "authors": [
+        "eternalnexus"
+      ],
+      "baseUrl": "https://example.com",
+      "type": "video",
+      "rating": "18",
+      "isAdult": true,
+      "language": "en",
+      "languages": [
+        "en"
+      ],
+      "icon": "icon.png",
+      "iconUrl": "./icon.png",
+      "manifestVersion": 1
+    },
+    {
+      "packageName": "com.eternalnexus.mynimeku",
+      "name": "MyNimeKu",
+      "version": 1,
+      "description": "MyNimeKu is an online streaming provider for indonesian subs.",
+      "author": "eternalnexus",
+      "authors": [
+        "eternalnexus"
+      ],
+      "baseUrl": "https://example.com",
+      "type": "video",
+      "rating": "All",
+      "isAdult": false,
+      "language": "en",
+      "languages": [
+        "en"
+      ],
+      "icon": "icon.png",
+      "iconUrl": "./icon.png",
+      "manifestVersion": 1
+    },
+    {
+      "packageName": "com.eternalnexus.nontonanime",
+      "name": "NonTonAnime",
+      "version": 1,
+      "description": "NonTonAnime is an online streaming provider for indonesian anime.",
+      "author": "eternalnexus",
+      "authors": [
+        "eternalnexus"
+      ],
+      "baseUrl": "https://example.com",
+      "type": "video",
+      "rating": "All",
+      "isAdult": false,
+      "language": "en",
+      "languages": [
+        "en"
+      ],
+      "icon": "icon.png",
+      "iconUrl": "./icon.png",
+      "manifestVersion": 1
+    },
+    {
+      "packageName": "com.eternalnexus.animesamamanga",
+      "name": "AnimeSama (Manga)",
+      "version": 1,
+      "description": "AnimeSama is a manga provider for Seanime",
+      "author": "eternalnexus",
+      "authors": [
+        "eternalnexus"
+      ],
+      "baseUrl": "https://example.com",
+      "type": "manga",
+      "rating": "All",
+      "isAdult": false,
+      "language": "en",
+      "languages": [
+        "en"
+      ],
+      "icon": "icon.png",
+      "iconUrl": "./icon.png",
+      "manifestVersion": 1
+    },
+    {
+      "packageName": "com.eternalnexus.asurascans",
+      "name": "AsuraScans",
+      "version": 1,
+      "description": "AsuraScans is a manga provider for Seanime",
+      "author": "eternalnexus",
+      "authors": [
+        "eternalnexus"
+      ],
+      "baseUrl": "https://example.com",
+      "type": "manga",
+      "rating": "All",
+      "isAdult": false,
+      "language": "en",
+      "languages": [
+        "en"
+      ],
+      "icon": "icon.png",
+      "iconUrl": "./icon.png",
+      "manifestVersion": 1
+    },
+    {
+      "packageName": "com.eternalnexus.atsumaru",
+      "name": "Atsumaru",
+      "version": 1,
+      "description": "Atsumaru is a manga provider for Seanime",
+      "author": "eternalnexus",
+      "authors": [
+        "eternalnexus"
+      ],
+      "baseUrl": "https://example.com",
+      "type": "manga",
+      "rating": "All",
+      "isAdult": false,
+      "language": "en",
+      "languages": [
+        "en"
+      ],
+      "icon": "icon.png",
+      "iconUrl": "./icon.png",
+      "manifestVersion": 1
+    },
+    {
+      "packageName": "com.eternalnexus.komikcast",
+      "name": "KomikCast",
+      "version": 1,
+      "description": "KomikCast is a manga provider for Seanime",
+      "author": "eternalnexus",
+      "authors": [
+        "eternalnexus"
+      ],
+      "baseUrl": "https://example.com",
+      "type": "manga",
+      "rating": "All",
+      "isAdult": false,
+      "language": "en",
+      "languages": [
+        "en"
+      ],
+      "icon": "icon.png",
+      "iconUrl": "./icon.png",
+      "manifestVersion": 1
+    },
+    {
+      "packageName": "com.eternalnexus.komiku",
+      "name": "Komiku",
+      "version": 1,
+      "description": "Komiku is a manga provider for Seanime",
+      "author": "eternalnexus",
+      "authors": [
+        "eternalnexus"
+      ],
+      "baseUrl": "https://example.com",
+      "type": "manga",
+      "rating": "All",
+      "isAdult": false,
+      "language": "en",
+      "languages": [
+        "en"
+      ],
+      "icon": "icon.png",
+      "iconUrl": "./icon.png",
+      "manifestVersion": 1
+    },
+    {
+      "packageName": "com.eternalnexus.lelmanga",
+      "name": "LelManga",
+      "version": 1,
+      "description": "LelManga is a manga provider for Seanime",
+      "author": "eternalnexus",
+      "authors": [
+        "eternalnexus"
+      ],
+      "baseUrl": "https://example.com",
+      "type": "manga",
+      "rating": "All",
+      "isAdult": false,
+      "language": "en",
+      "languages": [
+        "en"
+      ],
+      "icon": "icon.png",
+      "iconUrl": "./icon.png",
+      "manifestVersion": 1
+    },
+    {
+      "packageName": "com.eternalnexus.mangabuddy",
+      "name": "MangaBuddy",
+      "version": 1,
+      "description": "MangaBuddy is a manga provider for Seanime",
+      "author": "eternalnexus",
+      "authors": [
+        "eternalnexus"
+      ],
+      "baseUrl": "https://example.com",
+      "type": "manga",
+      "rating": "All",
+      "isAdult": false,
+      "language": "en",
+      "languages": [
+        "en"
+      ],
+      "icon": "icon.png",
+      "iconUrl": "./icon.png",
+      "manifestVersion": 1
+    },
+    {
+      "packageName": "com.eternalnexus.mangacloud",
+      "name": "MangaCloud",
+      "version": 1,
+      "description": "MangaCloud is a manga provider for Seanime",
+      "author": "eternalnexus",
+      "authors": [
+        "eternalnexus"
+      ],
+      "baseUrl": "https://example.com",
+      "type": "manga",
+      "rating": "All",
+      "isAdult": false,
+      "language": "en",
+      "languages": [
+        "en"
+      ],
+      "icon": "icon.png",
+      "iconUrl": "./icon.png",
+      "manifestVersion": 1
+    },
+    {
+      "packageName": "com.eternalnexus.mangadot",
+      "name": "MangaDot",
+      "version": 1,
+      "description": "MangaDot is a manga provider for Seanime",
+      "author": "eternalnexus",
+      "authors": [
+        "eternalnexus"
+      ],
+      "baseUrl": "https://example.com",
+      "type": "manga",
+      "rating": "All",
+      "isAdult": false,
+      "language": "en",
+      "languages": [
+        "en"
+      ],
+      "icon": "icon.png",
+      "iconUrl": "./icon.png",
+      "manifestVersion": 1
+    },
+    {
+      "packageName": "com.eternalnexus.mangafreak",
+      "name": "MangaFreak",
+      "version": 1,
+      "description": "MangaFreak is a manga provider for Seanime",
+      "author": "eternalnexus",
+      "authors": [
+        "eternalnexus"
+      ],
+      "baseUrl": "https://example.com",
+      "type": "manga",
+      "rating": "All",
+      "isAdult": false,
+      "language": "en",
+      "languages": [
+        "en"
+      ],
+      "icon": "icon.png",
+      "iconUrl": "./icon.png",
+      "manifestVersion": 1
+    },
+    {
+      "packageName": "com.eternalnexus.mangahub",
+      "name": "MangaHub",
+      "version": 1,
+      "description": "MangaHub is a Russian manga provider for Seanime",
+      "author": "eternalnexus",
+      "authors": [
+        "eternalnexus"
+      ],
+      "baseUrl": "https://example.com",
+      "type": "manga",
+      "rating": "All",
+      "isAdult": false,
+      "language": "en",
+      "languages": [
+        "en"
+      ],
+      "icon": "icon.png",
+      "iconUrl": "./icon.png",
+      "manifestVersion": 1
+    },
+    {
+      "packageName": "com.eternalnexus.mangakatana",
+      "name": "MangaKatana",
+      "version": 1,
+      "description": "MangaKatana is a manga provider for Seanime",
+      "author": "eternalnexus",
+      "authors": [
+        "eternalnexus"
+      ],
+      "baseUrl": "https://example.com",
+      "type": "manga",
+      "rating": "All",
+      "isAdult": false,
+      "language": "en",
+      "languages": [
+        "en"
+      ],
+      "icon": "icon.png",
+      "iconUrl": "./icon.png",
+      "manifestVersion": 1
+    },
+    {
+      "packageName": "com.eternalnexus.mangabats",
+      "name": "MangaBats",
+      "version": 1,
+      "description": "MangaBats is a manga provider for Seanime",
+      "author": "eternalnexus",
+      "authors": [
+        "eternalnexus"
+      ],
+      "baseUrl": "https://example.com",
+      "type": "manga",
+      "rating": "All",
+      "isAdult": false,
+      "language": "en",
+      "languages": [
+        "en"
+      ],
+      "icon": "icon.png",
+      "iconUrl": "./icon.png",
+      "manifestVersion": 1
+    },
+    {
+      "packageName": "com.eternalnexus.mangaworldadult",
+      "name": "MangaWorldAdult",
+      "version": 1,
+      "description": "MangaWorldAdult is a manga provider for Seanime",
+      "author": "eternalnexus",
+      "authors": [
+        "eternalnexus"
+      ],
+      "baseUrl": "https://example.com",
+      "type": "manga",
+      "rating": "All",
+      "isAdult": false,
+      "language": "en",
+      "languages": [
+        "en"
+      ],
+      "icon": "icon.png",
+      "iconUrl": "./icon.png",
+      "manifestVersion": 1
+    },
+    {
+      "packageName": "com.eternalnexus.manhwaweb",
+      "name": "ManhwaWeb",
+      "version": 1,
+      "description": "Spanish manga and manhwa provider.",
+      "author": "eternalnexus",
+      "authors": [
+        "eternalnexus"
+      ],
+      "baseUrl": "https://example.com",
+      "type": "manga",
+      "rating": "All",
+      "isAdult": false,
+      "language": "en",
+      "languages": [
+        "en"
+      ],
+      "icon": "icon.png",
+      "iconUrl": "./icon.png",
+      "manifestVersion": 1
+    },
+    {
+      "packageName": "com.eternalnexus.mynimekumanga",
+      "name": "MyNimeKu (Manga)",
+      "version": 1,
+      "description": "MyNimeKu is a manga provider for Seanime",
+      "author": "eternalnexus",
+      "authors": [
+        "eternalnexus"
+      ],
+      "baseUrl": "https://example.com",
+      "type": "manga",
+      "rating": "All",
+      "isAdult": false,
+      "language": "en",
+      "languages": [
+        "en"
+      ],
+      "icon": "icon.png",
+      "iconUrl": "./icon.png",
+      "manifestVersion": 1
+    },
+    {
+      "packageName": "com.eternalnexus.ravenscans",
+      "name": "RavenScans",
+      "version": 1,
+      "description": "RavenScans is a manga provider for Seanime",
+      "author": "eternalnexus",
+      "authors": [
+        "eternalnexus"
+      ],
+      "baseUrl": "https://example.com",
+      "type": "manga",
+      "rating": "All",
+      "isAdult": false,
+      "language": "en",
+      "languages": [
+        "en"
+      ],
+      "icon": "icon.png",
+      "iconUrl": "./icon.png",
+      "manifestVersion": 1
+    },
+    {
+      "packageName": "com.eternalnexus.taiyo",
+      "name": "Taiyo",
+      "version": 1,
+      "description": "Taiyo is a manga provider for Seanime",
+      "author": "eternalnexus",
+      "authors": [
+        "eternalnexus"
+      ],
+      "baseUrl": "https://example.com",
+      "type": "manga",
+      "rating": "All",
+      "isAdult": false,
+      "language": "en",
+      "languages": [
+        "en"
+      ],
+      "icon": "icon.png",
+      "iconUrl": "./icon.png",
+      "manifestVersion": 1
+    },
+    {
+      "packageName": "com.eternalnexus.account_switcher",
+      "name": "Account Switcher",
+      "version": 1,
+      "description": "Allows you to switch between multiple AniList accounts swiftly",
+      "author": "eternalnexus",
+      "authors": [
+        "eternalnexus"
+      ],
+      "baseUrl": "https://example.com",
+      "type": "other",
+      "rating": "All",
+      "isAdult": false,
+      "language": "en",
+      "languages": [
+        "en"
+      ],
+      "icon": "icon.png",
+      "iconUrl": "./icon.png",
+      "manifestVersion": 1
+    },
+    {
+      "packageName": "com.eternalnexus.anilist_activity",
+      "name": "Anilist activity",
+      "version": 1,
+      "description": "A plugin for viewing your friend's and your Anilist activities inside Seanime.",
+      "author": "eternalnexus",
+      "authors": [
+        "eternalnexus"
+      ],
+      "baseUrl": "https://example.com",
+      "type": "other",
+      "rating": "All",
+      "isAdult": false,
+      "language": "en",
+      "languages": [
+        "en"
+      ],
+      "icon": "icon.png",
+      "iconUrl": "./icon.png",
+      "manifestVersion": 1
+    },
+    {
+      "packageName": "com.eternalnexus.anilist_notifications",
+      "name": "AniList Notifications",
+      "version": 1,
+      "description": "View your AniList notifications.",
+      "author": "eternalnexus",
+      "authors": [
+        "eternalnexus"
+      ],
+      "baseUrl": "https://example.com",
+      "type": "other",
+      "rating": "All",
+      "isAdult": false,
+      "language": "en",
+      "languages": [
+        "en"
+      ],
+      "icon": "icon.png",
+      "iconUrl": "./icon.png",
+      "manifestVersion": 1
+    },
+    {
+      "packageName": "com.eternalnexus.anime_news",
+      "name": "Anime News",
+      "version": 1,
+      "description": "Get anime news in your Seanime instance!",
+      "author": "eternalnexus",
+      "authors": [
+        "eternalnexus"
+      ],
+      "baseUrl": "https://example.com",
+      "type": "other",
+      "rating": "All",
+      "isAdult": false,
+      "language": "en",
+      "languages": [
+        "en"
+      ],
+      "icon": "icon.png",
+      "iconUrl": "./icon.png",
+      "manifestVersion": 1
+    },
+    {
+      "packageName": "com.eternalnexus.antiseeding",
+      "name": "Anti-Seeding",
+      "version": 1,
+      "description": "Prevents torrent seeding",
+      "author": "eternalnexus",
+      "authors": [
+        "eternalnexus"
+      ],
+      "baseUrl": "https://example.com",
+      "type": "other",
+      "rating": "All",
+      "isAdult": false,
+      "language": "en",
+      "languages": [
+        "en"
+      ],
+      "icon": "icon.png",
+      "iconUrl": "./icon.png",
+      "manifestVersion": 1
+    },
+    {
+      "packageName": "com.eternalnexus.cookie_clicker",
+      "name": "Cookie Clicker",
+      "version": 1,
+      "description": "A cookie clicker tray based plugin",
+      "author": "eternalnexus",
+      "authors": [
+        "eternalnexus"
+      ],
+      "baseUrl": "https://example.com",
+      "type": "other",
+      "rating": "All",
+      "isAdult": false,
+      "language": "en",
+      "languages": [
+        "en"
+      ],
+      "icon": "icon.png",
+      "iconUrl": "./icon.png",
+      "manifestVersion": 1
+    },
+    {
+      "packageName": "com.eternalnexus.default_torrent_filters",
+      "name": "Default Torrent Filters",
+      "version": 1,
+      "description": "Automatically applies your preferred filters (Multi Subs, Dubbed, HEVC/AV1/H.264, audio codecs) to torrent search results, configurable from the tray icon.",
+      "author": "eternalnexus",
+      "authors": [
+        "eternalnexus"
+      ],
+      "baseUrl": "https://example.com",
+      "type": "other",
+      "rating": "All",
+      "isAdult": false,
+      "language": "en",
+      "languages": [
+        "en"
+      ],
+      "icon": "icon.png",
+      "iconUrl": "./icon.png",
+      "manifestVersion": 1
+    },
+    {
+      "packageName": "com.eternalnexus.snow_effect",
+      "name": "Seanime Snow effect",
+      "version": 1,
+      "description": "A simple plugin for showing winter effects.",
+      "author": "eternalnexus",
+      "authors": [
+        "eternalnexus"
+      ],
+      "baseUrl": "https://example.com",
+      "type": "other",
+      "rating": "All",
+      "isAdult": false,
+      "language": "en",
+      "languages": [
+        "en"
+      ],
+      "icon": "icon.png",
+      "iconUrl": "./icon.png",
+      "manifestVersion": 1
+    },
+    {
+      "packageName": "com.eternalnexus.ln_reader",
+      "name": "Light Novel Reader",
+      "version": 1,
+      "description": "A simple plugin for reading Light Novels inside Seanime.",
+      "author": "eternalnexus",
+      "authors": [
+        "eternalnexus"
+      ],
+      "baseUrl": "https://example.com",
+      "type": "other",
+      "rating": "All",
+      "isAdult": false,
+      "language": "en",
+      "languages": [
+        "en"
+      ],
+      "icon": "icon.png",
+      "iconUrl": "./icon.png",
+      "manifestVersion": 1
+    },
+    {
+      "packageName": "com.eternalnexus.oneko",
+      "name": "Onekojs",
+      "version": 1,
+      "description": "Implements the famous Oneko.js script on seanime.",
+      "author": "eternalnexus",
+      "authors": [
+        "eternalnexus"
+      ],
+      "baseUrl": "https://example.com",
+      "type": "other",
+      "rating": "All",
+      "isAdult": false,
+      "language": "en",
+      "languages": [
+        "en"
+      ],
+      "icon": "icon.png",
+      "iconUrl": "./icon.png",
+      "manifestVersion": 1
+    },
+    {
+      "packageName": "com.eternalnexus.ui_translation",
+      "name": "UI Translation",
+      "version": 1,
+      "description": "Translates Seanime UI into +10 different languages.",
+      "author": "eternalnexus",
+      "authors": [
+        "eternalnexus"
+      ],
+      "baseUrl": "https://example.com",
+      "type": "other",
+      "rating": "All",
+      "isAdult": false,
+      "language": "en",
+      "languages": [
+        "en"
+      ],
+      "icon": "icon.png",
+      "iconUrl": "./icon.png",
+      "manifestVersion": 1
+    }
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "packageName": "com.eternalnexus.kai_delta_dizigom104",
+  "name": "Dizigom104",
+  "version": 1,
+  "description": "Dizigom104 scraper with direct HLS extraction from watch API and embed player pages.",
+  "author": "eternalnexus",
+  "authors": [
+    "eternalnexus"
+  ],
+  "baseUrl": "https://dizigom104.com",
+  "type": "video",
+  "rating": "All",
+  "isAdult": false,
+  "language": "en",
+  "languages": [
+    "en"
+  ],
+  "icon": "icon.png",
+  "iconUrl": "./icon.png",
+  "manifestVersion": 1
+}

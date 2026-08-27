@@ -1,0 +1,546 @@
+(function() {
+    var manifest = {"packageName":"com.eternalnexus.comicvine","name":"ComicVine","version":1,"description":"Implements ComicVine as a custom source for Western comics/manga.","author":"eternalnexus","authors":["eternalnexus"],"baseUrl":"https://example.com","type":"video","rating":"All","isAdult":false,"language":"en","languages":["en"],"icon":"icon.png","iconUrl":"./icon.png","manifestVersion":1};
+
+
+
+// ComicVine (gamespot.com) custom source exposing Western comics as manga.
+//
+// ID scheme:
+//   3000000000 + ComicVine volume numeric id
+//
+// Medium details are fetched on demand from the `/volume/4050-{id}/` endpoint
+// (plus the first/last issue for characters and a couple of searches for
+// relations/recommendations) and cached (versioned) in $store so browsing,
+// searching, and detail views stay within the API rate limit (200 requests per
+// resource per hour).
+
+const COMICVINE_CACHE_VERSION = 1
+const COMICVINE_DETAILS_CACHE_VERSION = 1
+const ID_OFFSET = 3000000000
+
+const FIELD_LIST = [
+    "id",
+    "name",
+    "aliases",
+    "start_year",
+    "description",
+    "image",
+    "count_of_issues",
+    "site_detail_url",
+    "publisher",
+].join(",")
+
+const DETAILS_FIELD_LIST = [
+    "id",
+    "name",
+    "start_year",
+    "count_of_issues",
+    "description",
+    "image",
+    "publisher",
+    "first_issue",
+    "last_issue",
+    "site_detail_url",
+].join(",")
+
+class Provider implements CustomSource {
+    api_key = "{{api-key}}"
+    western_comics_only = "{{western-only}}"
+
+    getSettings(): Settings {
+        return {
+            supportsAnime,
+            supportsManga,
+        }
+    }
+
+    // ---------------------------------------------------------------- CustomSource (anime stubs)
+
+    async getAnime(ids): Promise<$app.AL_BaseAnime[]> {
+        return []
+    }
+
+    async getAnimeMetadata(id): Promise<$app.Metadata_AnimeMetadata | null> {
+        return null
+    }
+
+    async getAnimeWithRelations(id): Promise<$app.AL_CompleteAnime> {
+        throw new Error("not found.")
+    }
+
+    async getAnimeDetails(id): Promise<$app.AL_AnimeDetailsById_Media | null> {
+        return null
+    }
+
+    async listAnime(search, page, perPage): Promise<ListResponse<$app.AL_BaseAnime>> {
+        return { media, total, page, totalPages: 1 }
+    }
+
+    // ---------------------------------------------------------------- CustomSource (manga)
+
+    async getManga(ids): Promise<$app.AL_BaseManga[]> {
+        const ret: $app.AL_BaseManga[] = []
+        const cache = this._getMediaCache()
+
+        for (const id of ids) {
+            const cached = cache[id]
+
+            if (cached) {
+                ret.push(cached)
+                continue
+            }
+
+            const decoded = this._decodeId(id)
+            if (!decoded) continue
+
+            const volume = await this._apiGet("/volume/" + decoded.resource + "/", {})
+            const result = (volume as any)?.results
+
+            if (!result || typeof result.id === "undefined") continue
+
+            const media = this._volumeToMedia(result)
+            cache[media.id] = media
+            ret.push(media)
+        }
+
+        this._setMediaCache(cache)
+        return ret
+    }
+
+    async getMangaDetails(id): Promise<$app.AL_MangaDetailsById_Media | null> {
+        const cache = this._getDetailsCache()
+        const cached = cache[id]
+        if (cached) return cached
+
+        const decoded = this._decodeId(id)
+        if (!decoded) return null
+
+        const volume = await this._apiGet("/volume/" + decoded.resource + "/", {
+            field_list,
+        })
+        const result = (volume as any)?.results
+        if (!result || typeof result.id === "undefined") return null
+
+        const publisher = String(result?.publisher?.name || "").trim()
+
+        const characters = await this._getCharacters(result)
+        const relations = await this._getRelations(result, id)
+        const recommendations = await this._getRecommendations(result, id, characters, relations)
+
+        const details: $app.AL_MangaDetailsById_Media = {
+            id,
+            genres: publisher ? [publisher] ,
+            siteUrl: String(result?.site_detail_url || "").trim(),
+            characters,
+            relations,
+            recommendations,
+        }
+
+        cache[id] = details
+        this._setDetailsCache(cache)
+        return details
+    }
+
+    async listManga(search, page, perPage): Promise<ListResponse<$app.AL_BaseManga>> {
+        const query = String(search || "").trim()
+        const currentPage = page && page > 0 ? page : 1
+        const limit = Math.max(1, Math.min(perPage || 20, 100))
+
+        if (!this._hasApiKey()) {
+            return {
+                media,
+                total,
+                page,
+                totalPages,
+            }
+        }
+
+        let env = null
+        let total = 0
+
+        if (query.length > 0) {
+            env = await this._apiGet("/search/", {
+                query,
+                resources: "volume",
+                field_list,
+                limit: String(limit),
+                page: String(currentPage),
+            })
+            total = Number((env as any)?.number_of_total_results) || 0
+        } else {
+            env = await this._apiGet("/volumes/", {
+                sort: "date_added:desc",
+                field_list,
+                limit: String(limit),
+                page: String(currentPage),
+            })
+            total = Number((env as any)?.number_of_total_results) || 0
+        }
+
+        const results = (env as any)?.results || []
+        const cache = this._getMediaCache()
+        const media: $app.AL_BaseManga[] = []
+
+        for (const result of results) {
+            if (this._westernOnly() && this._isMangaLike(result)) continue
+
+            const m = this._volumeToMedia(result)
+            if (this._isFiniteMedia(m)) {
+                cache[m.id] = m
+                media.push(m)
+            }
+        }
+
+        this._setMediaCache(cache)
+
+        return {
+            media,
+            total,
+            page,
+            totalPages: Math.max(1, Math.ceil(total / limit)),
+        }
+    }
+
+    // ---------------------------------------------------------------- ComicVine helpers
+
+    _apiGet<T>(path, params, string>): Promise<T | null> {
+        const key = this._apiKey()
+        if (!key) return Promise.resolve(null)
+
+        const query, string> = {
+            api_key,
+            format: "json",
+            ...params,
+        }
+
+        const parts = []
+
+        for (const k of Object.keys(query)) {
+            const value = query[k]
+            if (value === undefined || value === null || value === "") continue
+            parts.push(`${encodeURIComponent(k)}=${encodeURIComponent(value)}`)
+        }
+
+        const url = `https://comicvine.gamespot.com/api${path}?${parts.join("&")}`
+
+        try {
+            return fetch(url, {
+                headers: {
+                    "Accept": "application/json",
+                    "User-Agent": "Seanime/1.0",
+                },
+            }).then(res => res.json())
+        } catch (err) {
+            console.error("ComicVine fetch failed:", err)
+            return Promise.resolve(null)
+        }
+    }
+
+    _volumeToMedia(result): $app.AL_BaseManga {
+        const numericId = Number(String(result?.id).replace(/\D/g, ""))
+        const id = numericId ? this._encodeId(numericId) : ID_OFFSET
+
+        const title = String(result?.name || "").trim() || "Unknown"
+        const aliases = this._normalizeAliases(result?.aliases)
+        const image = result?.image || {}
+        const superUrl = String(image.super_url || image.large_url || "").trim()
+        const mediumUrl = String(image.medium_url || image.small_url || image.thumb_url || "").trim()
+        const publisher = String(result?.publisher?.name || "").trim()
+
+        return {
+            id,
+            siteUrl: String(result?.site_detail_url || "").trim(),
+            title: {
+                userPreferred,
+                romaji,
+                english,
+            },
+            coverImage: {
+                extraLarge,
+                large: superUrl || mediumUrl,
+                medium,
+                color: "",
+            },
+            description: this._cleanHtml(result?.description),
+            chapters: Number(result?.count_of_issues) || 0,
+            synonyms,
+            genres: publisher ? [publisher] ,
+            type: "MANGA",
+            startDate: this._startDate(result?.start_year),
+        }
+    }
+
+    _startDate(startYear): { year: number } | undefined {
+        if (startYear === undefined || startYear === null) return undefined
+        if (typeof startYear === "string" && !startYear.trim()) return undefined
+        const year = Number(startYear)
+        return Number.isFinite(year) ? { year } : undefined
+    }
+
+    // Characters only exist on issues, so the first and last issue are fetched
+    // and their credits merged. Characters appearing in both issues are treated
+    // as the main cast.
+    async _getCharacters(volume): Promise<$app.AL_MangaDetailsById_Media_Characters | undefined> {
+        const issueIds = []
+        const firstId = Number(volume?.first_issue?.id)
+        const lastId = Number(volume?.last_issue?.id)
+        if (firstId) issueIds.push(firstId)
+        if (lastId && lastId !== firstId) issueIds.push(lastId)
+        if (issueIds.length === 0) return undefined
+
+        const counts = new Map<number, number>()
+        const byId = new Map<number, any>()
+
+        for (const issueId of issueIds) {
+            const issue = await this._apiGet("/issue/4000-" + issueId + "/", {
+                field_list: "id,character_credits",
+            })
+            const credits = (issue as any)?.results?.character_credits || []
+            for (const credit of credits) {
+                const creditId = Number(credit?.id)
+                if (!creditId) continue
+                byId.set(creditId, credit)
+                counts.set(creditId, (counts.get(creditId) || 0) + 1)
+            }
+        }
+
+        if (byId.size === 0) return undefined
+
+        const edges: $app.AL_MangaDetailsById_Media_Characters_Edges[] = []
+
+        for (const [creditId, credit] of Array.from(byId.entries()).slice(0, 20)) {
+            const name = String(credit?.name || "").trim()
+            if (!name) continue
+            edges.push({
+                id,
+                name,
+                role: (counts.get(creditId) || 0) >= issueIds.length ? "MAIN" : "SUPPORTING",
+                node: {
+                    id,
+                    isFavourite,
+                    name: { full: name },
+                    siteUrl: String(credit?.site_detail_url || "").trim(),
+                },
+            })
+        }
+
+        return edges.length > 0 ? { edges } : undefined
+    }
+
+    // ComicVine exposes no relation graph, so same-title editions (e.g. the
+    // international editions of a series) are surfaced as ALTERNATIVE relations.
+    async _getRelations(volume, selfId): Promise<$app.AL_MangaDetailsById_Media_Relations | undefined> {
+        const name = String(volume?.name || "").trim()
+        if (!name) return undefined
+
+        const env = await this._apiGet("/search/", {
+            query,
+            resources: "volume",
+            field_list,
+            limit: "20",
+        })
+        const results = (env as any)?.results || []
+        const edges: $app.AL_MangaDetailsById_Media_Relations_Edges[] = []
+
+        for (const result of results) {
+            if (edges.length >= 8) break
+            if (this._westernOnly() && this._isMangaLike(result)) continue
+
+            const media = this._volumeToMedia(result)
+            if (!this._isFiniteMedia(media) || media.id === selfId) continue
+
+            edges.push({ node, relationType: "ALTERNATIVE" })
+        }
+
+        return edges.length > 0 ? { edges } : undefined
+    }
+
+    // Recommendations are derived from the volume's top character: other volumes
+    // featuring that character. Skipped when no characters were found.
+    async _getRecommendations(
+        volume,
+        selfId,
+        characters?: $app.AL_MangaDetailsById_Media_Characters,
+        relations?: $app.AL_MangaDetailsById_Media_Relations,
+    ): Promise<$app.AL_MangaDetailsById_Media_Recommendations | undefined> {
+        const characterName = this._topCharacterName(characters)
+        if (!characterName) return undefined
+
+        const env = await this._apiGet("/search/", {
+            query,
+            resources: "volume",
+            field_list,
+            limit: "20",
+        })
+        const results = (env as any)?.results || []
+
+        const excluded = new Set<number>([selfId])
+        if (relations?.edges) {
+            for (const edge of relations.edges) {
+                if (edge.node?.id) excluded.add(edge.node.id)
+            }
+        }
+
+        const edges: $app.AL_MangaDetailsById_Media_Recommendations_Edges[] = []
+
+        for (const result of results) {
+            if (edges.length >= 10) break
+            if (this._westernOnly() && this._isMangaLike(result)) continue
+
+            const media = this._volumeToMedia(result)
+            if (!this._isFiniteMedia(media) || excluded.has(media.id)) continue
+
+            edges.push({ node: { mediaRecommendation: media as any } })
+        }
+
+        return edges.length > 0 ? { edges } : undefined
+    }
+
+    _topCharacterName(characters?: $app.AL_MangaDetailsById_Media_Characters): string {
+        const edges = characters?.edges || []
+        if (edges.length === 0) return ""
+
+        const primary = edges.find(e => e.role === "MAIN") || edges[0]
+        return String(primary?.node?.name?.full || primary?.name || "").trim()
+    }
+
+    _decodeId(id): { resource, numericId: number } | null {
+        const numericId = Number(id)
+        if (!numericId || numericId < ID_OFFSET) return null
+        const value = numericId - ID_OFFSET
+        if (value < 1) return null
+        return { resource: `4050-${value}`, numericId: value }
+    }
+
+    _encodeId(numericId): number {
+        return ID_OFFSET + Number(numericId)
+    }
+
+    _normalizeAliases(aliases): string[] {
+        if (typeof aliases !== "string" || !aliases.trim()) return []
+        const parts = aliases.split("\n").map(a => a.trim()).filter(a => a.length > 0)
+        return parts.slice(0, 10)
+    }
+
+    _isFiniteMedia(m): boolean {
+        const values = []
+        if (m) values.push(m.id, m.chapters, m.startDate?.year)
+        return values.every(v => v === undefined || v === null || (typeof v === "number" && Number.isFinite(v)))
+    }
+
+    _cleanHtml(input): string {
+        if (typeof input !== "string" || !input) return ""
+        const withoutTags = input.replace(/<[^>]*>/g, " ")
+        const decoded = withoutTags
+            .replace(/&nbsp;/g, " ")
+            .replace(/&amp;/g, "&")
+            .replace(/&quot;/g, "\"")
+            .replace(/&#39;/g, "'")
+            .replace(/&lt;/g, "<")
+            .replace(/&gt;/g, ">")
+        return decoded.replace(/\s+/g, " ").trim()
+    }
+
+    _apiKey(): string {
+        return String(this.api_key || "").trim()
+    }
+
+    _hasApiKey(): boolean {
+        const key = this._apiKey()
+        return key.length > 0 && !key.includes("{{")
+    }
+
+    _westernOnly(): boolean {
+        return String(this.western_comics_only || "").trim() === "true"
+    }
+
+    // Best-effort "is manga" detection. ComicVine exposes no country, language,
+    // or manga flag on volumes (see /volume and /publisher docs), so this relies
+    // on: "manga" in the name/aliases, CJK characters in the name, or a
+    // manga-only publisher. International manga editions (e.g. Naruto@Carlsen,
+    // Hellsing@Dark Horse) may still slip through.
+    _isMangaLike(result): boolean {
+        const name = String(result?.name || "")
+        const aliases = String(result?.aliases || "")
+
+        if (/manga|mang[áàâäã]/i.test(name) || /manga|mang[áàâäã]/i.test(aliases)) return true
+
+        const cjk = /[\u3040-\u30ff\u3400-\u4dbf\u4e00-\u9fff\uf900-\ufaff\uac00-\ud7af]/
+        if (cjk.test(name)) return true
+
+        const publisher = String(result?.publisher?.name || "").toLowerCase()
+        const mangaPublishers = [
+            "shueisha", "shogakukan", "kodansha", "viz", "tokyopop", "yen press",
+            "seven seas", "square enix", "kadokawa", "ichijinsha", "houbunsha",
+            "akita shoten", "hakusensha", "futabasha", "media factory",
+            "ascii media works", "del rey manga", "cmx", "one peace", "vertical",
+            "shonen gahosha", "bungeishunju",
+        ]
+        return mangaPublishers.some(p => publisher.includes(p))
+    }
+
+    // ---------------------------------------------------------------- cache
+
+    _getMediaCache(), $app.AL_BaseManga> {
+        const raw = $store.get("comicvine.media") as { version?, media?, $app.AL_BaseManga> } | undefined
+
+        if (!raw || raw.version !== COMICVINE_CACHE_VERSION || !raw.media) {
+            return {}
+        }
+
+        return raw.media
+    }
+
+    _setMediaCache(cache, $app.AL_BaseManga>) {
+        $store.set("comicvine.media", {
+            version,
+            media,
+        })
+    }
+
+    _getDetailsCache(), $app.AL_MangaDetailsById_Media> {
+        const raw = $store.get("comicvine.details") as { version?, details?, $app.AL_MangaDetailsById_Media> } | undefined
+
+        if (!raw || raw.version !== COMICVINE_DETAILS_CACHE_VERSION || !raw.details) {
+            return {}
+        }
+
+        return raw.details
+    }
+
+    _setDetailsCache(cache, $app.AL_MangaDetailsById_Media>) {
+        $store.set("comicvine.details", {
+            version,
+            details,
+        })
+    }
+}
+    async function getHome(cb) {
+      try {
+        if (typeof globalThis.getHomeImpl === 'function') return await globalThis.getHomeImpl(cb);
+        cb({ success: true, data: { "Latest": [new MultimediaItem({ title: "ComicVine", url: manifest.baseUrl, posterUrl: "./icon.png", type: manifest.type })] } });
+      } catch (e) { cb({ success: false, message: String(e) }); }
+    }
+    async function search(query, page, cb) {
+      try {
+        if (typeof globalThis.searchImpl === 'function') return await globalThis.searchImpl(query, page, cb);
+        cb({ success: true, data: [] });
+      } catch (e) { cb({ success: false, message: String(e) }); }
+    }
+    async function load(url, cb) {
+      try {
+        if (typeof globalThis.loadImpl === 'function') return await globalThis.loadImpl(url, cb);
+        cb({ success: true, data: new MultimediaItem({ title: "ComicVine", url, type: manifest.type }) });
+      } catch (e) { cb({ success: false, message: String(e) }); }
+    }
+    async function loadStreams(url, cb) {
+      try {
+        if (typeof globalThis.loadStreamsImpl === 'function') return await globalThis.loadStreamsImpl(url, cb);
+        cb({ success: true, data: [] });
+      } catch (e) { cb({ success: false, message: String(e) }); }
+    }
+    globalThis.getHome = globalThis.getHome || getHome;
+    globalThis.search = globalThis.search || search;
+    globalThis.load = globalThis.load || load;
+    globalThis.loadStreams = globalThis.loadStreams || loadStreams;
+})();

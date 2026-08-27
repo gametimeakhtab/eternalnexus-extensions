@@ -1,0 +1,21 @@
+{
+  "packageName": "com.eternalnexus.kai_delta_missav",
+  "name": "MissAV",
+  "version": 1,
+  "description": "Direct MissAV scraper with adaptive HLS stream extraction.",
+  "author": "eternalnexus",
+  "authors": [
+    "eternalnexus"
+  ],
+  "baseUrl": "https://missav.ws",
+  "type": "video",
+  "rating": "All",
+  "isAdult": false,
+  "language": "en",
+  "languages": [
+    "en"
+  ],
+  "icon": "icon.png",
+  "iconUrl": "./icon.png",
+  "manifestVersion": 1
+}

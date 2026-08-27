@@ -1,0 +1,21 @@
+{
+  "packageName": "com.eternalnexus.default_torrent_filters",
+  "name": "Default Torrent Filters",
+  "version": 1,
+  "description": "Automatically applies your preferred filters (Multi Subs, Dubbed, HEVC/AV1/H.264, audio codecs) to torrent search results, configurable from the tray icon.",
+  "author": "eternalnexus",
+  "authors": [
+    "eternalnexus"
+  ],
+  "baseUrl": "https://example.com",
+  "type": "other",
+  "rating": "All",
+  "isAdult": false,
+  "language": "en",
+  "languages": [
+    "en"
+  ],
+  "icon": "icon.png",
+  "iconUrl": "./icon.png",
+  "manifestVersion": 1
+}

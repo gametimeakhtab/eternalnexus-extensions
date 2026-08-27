@@ -1,0 +1,21 @@
+{
+  "packageName": "com.eternalnexus.hentaiworld",
+  "name": "HentaiWorld",
+  "version": 1,
+  "description": "HentaiWorld is an online streaming provider for subbed/dubbed Hentai in Italian",
+  "author": "eternalnexus",
+  "authors": [
+    "eternalnexus"
+  ],
+  "baseUrl": "https://example.com",
+  "type": "video",
+  "rating": "18",
+  "isAdult": true,
+  "language": "en",
+  "languages": [
+    "en"
+  ],
+  "icon": "icon.png",
+  "iconUrl": "./icon.png",
+  "manifestVersion": 1
+}

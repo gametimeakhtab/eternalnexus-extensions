@@ -1,0 +1,21 @@
+{
+  "packageName": "com.eternalnexus.dev_akash_stars_4khd",
+  "name": "4K HD",
+  "version": 1,
+  "description": "4K Movies and TV Shows (VOD)",
+  "author": "eternalnexus",
+  "authors": [
+    "eternalnexus"
+  ],
+  "baseUrl": "https://4khdhub.link",
+  "type": "video",
+  "rating": "All",
+  "isAdult": false,
+  "language": "en",
+  "languages": [
+    "en"
+  ],
+  "icon": "icon.png",
+  "iconUrl": "./icon.png",
+  "manifestVersion": 1
+}

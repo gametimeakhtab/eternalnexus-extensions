@@ -1,0 +1,21 @@
+{
+  "packageName": "com.eternalnexus.kai_delta_lk21",
+  "name": "LK21",
+  "version": 1,
+  "description": "Lk21 Layarkaca21 movie and series streaming",
+  "author": "eternalnexus",
+  "authors": [
+    "eternalnexus"
+  ],
+  "baseUrl": "https://tv9.lk21official.cc",
+  "type": "video",
+  "rating": "All",
+  "isAdult": false,
+  "language": "en",
+  "languages": [
+    "en"
+  ],
+  "icon": "icon.png",
+  "iconUrl": "./icon.png",
+  "manifestVersion": 1
+}

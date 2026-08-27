@@ -1,0 +1,21 @@
+{
+  "packageName": "com.eternalnexus.torrentiov2",
+  "name": "Torrentio V2",
+  "version": 1,
+  "description": "Uses Torrentio to find anime torrents. Supports TMDB custom-source media via IMDb resolution.",
+  "author": "eternalnexus",
+  "authors": [
+    "eternalnexus"
+  ],
+  "baseUrl": "https://example.com",
+  "type": "anime",
+  "rating": "All",
+  "isAdult": false,
+  "language": "en",
+  "languages": [
+    "en"
+  ],
+  "icon": "icon.png",
+  "iconUrl": "./icon.png",
+  "manifestVersion": 1
+}

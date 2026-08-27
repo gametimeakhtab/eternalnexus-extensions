@@ -1,0 +1,21 @@
+{
+  "packageName": "com.eternalnexus.cookie_clicker",
+  "name": "Cookie Clicker",
+  "version": 1,
+  "description": "A cookie clicker tray based plugin",
+  "author": "eternalnexus",
+  "authors": [
+    "eternalnexus"
+  ],
+  "baseUrl": "https://example.com",
+  "type": "other",
+  "rating": "All",
+  "isAdult": false,
+  "language": "en",
+  "languages": [
+    "en"
+  ],
+  "icon": "icon.png",
+  "iconUrl": "./icon.png",
+  "manifestVersion": 1
+}

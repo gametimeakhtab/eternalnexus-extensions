@@ -1,0 +1,21 @@
+{
+  "packageName": "com.eternalnexus.lelmanga",
+  "name": "LelManga",
+  "version": 1,
+  "description": "LelManga is a manga provider for Seanime",
+  "author": "eternalnexus",
+  "authors": [
+    "eternalnexus"
+  ],
+  "baseUrl": "https://example.com",
+  "type": "manga",
+  "rating": "All",
+  "isAdult": false,
+  "language": "en",
+  "languages": [
+    "en"
+  ],
+  "icon": "icon.png",
+  "iconUrl": "./icon.png",
+  "manifestVersion": 1
+}

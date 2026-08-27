@@ -1,0 +1,21 @@
+{
+  "packageName": "com.eternalnexus.streamed",
+  "name": "Streamed (Sports)",
+  "version": 1,
+  "description": "Browse live and upcoming sports matches (football, basketball, UFC, tennis and more) as a Custom Source.",
+  "author": "eternalnexus",
+  "authors": [
+    "eternalnexus"
+  ],
+  "baseUrl": "https://example.com",
+  "type": "video",
+  "rating": "All",
+  "isAdult": false,
+  "language": "en",
+  "languages": [
+    "en"
+  ],
+  "icon": "icon.png",
+  "iconUrl": "./icon.png",
+  "manifestVersion": 1
+}

@@ -1,0 +1,21 @@
+{
+  "packageName": "com.eternalnexus.streamdownloader",
+  "name": "Stream Downloader",
+  "version": 1,
+  "description": "Download online-streaming (HLS/mp4) sources for anime episodes to disk. Search any installed streaming provider, pick an episode, and save it to your Downloads folder (or a custom directory).",
+  "author": "eternalnexus",
+  "authors": [
+    "eternalnexus"
+  ],
+  "baseUrl": "https://example.com",
+  "type": "other",
+  "rating": "All",
+  "isAdult": false,
+  "language": "en",
+  "languages": [
+    "en"
+  ],
+  "icon": "icon.png",
+  "iconUrl": "./icon.png",
+  "manifestVersion": 1
+}

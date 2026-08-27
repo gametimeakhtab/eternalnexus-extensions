@@ -1,0 +1,21 @@
+{
+  "packageName": "com.eternalnexus.dev_akash_stars_moviesdrive",
+  "name": "Movies Drive",
+  "version": 1,
+  "description": "Premium VOD Scraper with metadata sync",
+  "author": "eternalnexus",
+  "authors": [
+    "eternalnexus"
+  ],
+  "baseUrl": "https://new2.moviesdrives.my",
+  "type": "video",
+  "rating": "All",
+  "isAdult": false,
+  "language": "en",
+  "languages": [
+    "en"
+  ],
+  "icon": "icon.png",
+  "iconUrl": "./icon.png",
+  "manifestVersion": 1
+}

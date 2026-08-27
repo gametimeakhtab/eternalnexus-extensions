@@ -1,0 +1,21 @@
+{
+  "packageName": "com.eternalnexus.dev_akash_stars_streamflix",
+  "name": "StreamFlix 2.0",
+  "version": 1,
+  "description": "StreamFlix Provider",
+  "author": "eternalnexus",
+  "authors": [
+    "eternalnexus"
+  ],
+  "baseUrl": "https://api.streamflix.app",
+  "type": "video",
+  "rating": "All",
+  "isAdult": false,
+  "language": "en",
+  "languages": [
+    "en"
+  ],
+  "icon": "icon.png",
+  "iconUrl": "./icon.png",
+  "manifestVersion": 1
+}

@@ -1,0 +1,21 @@
+{
+  "packageName": "com.eternalnexus.animegg",
+  "name": "AnimeGG",
+  "version": 1,
+  "description": "AnimeGG is an online streaming provider for sub/dub anime in english",
+  "author": "eternalnexus",
+  "authors": [
+    "eternalnexus"
+  ],
+  "baseUrl": "https://example.com",
+  "type": "video",
+  "rating": "All",
+  "isAdult": false,
+  "language": "en",
+  "languages": [
+    "en"
+  ],
+  "icon": "icon.png",
+  "iconUrl": "./icon.png",
+  "manifestVersion": 1
+}

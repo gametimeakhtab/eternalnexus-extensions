@@ -1,0 +1,21 @@
+{
+  "packageName": "com.eternalnexus.animeav1",
+  "name": "AnimeAV1",
+  "version": 1,
+  "description": "Online streaming provider with hard subs and dubs in Spanish.",
+  "author": "eternalnexus",
+  "authors": [
+    "eternalnexus"
+  ],
+  "baseUrl": "https://example.com",
+  "type": "video",
+  "rating": "All",
+  "isAdult": false,
+  "language": "en",
+  "languages": [
+    "en"
+  ],
+  "icon": "icon.png",
+  "iconUrl": "./icon.png",
+  "manifestVersion": 1
+}

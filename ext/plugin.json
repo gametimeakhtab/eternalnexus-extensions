@@ -1,0 +1,21 @@
+{
+  "packageName": "com.eternalnexus.ext",
+  "name": "EXT Torrents",
+  "version": 1,
+  "description": "EXT Torrents (extto.com) torrent provider for movies and series.",
+  "author": "eternalnexus",
+  "authors": [
+    "eternalnexus"
+  ],
+  "baseUrl": "https://example.com",
+  "type": "anime",
+  "rating": "All",
+  "isAdult": false,
+  "language": "en",
+  "languages": [
+    "en"
+  ],
+  "icon": "icon.png",
+  "iconUrl": "./icon.png",
+  "manifestVersion": 1
+}

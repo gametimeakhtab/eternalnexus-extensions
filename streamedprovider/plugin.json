@@ -1,0 +1,21 @@
+{
+  "packageName": "com.eternalnexus.streamedprovider",
+  "name": "Streamed (Sports)",
+  "version": 1,
+  "description": "Online streaming provider for Streamed (sports). Resolves live sports streams from Streamed's embed player.",
+  "author": "eternalnexus",
+  "authors": [
+    "eternalnexus"
+  ],
+  "baseUrl": "https://example.com",
+  "type": "video",
+  "rating": "All",
+  "isAdult": false,
+  "language": "en",
+  "languages": [
+    "en"
+  ],
+  "icon": "icon.png",
+  "iconUrl": "./icon.png",
+  "manifestVersion": 1
+}

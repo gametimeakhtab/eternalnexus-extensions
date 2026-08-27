@@ -1,0 +1,21 @@
+{
+  "packageName": "com.eternalnexus.mynimekumanga",
+  "name": "MyNimeKu (Manga)",
+  "version": 1,
+  "description": "MyNimeKu is a manga provider for Seanime",
+  "author": "eternalnexus",
+  "authors": [
+    "eternalnexus"
+  ],
+  "baseUrl": "https://example.com",
+  "type": "manga",
+  "rating": "All",
+  "isAdult": false,
+  "language": "en",
+  "languages": [
+    "en"
+  ],
+  "icon": "icon.png",
+  "iconUrl": "./icon.png",
+  "manifestVersion": 1
+}

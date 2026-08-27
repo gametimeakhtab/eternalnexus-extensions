@@ -1,0 +1,21 @@
+{
+  "packageName": "com.eternalnexus.mangahub",
+  "name": "MangaHub",
+  "version": 1,
+  "description": "MangaHub is a Russian manga provider for Seanime",
+  "author": "eternalnexus",
+  "authors": [
+    "eternalnexus"
+  ],
+  "baseUrl": "https://example.com",
+  "type": "manga",
+  "rating": "All",
+  "isAdult": false,
+  "language": "en",
+  "languages": [
+    "en"
+  ],
+  "icon": "icon.png",
+  "iconUrl": "./icon.png",
+  "manifestVersion": 1
+}

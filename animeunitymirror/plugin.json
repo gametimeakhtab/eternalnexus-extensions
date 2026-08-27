@@ -1,0 +1,21 @@
+{
+  "packageName": "com.eternalnexus.animeunitymirror",
+  "name": "AnimeUnity (Mirror)",
+  "version": 1,
+  "description": "AnimeUnity mirror",
+  "author": "eternalnexus",
+  "authors": [
+    "eternalnexus"
+  ],
+  "baseUrl": "https://example.com",
+  "type": "video",
+  "rating": "All",
+  "isAdult": false,
+  "language": "en",
+  "languages": [
+    "en"
+  ],
+  "icon": "icon.png",
+  "iconUrl": "./icon.png",
+  "manifestVersion": 1
+}

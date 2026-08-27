@@ -1,0 +1,21 @@
+{
+  "packageName": "com.eternalnexus.dipland_mangafire",
+  "name": "MangaFire",
+  "version": 1,
+  "description": "Multi language manga provider.",
+  "author": "eternalnexus",
+  "authors": [
+    "eternalnexus"
+  ],
+  "baseUrl": "https://example.com",
+  "type": "manga",
+  "rating": "All",
+  "isAdult": false,
+  "language": "en",
+  "languages": [
+    "en"
+  ],
+  "icon": "icon.png",
+  "iconUrl": "./icon.png",
+  "manifestVersion": 1
+}

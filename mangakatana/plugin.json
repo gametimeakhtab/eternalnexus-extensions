@@ -1,0 +1,21 @@
+{
+  "packageName": "com.eternalnexus.mangakatana",
+  "name": "MangaKatana",
+  "version": 1,
+  "description": "MangaKatana is a manga provider for Seanime",
+  "author": "eternalnexus",
+  "authors": [
+    "eternalnexus"
+  ],
+  "baseUrl": "https://example.com",
+  "type": "manga",
+  "rating": "All",
+  "isAdult": false,
+  "language": "en",
+  "languages": [
+    "en"
+  ],
+  "icon": "icon.png",
+  "iconUrl": "./icon.png",
+  "manifestVersion": 1
+}

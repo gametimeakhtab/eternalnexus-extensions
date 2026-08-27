@@ -1,0 +1,21 @@
+{
+  "packageName": "com.eternalnexus.agefans",
+  "name": "AgeFans",
+  "version": 1,
+  "description": "AgeFans is an online streaming provider for subbed anime in chinese",
+  "author": "eternalnexus",
+  "authors": [
+    "eternalnexus"
+  ],
+  "baseUrl": "https://example.com",
+  "type": "video",
+  "rating": "All",
+  "isAdult": false,
+  "language": "en",
+  "languages": [
+    "en"
+  ],
+  "icon": "icon.png",
+  "iconUrl": "./icon.png",
+  "manifestVersion": 1
+}

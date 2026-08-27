@@ -1,0 +1,21 @@
+{
+  "packageName": "com.eternalnexus.animeheaven",
+  "name": "AnimeHeaven",
+  "version": 1,
+  "description": "AnimeHeaven is an online streaming provider for subbed anime in english",
+  "author": "eternalnexus",
+  "authors": [
+    "eternalnexus"
+  ],
+  "baseUrl": "https://example.com",
+  "type": "video",
+  "rating": "All",
+  "isAdult": false,
+  "language": "en",
+  "languages": [
+    "en"
+  ],
+  "icon": "icon.png",
+  "iconUrl": "./icon.png",
+  "manifestVersion": 1
+}

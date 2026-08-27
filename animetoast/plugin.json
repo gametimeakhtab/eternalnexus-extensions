@@ -1,0 +1,21 @@
+{
+  "packageName": "com.eternalnexus.animetoast",
+  "name": "AnimeToast",
+  "version": 1,
+  "description": "AnimeToast is an online streaming provider for german sub/dubs.",
+  "author": "eternalnexus",
+  "authors": [
+    "eternalnexus"
+  ],
+  "baseUrl": "https://example.com",
+  "type": "video",
+  "rating": "All",
+  "isAdult": false,
+  "language": "en",
+  "languages": [
+    "en"
+  ],
+  "icon": "icon.png",
+  "iconUrl": "./icon.png",
+  "manifestVersion": 1
+}

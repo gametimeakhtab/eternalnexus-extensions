@@ -1,0 +1,21 @@
+{
+  "packageName": "com.eternalnexus.antiseeding",
+  "name": "Anti-Seeding",
+  "version": 1,
+  "description": "Prevents torrent seeding",
+  "author": "eternalnexus",
+  "authors": [
+    "eternalnexus"
+  ],
+  "baseUrl": "https://example.com",
+  "type": "other",
+  "rating": "All",
+  "isAdult": false,
+  "language": "en",
+  "languages": [
+    "en"
+  ],
+  "icon": "icon.png",
+  "iconUrl": "./icon.png",
+  "manifestVersion": 1
+}

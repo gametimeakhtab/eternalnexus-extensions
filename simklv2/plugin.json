@@ -1,0 +1,21 @@
+{
+  "packageName": "com.eternalnexus.simklv2",
+  "name": "Simkl V2",
+  "version": 1,
+  "description": "Implements SIMKL as a custom source with watchlist support.",
+  "author": "eternalnexus",
+  "authors": [
+    "eternalnexus"
+  ],
+  "baseUrl": "https://example.com",
+  "type": "video",
+  "rating": "All",
+  "isAdult": false,
+  "language": "en",
+  "languages": [
+    "en"
+  ],
+  "icon": "icon.png",
+  "iconUrl": "./icon.png",
+  "manifestVersion": 1
+}

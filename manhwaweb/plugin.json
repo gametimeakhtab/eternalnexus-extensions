@@ -1,0 +1,21 @@
+{
+  "packageName": "com.eternalnexus.manhwaweb",
+  "name": "ManhwaWeb",
+  "version": 1,
+  "description": "Spanish manga and manhwa provider.",
+  "author": "eternalnexus",
+  "authors": [
+    "eternalnexus"
+  ],
+  "baseUrl": "https://example.com",
+  "type": "manga",
+  "rating": "All",
+  "isAdult": false,
+  "language": "en",
+  "languages": [
+    "en"
+  ],
+  "icon": "icon.png",
+  "iconUrl": "./icon.png",
+  "manifestVersion": 1
+}

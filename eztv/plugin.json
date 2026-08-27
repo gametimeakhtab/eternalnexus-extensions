@@ -1,0 +1,21 @@
+{
+  "packageName": "com.eternalnexus.eztv",
+  "name": "EZTV",
+  "version": 1,
+  "description": "EZTV torrent provider for TV series episodes (SxxExx).",
+  "author": "eternalnexus",
+  "authors": [
+    "eternalnexus"
+  ],
+  "baseUrl": "https://example.com",
+  "type": "anime",
+  "rating": "All",
+  "isAdult": false,
+  "language": "en",
+  "languages": [
+    "en"
+  ],
+  "icon": "icon.png",
+  "iconUrl": "./icon.png",
+  "manifestVersion": 1
+}

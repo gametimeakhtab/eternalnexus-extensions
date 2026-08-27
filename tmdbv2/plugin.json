@@ -1,0 +1,21 @@
+{
+  "packageName": "com.eternalnexus.tmdbv2",
+  "name": "TMDB V2",
+  "version": 1,
+  "description": "Implements TMDb as a custom source with per-season media entries.",
+  "author": "eternalnexus",
+  "authors": [
+    "eternalnexus"
+  ],
+  "baseUrl": "https://example.com",
+  "type": "video",
+  "rating": "All",
+  "isAdult": false,
+  "language": "en",
+  "languages": [
+    "en"
+  ],
+  "icon": "icon.png",
+  "iconUrl": "./icon.png",
+  "manifestVersion": 1
+}

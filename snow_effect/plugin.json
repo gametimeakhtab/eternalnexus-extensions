@@ -1,0 +1,21 @@
+{
+  "packageName": "com.eternalnexus.snow_effect",
+  "name": "Seanime Snow effect",
+  "version": 1,
+  "description": "A simple plugin for showing winter effects.",
+  "author": "eternalnexus",
+  "authors": [
+    "eternalnexus"
+  ],
+  "baseUrl": "https://example.com",
+  "type": "other",
+  "rating": "All",
+  "isAdult": false,
+  "language": "en",
+  "languages": [
+    "en"
+  ],
+  "icon": "icon.png",
+  "iconUrl": "./icon.png",
+  "manifestVersion": 1
+}

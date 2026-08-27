@@ -1,0 +1,21 @@
+{
+  "packageName": "com.eternalnexus.vidsrc",
+  "name": "VidSrc",
+  "version": 1,
+  "description": "Streams anime, series and movies from vidsrc (https://vidsrc.mov/). Requires a SIMKL Client ID for title matching.",
+  "author": "eternalnexus",
+  "authors": [
+    "eternalnexus"
+  ],
+  "baseUrl": "https://example.com",
+  "type": "video",
+  "rating": "All",
+  "isAdult": false,
+  "language": "en",
+  "languages": [
+    "en"
+  ],
+  "icon": "icon.png",
+  "iconUrl": "./icon.png",
+  "manifestVersion": 1
+}

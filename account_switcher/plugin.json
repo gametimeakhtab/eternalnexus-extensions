@@ -1,0 +1,21 @@
+{
+  "packageName": "com.eternalnexus.account_switcher",
+  "name": "Account Switcher",
+  "version": 1,
+  "description": "Allows you to switch between multiple AniList accounts swiftly",
+  "author": "eternalnexus",
+  "authors": [
+    "eternalnexus"
+  ],
+  "baseUrl": "https://example.com",
+  "type": "other",
+  "rating": "All",
+  "isAdult": false,
+  "language": "en",
+  "languages": [
+    "en"
+  ],
+  "icon": "icon.png",
+  "iconUrl": "./icon.png",
+  "manifestVersion": 1
+}

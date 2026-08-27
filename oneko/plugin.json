@@ -1,0 +1,21 @@
+{
+  "packageName": "com.eternalnexus.oneko",
+  "name": "Onekojs",
+  "version": 1,
+  "description": "Implements the famous Oneko.js script on seanime.",
+  "author": "eternalnexus",
+  "authors": [
+    "eternalnexus"
+  ],
+  "baseUrl": "https://example.com",
+  "type": "other",
+  "rating": "All",
+  "isAdult": false,
+  "language": "en",
+  "languages": [
+    "en"
+  ],
+  "icon": "icon.png",
+  "iconUrl": "./icon.png",
+  "manifestVersion": 1
+}
