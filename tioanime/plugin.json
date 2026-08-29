@@ -1,0 +1,21 @@
+{
+  "packageName": "com.eternalnexus.tioanime",
+  "name": "TioAnime",
+  "version": 1,
+  "description": "TioAnime is an online streaming provider for spanish subs.",
+  "author": "eternalnexus",
+  "authors": [
+    "eternalnexus"
+  ],
+  "baseUrl": "https://tioanime.com",
+  "type": "video",
+  "rating": "All",
+  "isAdult": false,
+  "language": "es",
+  "languages": [
+    "es"
+  ],
+  "icon": "icon.png",
+  "iconUrl": "./icon.png",
+  "manifestVersion": 1
+}

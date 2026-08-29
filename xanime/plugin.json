@@ -1,0 +1,21 @@
+{
+  "packageName": "com.eternalnexus.xanime",
+  "name": "XAnime",
+  "version": 1,
+  "description": "XAnime (xanime.me) — direct HLS from the site's GraphQL API, with soft subtitles",
+  "author": "eternalnexus",
+  "authors": [
+    "eternalnexus"
+  ],
+  "baseUrl": "https://xanime.me",
+  "type": "video",
+  "rating": "All",
+  "isAdult": false,
+  "language": "en",
+  "languages": [
+    "en"
+  ],
+  "icon": "icon.png",
+  "iconUrl": "./icon.png",
+  "manifestVersion": 1
+}

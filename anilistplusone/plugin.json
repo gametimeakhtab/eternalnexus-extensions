@@ -1,0 +1,21 @@
+{
+  "packageName": "com.eternalnexus.anilistplusone",
+  "name": "AniList +1 Episode",
+  "version": 1,
+  "description": "Adds a compact anime page button that increments the AniList watched episode progress by one.",
+  "author": "eternalnexus",
+  "authors": [
+    "eternalnexus"
+  ],
+  "baseUrl": "https://github.com/mohaisreal/seanime-ext",
+  "type": "other",
+  "rating": "All",
+  "isAdult": false,
+  "language": "en",
+  "languages": [
+    "en"
+  ],
+  "icon": "icon.png",
+  "iconUrl": "./icon.png",
+  "manifestVersion": 1
+}

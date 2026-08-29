@@ -1,0 +1,21 @@
+{
+  "packageName": "com.eternalnexus.anizone",
+  "name": "AniZone",
+  "version": 1,
+  "description": "Only anizone compatibility layer you'll ever need",
+  "author": "eternalnexus",
+  "authors": [
+    "eternalnexus"
+  ],
+  "baseUrl": "https://anizone.to",
+  "type": "video",
+  "rating": "All",
+  "isAdult": false,
+  "language": "en",
+  "languages": [
+    "en"
+  ],
+  "icon": "icon.png",
+  "iconUrl": "./icon.png",
+  "manifestVersion": 1
+}

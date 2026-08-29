@@ -1748,6 +1748,384 @@
       "icon": "icon.png",
       "iconUrl": "./icon.png",
       "manifestVersion": 1
+    },
+    {
+      "packageName": "com.eternalnexus.anikoto",
+      "name": "Anikoto",
+      "version": 1,
+      "description": "Anikoto site scrape → MegaPlay sources, with soft subtitles and cookie-jar sessions",
+      "author": "eternalnexus",
+      "authors": [
+        "eternalnexus"
+      ],
+      "baseUrl": "https://anikoto.cz",
+      "type": "video",
+      "rating": "All",
+      "isAdult": false,
+      "language": "en",
+      "languages": [
+        "en"
+      ],
+      "icon": "icon.png",
+      "iconUrl": "./icon.png",
+      "manifestVersion": 1
+    },
+    {
+      "packageName": "com.eternalnexus.anizone",
+      "name": "AniZone",
+      "version": 1,
+      "description": "Only anizone compatibility layer you'll ever need",
+      "author": "eternalnexus",
+      "authors": [
+        "eternalnexus"
+      ],
+      "baseUrl": "https://anizone.to",
+      "type": "video",
+      "rating": "All",
+      "isAdult": false,
+      "language": "en",
+      "languages": [
+        "en"
+      ],
+      "icon": "icon.png",
+      "iconUrl": "./icon.png",
+      "manifestVersion": 1
+    },
+    {
+      "packageName": "com.eternalnexus.xanime",
+      "name": "XAnime",
+      "version": 1,
+      "description": "XAnime (xanime.me) — direct HLS from the site's GraphQL API, with soft subtitles",
+      "author": "eternalnexus",
+      "authors": [
+        "eternalnexus"
+      ],
+      "baseUrl": "https://xanime.me",
+      "type": "video",
+      "rating": "All",
+      "isAdult": false,
+      "language": "en",
+      "languages": [
+        "en"
+      ],
+      "icon": "icon.png",
+      "iconUrl": "./icon.png",
+      "manifestVersion": 1
+    },
+    {
+      "packageName": "com.eternalnexus.anilistplusone",
+      "name": "AniList +1 Episode",
+      "version": 1,
+      "description": "Adds a compact anime page button that increments the AniList watched episode progress by one.",
+      "author": "eternalnexus",
+      "authors": [
+        "eternalnexus"
+      ],
+      "baseUrl": "https://github.com/mohaisreal/seanime-ext",
+      "type": "other",
+      "rating": "All",
+      "isAdult": false,
+      "language": "en",
+      "languages": [
+        "en"
+      ],
+      "icon": "icon.png",
+      "iconUrl": "./icon.png",
+      "manifestVersion": 1
+    },
+    {
+      "packageName": "com.eternalnexus.animesalt_seanime",
+      "name": "AnimeSalt",
+      "version": 1,
+      "description": "AnimeSalt is an online streaming provider for Hindi, Tamil, Telugu, English and Japanese anime streams.",
+      "author": "eternalnexus",
+      "authors": [
+        "eternalnexus"
+      ],
+      "baseUrl": "https://animesalt.ac",
+      "type": "video",
+      "rating": "All",
+      "isAdult": false,
+      "language": "multi",
+      "languages": [
+        "multi"
+      ],
+      "icon": "icon.png",
+      "iconUrl": "./icon.png",
+      "manifestVersion": 1
+    },
+    {
+      "packageName": "com.eternalnexus.capibara_traductor",
+      "name": "CapibaraTraductor",
+      "version": 1,
+      "description": "El Hub de tus Scans Favoritos. Proveedor de manga en español.",
+      "author": "eternalnexus",
+      "authors": [
+        "eternalnexus"
+      ],
+      "baseUrl": "https://example.com",
+      "type": "manga",
+      "rating": "All",
+      "isAdult": false,
+      "language": "es",
+      "languages": [
+        "es"
+      ],
+      "icon": "icon.png",
+      "iconUrl": "./icon.png",
+      "manifestVersion": 1
+    },
+    {
+      "packageName": "com.eternalnexus.hentaila",
+      "name": "Hentaila",
+      "version": 1,
+      "description": "Hentaila is an online streaming provider for Spanish hentai subs.",
+      "author": "eternalnexus",
+      "authors": [
+        "eternalnexus"
+      ],
+      "baseUrl": "https://hentaila.com",
+      "type": "video",
+      "rating": "18",
+      "isAdult": true,
+      "language": "en",
+      "languages": [
+        "en"
+      ],
+      "icon": "icon.png",
+      "iconUrl": "./icon.png",
+      "manifestVersion": 1
+    },
+    {
+      "packageName": "com.eternalnexus.jkanime",
+      "name": "JkAnime",
+      "version": 1,
+      "description": "JkAnime is an online streaming provider for spanish subs.",
+      "author": "eternalnexus",
+      "authors": [
+        "eternalnexus"
+      ],
+      "baseUrl": "https://jkanime.net",
+      "type": "video",
+      "rating": "All",
+      "isAdult": false,
+      "language": "es",
+      "languages": [
+        "es"
+      ],
+      "icon": "icon.png",
+      "iconUrl": "./icon.png",
+      "manifestVersion": 1
+    },
+    {
+      "packageName": "com.eternalnexus.leermangaesp",
+      "name": "MangaLect",
+      "version": 1,
+      "description": "Proveedor de manga en español para MangaLect.",
+      "author": "eternalnexus",
+      "authors": [
+        "eternalnexus"
+      ],
+      "baseUrl": "https://leermanga.net",
+      "type": "manga",
+      "rating": "All",
+      "isAdult": false,
+      "language": "es",
+      "languages": [
+        "es"
+      ],
+      "icon": "icon.png",
+      "iconUrl": "./icon.png",
+      "manifestVersion": 1
+    },
+    {
+      "packageName": "com.eternalnexus.malsync_bidir",
+      "name": "FullMALSync",
+      "version": 1,
+      "description": "Synchronizes AniList to MyAnimeList and imports MAL to AniList for anime and manga.",
+      "author": "eternalnexus",
+      "authors": [
+        "eternalnexus"
+      ],
+      "baseUrl": "https://example.com",
+      "type": "other",
+      "rating": "All",
+      "isAdult": false,
+      "language": "en",
+      "languages": [
+        "en"
+      ],
+      "icon": "icon.png",
+      "iconUrl": "./icon.png",
+      "manifestVersion": 1
+    },
+    {
+      "packageName": "com.eternalnexus.mangaoni",
+      "name": "MangaOni",
+      "version": 1,
+      "description": "Proveedor de manga en español para MangaOni.",
+      "author": "eternalnexus",
+      "authors": [
+        "eternalnexus"
+      ],
+      "baseUrl": "https://mangaoni.com",
+      "type": "manga",
+      "rating": "All",
+      "isAdult": false,
+      "language": "es",
+      "languages": [
+        "es"
+      ],
+      "icon": "icon.png",
+      "iconUrl": "./icon.png",
+      "manifestVersion": 1
+    },
+    {
+      "packageName": "com.eternalnexus.reanime",
+      "name": "Re:ANIME",
+      "version": 1,
+      "description": "Re:ANIME is an online streaming provider for English subs and dubs.",
+      "author": "eternalnexus",
+      "authors": [
+        "eternalnexus"
+      ],
+      "baseUrl": "https://reanime.org",
+      "type": "video",
+      "rating": "All",
+      "isAdult": false,
+      "language": "en",
+      "languages": [
+        "en"
+      ],
+      "icon": "icon.png",
+      "iconUrl": "./icon.png",
+      "manifestVersion": 1
+    },
+    {
+      "packageName": "com.eternalnexus.tioanime",
+      "name": "TioAnime",
+      "version": 1,
+      "description": "TioAnime is an online streaming provider for spanish subs.",
+      "author": "eternalnexus",
+      "authors": [
+        "eternalnexus"
+      ],
+      "baseUrl": "https://tioanime.com",
+      "type": "video",
+      "rating": "All",
+      "isAdult": false,
+      "language": "es",
+      "languages": [
+        "es"
+      ],
+      "icon": "icon.png",
+      "iconUrl": "./icon.png",
+      "manifestVersion": 1
+    },
+    {
+      "packageName": "com.eternalnexus.toongod",
+      "name": "ToonGod",
+      "version": 1,
+      "description": "Manga provider for ToonGod",
+      "author": "eternalnexus",
+      "authors": [
+        "eternalnexus"
+      ],
+      "baseUrl": "https://toongod.org",
+      "type": "manga",
+      "rating": "All",
+      "isAdult": false,
+      "language": "en",
+      "languages": [
+        "en"
+      ],
+      "icon": "icon.png",
+      "iconUrl": "./icon.png",
+      "manifestVersion": 1
+    },
+    {
+      "packageName": "com.eternalnexus.skip_ahead_video_player",
+      "name": "Skip Ahead",
+      "version": 1,
+      "description": "Adds a skip-ahead button to the video player control bar with configurable position. Useful for skipping intros or recaps in anime episodes.",
+      "author": "eternalnexus",
+      "authors": [
+        "eternalnexus"
+      ],
+      "baseUrl": "https://example.com",
+      "type": "other",
+      "rating": "All",
+      "isAdult": false,
+      "language": "multi",
+      "languages": [
+        "multi"
+      ],
+      "icon": "icon.png",
+      "iconUrl": "./icon.png",
+      "manifestVersion": 1
+    },
+    {
+      "packageName": "com.eternalnexus.aquaprefs",
+      "name": "Aqua's Prefs",
+      "version": 1,
+      "description": "Remembers your player and series options.",
+      "author": "eternalnexus",
+      "authors": [
+        "eternalnexus"
+      ],
+      "baseUrl": "https://github.com/aquaryuo/seanime",
+      "type": "other",
+      "rating": "All",
+      "isAdult": false,
+      "language": "multi",
+      "languages": [
+        "multi"
+      ],
+      "icon": "icon.png",
+      "iconUrl": "./icon.png",
+      "manifestVersion": 1
+    },
+    {
+      "packageName": "com.eternalnexus.aquatils",
+      "name": "Aqua's Utils",
+      "version": 1,
+      "description": "Toolbox plugin: surfaces compatible extension errors, launches a self-contained solver (or connects to a remote one you run) to reach guarded sites, and more.",
+      "author": "eternalnexus",
+      "authors": [
+        "eternalnexus"
+      ],
+      "baseUrl": "https://github.com/aquaryuo/seanime",
+      "type": "other",
+      "rating": "All",
+      "isAdult": false,
+      "language": "multi",
+      "languages": [
+        "multi"
+      ],
+      "icon": "icon.png",
+      "iconUrl": "./icon.png",
+      "manifestVersion": 1
+    },
+    {
+      "packageName": "com.eternalnexus.seatags",
+      "name": "SeaTags",
+      "version": 1,
+      "description": "Plugin dedicated to displaying status of plugins/extensions within installed/marketplace pages; as well as filter based on author & show score",
+      "author": "eternalnexus",
+      "authors": [
+        "eternalnexus"
+      ],
+      "baseUrl": "https://github.com/aquaryuo/seanime",
+      "type": "other",
+      "rating": "All",
+      "isAdult": false,
+      "language": "multi",
+      "languages": [
+        "multi"
+      ],
+      "icon": "icon.png",
+      "iconUrl": "./icon.png",
+      "manifestVersion": 1
     }
   ]
 }

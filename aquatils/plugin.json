@@ -1,0 +1,21 @@
+{
+  "packageName": "com.eternalnexus.aquatils",
+  "name": "Aqua's Utils",
+  "version": 1,
+  "description": "Toolbox plugin: surfaces compatible extension errors, launches a self-contained solver (or connects to a remote one you run) to reach guarded sites, and more.",
+  "author": "eternalnexus",
+  "authors": [
+    "eternalnexus"
+  ],
+  "baseUrl": "https://github.com/aquaryuo/seanime",
+  "type": "other",
+  "rating": "All",
+  "isAdult": false,
+  "language": "multi",
+  "languages": [
+    "multi"
+  ],
+  "icon": "icon.png",
+  "iconUrl": "./icon.png",
+  "manifestVersion": 1
+}

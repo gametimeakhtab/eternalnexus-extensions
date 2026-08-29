@@ -1,0 +1,21 @@
+{
+  "packageName": "com.eternalnexus.jkanime",
+  "name": "JkAnime",
+  "version": 1,
+  "description": "JkAnime is an online streaming provider for spanish subs.",
+  "author": "eternalnexus",
+  "authors": [
+    "eternalnexus"
+  ],
+  "baseUrl": "https://jkanime.net",
+  "type": "video",
+  "rating": "All",
+  "isAdult": false,
+  "language": "es",
+  "languages": [
+    "es"
+  ],
+  "icon": "icon.png",
+  "iconUrl": "./icon.png",
+  "manifestVersion": 1
+}

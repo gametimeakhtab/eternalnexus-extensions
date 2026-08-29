@@ -1,0 +1,21 @@
+{
+  "packageName": "com.eternalnexus.aquaprefs",
+  "name": "Aqua's Prefs",
+  "version": 1,
+  "description": "Remembers your player and series options.",
+  "author": "eternalnexus",
+  "authors": [
+    "eternalnexus"
+  ],
+  "baseUrl": "https://github.com/aquaryuo/seanime",
+  "type": "other",
+  "rating": "All",
+  "isAdult": false,
+  "language": "multi",
+  "languages": [
+    "multi"
+  ],
+  "icon": "icon.png",
+  "iconUrl": "./icon.png",
+  "manifestVersion": 1
+}

@@ -1,0 +1,21 @@
+{
+  "packageName": "com.eternalnexus.leermangaesp",
+  "name": "MangaLect",
+  "version": 1,
+  "description": "Proveedor de manga en español para MangaLect.",
+  "author": "eternalnexus",
+  "authors": [
+    "eternalnexus"
+  ],
+  "baseUrl": "https://leermanga.net",
+  "type": "manga",
+  "rating": "All",
+  "isAdult": false,
+  "language": "es",
+  "languages": [
+    "es"
+  ],
+  "icon": "icon.png",
+  "iconUrl": "./icon.png",
+  "manifestVersion": 1
+}

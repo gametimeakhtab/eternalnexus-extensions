@@ -1,0 +1,21 @@
+{
+  "packageName": "com.eternalnexus.anikoto",
+  "name": "Anikoto",
+  "version": 1,
+  "description": "Anikoto site scrape → MegaPlay sources, with soft subtitles and cookie-jar sessions",
+  "author": "eternalnexus",
+  "authors": [
+    "eternalnexus"
+  ],
+  "baseUrl": "https://anikoto.cz",
+  "type": "video",
+  "rating": "All",
+  "isAdult": false,
+  "language": "en",
+  "languages": [
+    "en"
+  ],
+  "icon": "icon.png",
+  "iconUrl": "./icon.png",
+  "manifestVersion": 1
+}

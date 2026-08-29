@@ -1,0 +1,21 @@
+{
+  "packageName": "com.eternalnexus.animesalt_seanime",
+  "name": "AnimeSalt",
+  "version": 1,
+  "description": "AnimeSalt is an online streaming provider for Hindi, Tamil, Telugu, English and Japanese anime streams.",
+  "author": "eternalnexus",
+  "authors": [
+    "eternalnexus"
+  ],
+  "baseUrl": "https://animesalt.ac",
+  "type": "video",
+  "rating": "All",
+  "isAdult": false,
+  "language": "multi",
+  "languages": [
+    "multi"
+  ],
+  "icon": "icon.png",
+  "iconUrl": "./icon.png",
+  "manifestVersion": 1
+}

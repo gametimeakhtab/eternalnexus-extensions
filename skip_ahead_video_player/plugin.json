@@ -1,0 +1,21 @@
+{
+  "packageName": "com.eternalnexus.skip_ahead_video_player",
+  "name": "Skip Ahead",
+  "version": 1,
+  "description": "Adds a skip-ahead button to the video player control bar with configurable position. Useful for skipping intros or recaps in anime episodes.",
+  "author": "eternalnexus",
+  "authors": [
+    "eternalnexus"
+  ],
+  "baseUrl": "https://example.com",
+  "type": "other",
+  "rating": "All",
+  "isAdult": false,
+  "language": "multi",
+  "languages": [
+    "multi"
+  ],
+  "icon": "icon.png",
+  "iconUrl": "./icon.png",
+  "manifestVersion": 1
+}

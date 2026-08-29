@@ -1,0 +1,21 @@
+{
+  "packageName": "com.eternalnexus.hentaila",
+  "name": "Hentaila",
+  "version": 1,
+  "description": "Hentaila is an online streaming provider for Spanish hentai subs.",
+  "author": "eternalnexus",
+  "authors": [
+    "eternalnexus"
+  ],
+  "baseUrl": "https://hentaila.com",
+  "type": "video",
+  "rating": "18",
+  "isAdult": true,
+  "language": "en",
+  "languages": [
+    "en"
+  ],
+  "icon": "icon.png",
+  "iconUrl": "./icon.png",
+  "manifestVersion": 1
+}

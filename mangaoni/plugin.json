@@ -1,0 +1,21 @@
+{
+  "packageName": "com.eternalnexus.mangaoni",
+  "name": "MangaOni",
+  "version": 1,
+  "description": "Proveedor de manga en español para MangaOni.",
+  "author": "eternalnexus",
+  "authors": [
+    "eternalnexus"
+  ],
+  "baseUrl": "https://mangaoni.com",
+  "type": "manga",
+  "rating": "All",
+  "isAdult": false,
+  "language": "es",
+  "languages": [
+    "es"
+  ],
+  "icon": "icon.png",
+  "iconUrl": "./icon.png",
+  "manifestVersion": 1
+}

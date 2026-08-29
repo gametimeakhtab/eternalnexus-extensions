@@ -1,0 +1,21 @@
+{
+  "packageName": "com.eternalnexus.toongod",
+  "name": "ToonGod",
+  "version": 1,
+  "description": "Manga provider for ToonGod",
+  "author": "eternalnexus",
+  "authors": [
+    "eternalnexus"
+  ],
+  "baseUrl": "https://toongod.org",
+  "type": "manga",
+  "rating": "All",
+  "isAdult": false,
+  "language": "en",
+  "languages": [
+    "en"
+  ],
+  "icon": "icon.png",
+  "iconUrl": "./icon.png",
+  "manifestVersion": 1
+}

@@ -1,0 +1,21 @@
+{
+  "packageName": "com.eternalnexus.seatags",
+  "name": "SeaTags",
+  "version": 1,
+  "description": "Plugin dedicated to displaying status of plugins/extensions within installed/marketplace pages; as well as filter based on author & show score",
+  "author": "eternalnexus",
+  "authors": [
+    "eternalnexus"
+  ],
+  "baseUrl": "https://github.com/aquaryuo/seanime",
+  "type": "other",
+  "rating": "All",
+  "isAdult": false,
+  "language": "multi",
+  "languages": [
+    "multi"
+  ],
+  "icon": "icon.png",
+  "iconUrl": "./icon.png",
+  "manifestVersion": 1
+}
