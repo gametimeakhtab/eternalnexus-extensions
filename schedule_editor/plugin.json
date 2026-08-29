@@ -1,0 +1,16 @@
+{
+  "manifest_version": 1,
+  "id": "com.eternalnexus.schedule_editor",
+  "name": "Schedule Editor",
+  "description": "Schedule customization and editor extension",
+  "version": "1.0.0",
+  "type": "other",
+  "author": "Kaktus",
+  "rating": "All",
+  "isAdult": false,
+  "language": "en",
+  "baseUrl": "https://www.livechart.me",
+  "icon": "./icon.png",
+  "iconUrl": "./icon.png",
+  "homepage": "https://www.livechart.me"
+}

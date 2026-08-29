@@ -1,0 +1,16 @@
+{
+  "manifest_version": 1,
+  "id": "com.eternalnexus.livechart_schedule",
+  "name": "LiveChart Schedule",
+  "description": "Overrides anime schedule times using LiveChart data with simulcast and dub support",
+  "version": "0.6.4",
+  "type": "schedule",
+  "author": "Kaktus",
+  "rating": "All",
+  "isAdult": false,
+  "language": "en",
+  "baseUrl": "https://www.livechart.me",
+  "icon": "./icon.png",
+  "iconUrl": "./icon.png",
+  "homepage": "https://www.livechart.me"
+}
