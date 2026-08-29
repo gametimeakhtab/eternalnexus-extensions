@@ -1,5 +1,6 @@
 {
   "manifest_version": 1,
+  "packageName": "com.eternalnexus.livechart_schedule",
   "id": "com.eternalnexus.livechart_schedule",
   "name": "LiveChart Schedule",
   "description": "Overrides anime schedule times using LiveChart data with simulcast and dub support",
