@@ -1,5 +1,5 @@
 (function() {
-    var manifest = {"packageName":"com.eternalnexus.dev_akash_stars_animedekho","name":"Anime Dekho","version":1,"description":"Anime Dekho plugin for SkyStream - Ported from CloudStream","author":"eternalnexus","authors":["eternalnexus"],"baseUrl":"https://animedekho.app","type":"video","rating":"All","isAdult":false,"language":"en","languages":["en"],"icon":"icon.png","iconUrl":"./icon.png","manifestVersion":1};
+    var manifest = {"packageName":"com.eternalnexus.dev_akash_stars_animedekho","name":"Anime Dekho","version":1,"description":"Anime Dekho plugin for EternalNexus - Ported from CloudStream","author":"eternalnexus","authors":["eternalnexus"],"baseUrl":"https://animedekho.app","type":"video","rating":"All","isAdult":false,"language":"en","languages":["en"],"icon":"icon.png","iconUrl":"./icon.png","manifestVersion":1};
 (function() {
     /**
      * @typedef {Object} Response

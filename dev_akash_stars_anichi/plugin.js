@@ -1,5 +1,5 @@
 (function() {
-    var manifest = {"packageName":"com.eternalnexus.dev_akash_stars_anichi","name":"Anichi","version":1,"description":"Anichi (AllAnime) plugin for SkyStream. GraphQL-powered anime provider.","author":"eternalnexus","authors":["eternalnexus"],"baseUrl":"https://allmanga.to","type":"video","rating":"All","isAdult":false,"language":"en","languages":["en"],"icon":"icon.png","iconUrl":"./icon.png","manifestVersion":1};
+    var manifest = {"packageName":"com.eternalnexus.dev_akash_stars_anichi","name":"Anichi","version":1,"description":"Anichi (AllAnime) plugin for EternalNexus. GraphQL-powered anime provider.","author":"eternalnexus","authors":["eternalnexus"],"baseUrl":"https://allmanga.to","type":"video","rating":"All","isAdult":false,"language":"en","languages":["en"],"icon":"icon.png","iconUrl":"./icon.png","manifestVersion":1};
 (function() {
     /**
      * @type {import('@skystream/sdk').Manifest}
