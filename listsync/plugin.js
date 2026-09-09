@@ -33,6 +33,10 @@ function init() {
 		$store.set("POST_UPDATE_ENTRY", { mediaId: e.mediaId });
 	});
 
+	$app.onPostUpdateEntryProgress((e) => {
+		$store.set("POST_UPDATE_ENTRY", { mediaId: e.mediaId });
+	});
+
 	// ---- post-delete: remove the entry from SIMKL ----
 	$app.onPostDeleteEntry((e) => {
 		$store.set("POST_DELETE_ENTRY", { mediaId: e.mediaId });

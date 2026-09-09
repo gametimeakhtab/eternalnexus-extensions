@@ -1,0 +1,21 @@
+{
+  "packageName": "com.eternalnexus.anime_master",
+  "name": "Anime Master",
+  "version": 1,
+  "description": "Universal Media Scraper SDK & Multi-Provider Aggregator for anime content without website references.",
+  "author": "eternalnexus",
+  "authors": [
+    "eternalnexus"
+  ],
+  "baseUrl": "https://gogoanime.cl",
+  "type": "video",
+  "rating": "All",
+  "isAdult": false,
+  "language": "en",
+  "languages": [
+    "en"
+  ],
+  "icon": "icon.png",
+  "iconUrl": "./icon.png",
+  "manifestVersion": 2
+}
