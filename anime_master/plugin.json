@@ -17,5 +17,6 @@
   ],
   "icon": "icon.png",
   "iconUrl": "./icon.png",
-  "manifestVersion": 2
+  "manifestVersion": 2,
+  "marketCategory": "Anime"
 }

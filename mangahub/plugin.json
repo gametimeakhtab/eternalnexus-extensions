@@ -17,5 +17,6 @@
   ],
   "icon": "icon.png",
   "iconUrl": "./icon.png",
-  "manifestVersion": 1
+  "manifestVersion": 1,
+  "marketCategory": "Manga"
 }

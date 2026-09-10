@@ -19,5 +19,8 @@
   "iconUrl": "./icon.png",
   "manifestVersion": 1,
   "status": "working",
-  "categories": ["Market"]
+  "categories": [
+    "Market"
+  ],
+  "marketCategory": "Manga"
 }

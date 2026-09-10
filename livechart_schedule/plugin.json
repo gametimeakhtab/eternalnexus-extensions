@@ -13,5 +13,6 @@
   "baseUrl": "https://www.livechart.me",
   "icon": "./icon.png",
   "iconUrl": "./icon.png",
-  "homepage": "https://www.livechart.me"
+  "homepage": "https://www.livechart.me",
+  "marketCategory": "Other"
 }
