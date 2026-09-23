@@ -24,8 +24,8 @@
                         "icon":  "icon.png",
                         "manifestVersion":  1,
                         "iconUrl":  "./icon.png",
-                        "downloadUrl":  "https://raw.githubusercontent.com/eternalnexus/eternalnexus_extensions/master/account_switcher/plugin.js",
-                        "jsonUrl":  "https://raw.githubusercontent.com/eternalnexus/eternalnexus_extensions/master/account_switcher/plugin.json"
+                        "downloadUrl":  "https://raw.githubusercontent.com/gametimeakhtab/eternalnexus-extensions/main/account_switcher/plugin.js",
+                        "jsonUrl":  "https://raw.githubusercontent.com/gametimeakhtab/eternalnexus-extensions/main/account_switcher/plugin.json"
                     },
                     {
                         "packageName":  "com.eternalnexus.agefans",
@@ -47,8 +47,8 @@
                         "icon":  "icon.png",
                         "manifestVersion":  1,
                         "iconUrl":  "./icon.png",
-                        "downloadUrl":  "https://raw.githubusercontent.com/eternalnexus/eternalnexus_extensions/master/agefans/plugin.js",
-                        "jsonUrl":  "https://raw.githubusercontent.com/eternalnexus/eternalnexus_extensions/master/agefans/plugin.json"
+                        "downloadUrl":  "https://raw.githubusercontent.com/gametimeakhtab/eternalnexus-extensions/main/agefans/plugin.js",
+                        "jsonUrl":  "https://raw.githubusercontent.com/gametimeakhtab/eternalnexus-extensions/main/agefans/plugin.json"
                     },
                     {
                         "packageName":  "com.eternalnexus.allmangaanime",
@@ -70,8 +70,8 @@
                         "icon":  "icon.png",
                         "manifestVersion":  1,
                         "iconUrl":  "./icon.png",
-                        "downloadUrl":  "https://raw.githubusercontent.com/eternalnexus/eternalnexus_extensions/master/allmangaanime/plugin.js",
-                        "jsonUrl":  "https://raw.githubusercontent.com/eternalnexus/eternalnexus_extensions/master/allmangaanime/plugin.json"
+                        "downloadUrl":  "https://raw.githubusercontent.com/gametimeakhtab/eternalnexus-extensions/main/allmangaanime/plugin.js",
+                        "jsonUrl":  "https://raw.githubusercontent.com/gametimeakhtab/eternalnexus-extensions/main/allmangaanime/plugin.json"
                     },
                     {
                         "packageName":  "com.eternalnexus.anibd",
@@ -93,8 +93,8 @@
                         "icon":  "icon.png",
                         "manifestVersion":  1,
                         "iconUrl":  "./icon.png",
-                        "downloadUrl":  "https://raw.githubusercontent.com/eternalnexus/eternalnexus_extensions/master/anibd/plugin.js",
-                        "jsonUrl":  "https://raw.githubusercontent.com/eternalnexus/eternalnexus_extensions/master/anibd/plugin.json"
+                        "downloadUrl":  "https://raw.githubusercontent.com/gametimeakhtab/eternalnexus-extensions/main/anibd/plugin.js",
+                        "jsonUrl":  "https://raw.githubusercontent.com/gametimeakhtab/eternalnexus-extensions/main/anibd/plugin.json"
                     },
                     {
                         "packageName":  "com.eternalnexus.anidb",
@@ -116,8 +116,8 @@
                         "icon":  "icon.png",
                         "manifestVersion":  1,
                         "iconUrl":  "./icon.png",
-                        "downloadUrl":  "https://raw.githubusercontent.com/eternalnexus/eternalnexus_extensions/master/anidb/plugin.js",
-                        "jsonUrl":  "https://raw.githubusercontent.com/eternalnexus/eternalnexus_extensions/master/anidb/plugin.json"
+                        "downloadUrl":  "https://raw.githubusercontent.com/gametimeakhtab/eternalnexus-extensions/main/anidb/plugin.js",
+                        "jsonUrl":  "https://raw.githubusercontent.com/gametimeakhtab/eternalnexus-extensions/main/anidb/plugin.json"
                     },
                     {
                         "packageName":  "com.eternalnexus.anikoto",
@@ -139,8 +139,8 @@
                         "icon":  "icon.png",
                         "manifestVersion":  1,
                         "iconUrl":  "./icon.png",
-                        "downloadUrl":  "https://raw.githubusercontent.com/eternalnexus/eternalnexus_extensions/master/anikoto/plugin.js",
-                        "jsonUrl":  "https://raw.githubusercontent.com/eternalnexus/eternalnexus_extensions/master/anikoto/plugin.json"
+                        "downloadUrl":  "https://raw.githubusercontent.com/gametimeakhtab/eternalnexus-extensions/main/anikoto/plugin.js",
+                        "jsonUrl":  "https://raw.githubusercontent.com/gametimeakhtab/eternalnexus-extensions/main/anikoto/plugin.json"
                     },
                     {
                         "packageName":  "com.eternalnexus.anilistplusone",
@@ -162,8 +162,8 @@
                         "icon":  "icon.png",
                         "manifestVersion":  1,
                         "iconUrl":  "./icon.png",
-                        "downloadUrl":  "https://raw.githubusercontent.com/eternalnexus/eternalnexus_extensions/master/anilistplusone/plugin.js",
-                        "jsonUrl":  "https://raw.githubusercontent.com/eternalnexus/eternalnexus_extensions/master/anilistplusone/plugin.json"
+                        "downloadUrl":  "https://raw.githubusercontent.com/gametimeakhtab/eternalnexus-extensions/main/anilistplusone/plugin.js",
+                        "jsonUrl":  "https://raw.githubusercontent.com/gametimeakhtab/eternalnexus-extensions/main/anilistplusone/plugin.json"
                     },
                     {
                         "packageName":  "com.eternalnexus.anilist_activity",
@@ -185,8 +185,8 @@
                         "icon":  "icon.png",
                         "manifestVersion":  1,
                         "iconUrl":  "./icon.png",
-                        "downloadUrl":  "https://raw.githubusercontent.com/eternalnexus/eternalnexus_extensions/master/anilist_activity/plugin.js",
-                        "jsonUrl":  "https://raw.githubusercontent.com/eternalnexus/eternalnexus_extensions/master/anilist_activity/plugin.json"
+                        "downloadUrl":  "https://raw.githubusercontent.com/gametimeakhtab/eternalnexus-extensions/main/anilist_activity/plugin.js",
+                        "jsonUrl":  "https://raw.githubusercontent.com/gametimeakhtab/eternalnexus-extensions/main/anilist_activity/plugin.json"
                     },
                     {
                         "packageName":  "com.eternalnexus.anilist_notifications",
@@ -208,8 +208,8 @@
                         "icon":  "icon.png",
                         "manifestVersion":  1,
                         "iconUrl":  "./icon.png",
-                        "downloadUrl":  "https://raw.githubusercontent.com/eternalnexus/eternalnexus_extensions/master/anilist_notifications/plugin.js",
-                        "jsonUrl":  "https://raw.githubusercontent.com/eternalnexus/eternalnexus_extensions/master/anilist_notifications/plugin.json"
+                        "downloadUrl":  "https://raw.githubusercontent.com/gametimeakhtab/eternalnexus-extensions/main/anilist_notifications/plugin.js",
+                        "jsonUrl":  "https://raw.githubusercontent.com/gametimeakhtab/eternalnexus-extensions/main/anilist_notifications/plugin.json"
                     },
                     {
                         "packageName":  "com.eternalnexus.animeav1",
@@ -231,8 +231,8 @@
                         "icon":  "icon.png",
                         "manifestVersion":  1,
                         "iconUrl":  "./icon.png",
-                        "downloadUrl":  "https://raw.githubusercontent.com/eternalnexus/eternalnexus_extensions/master/animeav1/plugin.js",
-                        "jsonUrl":  "https://raw.githubusercontent.com/eternalnexus/eternalnexus_extensions/master/animeav1/plugin.json"
+                        "downloadUrl":  "https://raw.githubusercontent.com/gametimeakhtab/eternalnexus-extensions/main/animeav1/plugin.js",
+                        "jsonUrl":  "https://raw.githubusercontent.com/gametimeakhtab/eternalnexus-extensions/main/animeav1/plugin.json"
                     },
                     {
                         "packageName":  "com.eternalnexus.animegg",
@@ -254,8 +254,8 @@
                         "icon":  "icon.png",
                         "manifestVersion":  1,
                         "iconUrl":  "./icon.png",
-                        "downloadUrl":  "https://raw.githubusercontent.com/eternalnexus/eternalnexus_extensions/master/animegg/plugin.js",
-                        "jsonUrl":  "https://raw.githubusercontent.com/eternalnexus/eternalnexus_extensions/master/animegg/plugin.json"
+                        "downloadUrl":  "https://raw.githubusercontent.com/gametimeakhtab/eternalnexus-extensions/main/animegg/plugin.js",
+                        "jsonUrl":  "https://raw.githubusercontent.com/gametimeakhtab/eternalnexus-extensions/main/animegg/plugin.json"
                     },
                     {
                         "packageName":  "com.eternalnexus.animeheaven",
@@ -277,8 +277,8 @@
                         "icon":  "icon.png",
                         "manifestVersion":  1,
                         "iconUrl":  "./icon.png",
-                        "downloadUrl":  "https://raw.githubusercontent.com/eternalnexus/eternalnexus_extensions/master/animeheaven/plugin.js",
-                        "jsonUrl":  "https://raw.githubusercontent.com/eternalnexus/eternalnexus_extensions/master/animeheaven/plugin.json"
+                        "downloadUrl":  "https://raw.githubusercontent.com/gametimeakhtab/eternalnexus-extensions/main/animeheaven/plugin.js",
+                        "jsonUrl":  "https://raw.githubusercontent.com/gametimeakhtab/eternalnexus-extensions/main/animeheaven/plugin.json"
                     },
                     {
                         "packageName":  "com.eternalnexus.animesalt_seanime",
@@ -300,8 +300,8 @@
                         "icon":  "icon.png",
                         "manifestVersion":  1,
                         "iconUrl":  "./icon.png",
-                        "downloadUrl":  "https://raw.githubusercontent.com/eternalnexus/eternalnexus_extensions/master/animesalt_seanime/plugin.js",
-                        "jsonUrl":  "https://raw.githubusercontent.com/eternalnexus/eternalnexus_extensions/master/animesalt_seanime/plugin.json"
+                        "downloadUrl":  "https://raw.githubusercontent.com/gametimeakhtab/eternalnexus-extensions/main/animesalt_seanime/plugin.js",
+                        "jsonUrl":  "https://raw.githubusercontent.com/gametimeakhtab/eternalnexus-extensions/main/animesalt_seanime/plugin.json"
                     },
                     {
                         "packageName":  "com.eternalnexus.animesamamanga",
@@ -323,8 +323,8 @@
                         "icon":  "icon.png",
                         "manifestVersion":  1,
                         "iconUrl":  "./icon.png",
-                        "downloadUrl":  "https://raw.githubusercontent.com/eternalnexus/eternalnexus_extensions/master/animesamamanga/plugin.js",
-                        "jsonUrl":  "https://raw.githubusercontent.com/eternalnexus/eternalnexus_extensions/master/animesamamanga/plugin.json"
+                        "downloadUrl":  "https://raw.githubusercontent.com/gametimeakhtab/eternalnexus-extensions/main/animesamamanga/plugin.js",
+                        "jsonUrl":  "https://raw.githubusercontent.com/gametimeakhtab/eternalnexus-extensions/main/animesamamanga/plugin.json"
                     },
                     {
                         "packageName":  "com.eternalnexus.animesaturnmirror",
@@ -346,8 +346,8 @@
                         "icon":  "icon.png",
                         "manifestVersion":  1,
                         "iconUrl":  "./icon.png",
-                        "downloadUrl":  "https://raw.githubusercontent.com/eternalnexus/eternalnexus_extensions/master/animesaturnmirror/plugin.js",
-                        "jsonUrl":  "https://raw.githubusercontent.com/eternalnexus/eternalnexus_extensions/master/animesaturnmirror/plugin.json"
+                        "downloadUrl":  "https://raw.githubusercontent.com/gametimeakhtab/eternalnexus-extensions/main/animesaturnmirror/plugin.js",
+                        "jsonUrl":  "https://raw.githubusercontent.com/gametimeakhtab/eternalnexus-extensions/main/animesaturnmirror/plugin.json"
                     },
                     {
                         "packageName":  "com.eternalnexus.animetoast",
@@ -369,8 +369,8 @@
                         "icon":  "icon.png",
                         "manifestVersion":  1,
                         "iconUrl":  "./icon.png",
-                        "downloadUrl":  "https://raw.githubusercontent.com/eternalnexus/eternalnexus_extensions/master/animetoast/plugin.js",
-                        "jsonUrl":  "https://raw.githubusercontent.com/eternalnexus/eternalnexus_extensions/master/animetoast/plugin.json"
+                        "downloadUrl":  "https://raw.githubusercontent.com/gametimeakhtab/eternalnexus-extensions/main/animetoast/plugin.js",
+                        "jsonUrl":  "https://raw.githubusercontent.com/gametimeakhtab/eternalnexus-extensions/main/animetoast/plugin.json"
                     },
                     {
                         "packageName":  "com.eternalnexus.animeunitymirror",
@@ -392,8 +392,8 @@
                         "icon":  "icon.png",
                         "manifestVersion":  1,
                         "iconUrl":  "./icon.png",
-                        "downloadUrl":  "https://raw.githubusercontent.com/eternalnexus/eternalnexus_extensions/master/animeunitymirror/plugin.js",
-                        "jsonUrl":  "https://raw.githubusercontent.com/eternalnexus/eternalnexus_extensions/master/animeunitymirror/plugin.json"
+                        "downloadUrl":  "https://raw.githubusercontent.com/gametimeakhtab/eternalnexus-extensions/main/animeunitymirror/plugin.js",
+                        "jsonUrl":  "https://raw.githubusercontent.com/gametimeakhtab/eternalnexus-extensions/main/animeunitymirror/plugin.json"
                     },
                     {
                         "packageName":  "com.eternalnexus.anime_news",
@@ -415,8 +415,8 @@
                         "icon":  "icon.png",
                         "manifestVersion":  1,
                         "iconUrl":  "./icon.png",
-                        "downloadUrl":  "https://raw.githubusercontent.com/eternalnexus/eternalnexus_extensions/master/anime_news/plugin.js",
-                        "jsonUrl":  "https://raw.githubusercontent.com/eternalnexus/eternalnexus_extensions/master/anime_news/plugin.json"
+                        "downloadUrl":  "https://raw.githubusercontent.com/gametimeakhtab/eternalnexus-extensions/main/anime_news/plugin.js",
+                        "jsonUrl":  "https://raw.githubusercontent.com/gametimeakhtab/eternalnexus-extensions/main/anime_news/plugin.json"
                     },
                     {
                         "packageName":  "com.eternalnexus.anitube",
@@ -438,8 +438,8 @@
                         "icon":  "icon.png",
                         "manifestVersion":  1,
                         "iconUrl":  "./icon.png",
-                        "downloadUrl":  "https://raw.githubusercontent.com/eternalnexus/eternalnexus_extensions/master/anitube/plugin.js",
-                        "jsonUrl":  "https://raw.githubusercontent.com/eternalnexus/eternalnexus_extensions/master/anitube/plugin.json"
+                        "downloadUrl":  "https://raw.githubusercontent.com/gametimeakhtab/eternalnexus-extensions/main/anitube/plugin.js",
+                        "jsonUrl":  "https://raw.githubusercontent.com/gametimeakhtab/eternalnexus-extensions/main/anitube/plugin.json"
                     },
                     {
                         "packageName":  "com.eternalnexus.aniworld",
@@ -461,8 +461,8 @@
                         "icon":  "icon.png",
                         "manifestVersion":  1,
                         "iconUrl":  "./icon.png",
-                        "downloadUrl":  "https://raw.githubusercontent.com/eternalnexus/eternalnexus_extensions/master/aniworld/plugin.js",
-                        "jsonUrl":  "https://raw.githubusercontent.com/eternalnexus/eternalnexus_extensions/master/aniworld/plugin.json"
+                        "downloadUrl":  "https://raw.githubusercontent.com/gametimeakhtab/eternalnexus-extensions/main/aniworld/plugin.js",
+                        "jsonUrl":  "https://raw.githubusercontent.com/gametimeakhtab/eternalnexus-extensions/main/aniworld/plugin.json"
                     },
                     {
                         "packageName":  "com.eternalnexus.anizone",
@@ -484,8 +484,8 @@
                         "icon":  "icon.png",
                         "manifestVersion":  1,
                         "iconUrl":  "./icon.png",
-                        "downloadUrl":  "https://raw.githubusercontent.com/eternalnexus/eternalnexus_extensions/master/anizone/plugin.js",
-                        "jsonUrl":  "https://raw.githubusercontent.com/eternalnexus/eternalnexus_extensions/master/anizone/plugin.json"
+                        "downloadUrl":  "https://raw.githubusercontent.com/gametimeakhtab/eternalnexus-extensions/main/anizone/plugin.js",
+                        "jsonUrl":  "https://raw.githubusercontent.com/gametimeakhtab/eternalnexus-extensions/main/anizone/plugin.json"
                     },
                     {
                         "packageName":  "com.eternalnexus.antiseeding",
@@ -507,8 +507,8 @@
                         "icon":  "icon.png",
                         "manifestVersion":  1,
                         "iconUrl":  "./icon.png",
-                        "downloadUrl":  "https://raw.githubusercontent.com/eternalnexus/eternalnexus_extensions/master/antiseeding/plugin.js",
-                        "jsonUrl":  "https://raw.githubusercontent.com/eternalnexus/eternalnexus_extensions/master/antiseeding/plugin.json"
+                        "downloadUrl":  "https://raw.githubusercontent.com/gametimeakhtab/eternalnexus-extensions/main/antiseeding/plugin.js",
+                        "jsonUrl":  "https://raw.githubusercontent.com/gametimeakhtab/eternalnexus-extensions/main/antiseeding/plugin.json"
                     },
                     {
                         "packageName":  "com.eternalnexus.aquaprefs",
@@ -530,8 +530,8 @@
                         "icon":  "icon.png",
                         "manifestVersion":  1,
                         "iconUrl":  "./icon.png",
-                        "downloadUrl":  "https://raw.githubusercontent.com/eternalnexus/eternalnexus_extensions/master/aquaprefs/plugin.js",
-                        "jsonUrl":  "https://raw.githubusercontent.com/eternalnexus/eternalnexus_extensions/master/aquaprefs/plugin.json"
+                        "downloadUrl":  "https://raw.githubusercontent.com/gametimeakhtab/eternalnexus-extensions/main/aquaprefs/plugin.js",
+                        "jsonUrl":  "https://raw.githubusercontent.com/gametimeakhtab/eternalnexus-extensions/main/aquaprefs/plugin.json"
                     },
                     {
                         "packageName":  "com.eternalnexus.aquatils",
@@ -553,8 +553,8 @@
                         "icon":  "icon.png",
                         "manifestVersion":  1,
                         "iconUrl":  "./icon.png",
-                        "downloadUrl":  "https://raw.githubusercontent.com/eternalnexus/eternalnexus_extensions/master/aquatils/plugin.js",
-                        "jsonUrl":  "https://raw.githubusercontent.com/eternalnexus/eternalnexus_extensions/master/aquatils/plugin.json"
+                        "downloadUrl":  "https://raw.githubusercontent.com/gametimeakhtab/eternalnexus-extensions/main/aquatils/plugin.js",
+                        "jsonUrl":  "https://raw.githubusercontent.com/gametimeakhtab/eternalnexus-extensions/main/aquatils/plugin.json"
                     },
                     {
                         "packageName":  "com.eternalnexus.asurascans",
@@ -576,8 +576,8 @@
                         "icon":  "icon.png",
                         "manifestVersion":  1,
                         "iconUrl":  "./icon.png",
-                        "downloadUrl":  "https://raw.githubusercontent.com/eternalnexus/eternalnexus_extensions/master/asurascans/plugin.js",
-                        "jsonUrl":  "https://raw.githubusercontent.com/eternalnexus/eternalnexus_extensions/master/asurascans/plugin.json"
+                        "downloadUrl":  "https://raw.githubusercontent.com/gametimeakhtab/eternalnexus-extensions/main/asurascans/plugin.js",
+                        "jsonUrl":  "https://raw.githubusercontent.com/gametimeakhtab/eternalnexus-extensions/main/asurascans/plugin.json"
                     },
                     {
                         "packageName":  "com.eternalnexus.atsumaru",
@@ -599,8 +599,8 @@
                         "icon":  "icon.png",
                         "manifestVersion":  1,
                         "iconUrl":  "./icon.png",
-                        "downloadUrl":  "https://raw.githubusercontent.com/eternalnexus/eternalnexus_extensions/master/atsumaru/plugin.js",
-                        "jsonUrl":  "https://raw.githubusercontent.com/eternalnexus/eternalnexus_extensions/master/atsumaru/plugin.json"
+                        "downloadUrl":  "https://raw.githubusercontent.com/gametimeakhtab/eternalnexus-extensions/main/atsumaru/plugin.js",
+                        "jsonUrl":  "https://raw.githubusercontent.com/gametimeakhtab/eternalnexus-extensions/main/atsumaru/plugin.json"
                     },
                     {
                         "packageName":  "com.eternalnexus.batcave",
@@ -622,8 +622,8 @@
                         "icon":  "icon.png",
                         "manifestVersion":  1,
                         "iconUrl":  "./icon.png",
-                        "downloadUrl":  "https://raw.githubusercontent.com/eternalnexus/eternalnexus_extensions/master/batcave/plugin.js",
-                        "jsonUrl":  "https://raw.githubusercontent.com/eternalnexus/eternalnexus_extensions/master/batcave/plugin.json"
+                        "downloadUrl":  "https://raw.githubusercontent.com/gametimeakhtab/eternalnexus-extensions/main/batcave/plugin.js",
+                        "jsonUrl":  "https://raw.githubusercontent.com/gametimeakhtab/eternalnexus-extensions/main/batcave/plugin.json"
                     },
                     {
                         "packageName":  "com.eternalnexus.capibara_traductor",
@@ -645,8 +645,8 @@
                         "icon":  "icon.png",
                         "manifestVersion":  1,
                         "iconUrl":  "./icon.png",
-                        "downloadUrl":  "https://raw.githubusercontent.com/eternalnexus/eternalnexus_extensions/master/capibara_traductor/plugin.js",
-                        "jsonUrl":  "https://raw.githubusercontent.com/eternalnexus/eternalnexus_extensions/master/capibara_traductor/plugin.json"
+                        "downloadUrl":  "https://raw.githubusercontent.com/gametimeakhtab/eternalnexus-extensions/main/capibara_traductor/plugin.js",
+                        "jsonUrl":  "https://raw.githubusercontent.com/gametimeakhtab/eternalnexus-extensions/main/capibara_traductor/plugin.json"
                     },
                     {
                         "packageName":  "com.eternalnexus.comicvine",
@@ -668,8 +668,8 @@
                         "icon":  "icon.png",
                         "manifestVersion":  1,
                         "iconUrl":  "./icon.png",
-                        "downloadUrl":  "https://raw.githubusercontent.com/eternalnexus/eternalnexus_extensions/master/comicvine/plugin.js",
-                        "jsonUrl":  "https://raw.githubusercontent.com/eternalnexus/eternalnexus_extensions/master/comicvine/plugin.json"
+                        "downloadUrl":  "https://raw.githubusercontent.com/gametimeakhtab/eternalnexus-extensions/main/comicvine/plugin.js",
+                        "jsonUrl":  "https://raw.githubusercontent.com/gametimeakhtab/eternalnexus-extensions/main/comicvine/plugin.json"
                     },
                     {
                         "packageName":  "com.eternalnexus.cookie_clicker",
@@ -691,8 +691,8 @@
                         "icon":  "icon.png",
                         "manifestVersion":  1,
                         "iconUrl":  "./icon.png",
-                        "downloadUrl":  "https://raw.githubusercontent.com/eternalnexus/eternalnexus_extensions/master/cookie_clicker/plugin.js",
-                        "jsonUrl":  "https://raw.githubusercontent.com/eternalnexus/eternalnexus_extensions/master/cookie_clicker/plugin.json"
+                        "downloadUrl":  "https://raw.githubusercontent.com/gametimeakhtab/eternalnexus-extensions/main/cookie_clicker/plugin.js",
+                        "jsonUrl":  "https://raw.githubusercontent.com/gametimeakhtab/eternalnexus-extensions/main/cookie_clicker/plugin.json"
                     },
                     {
                         "packageName":  "com.eternalnexus.cornhub",
@@ -714,8 +714,8 @@
                         "icon":  "icon.png",
                         "manifestVersion":  1,
                         "iconUrl":  "./icon.png",
-                        "downloadUrl":  "https://raw.githubusercontent.com/eternalnexus/eternalnexus_extensions/master/cornhub/plugin.js",
-                        "jsonUrl":  "https://raw.githubusercontent.com/eternalnexus/eternalnexus_extensions/master/cornhub/plugin.json"
+                        "downloadUrl":  "https://raw.githubusercontent.com/gametimeakhtab/eternalnexus-extensions/main/cornhub/plugin.js",
+                        "jsonUrl":  "https://raw.githubusercontent.com/gametimeakhtab/eternalnexus-extensions/main/cornhub/plugin.json"
                     },
                     {
                         "packageName":  "com.eternalnexus.default_torrent_filters",
@@ -737,8 +737,8 @@
                         "icon":  "icon.png",
                         "manifestVersion":  1,
                         "iconUrl":  "./icon.png",
-                        "downloadUrl":  "https://raw.githubusercontent.com/eternalnexus/eternalnexus_extensions/master/default_torrent_filters/plugin.js",
-                        "jsonUrl":  "https://raw.githubusercontent.com/eternalnexus/eternalnexus_extensions/master/default_torrent_filters/plugin.json"
+                        "downloadUrl":  "https://raw.githubusercontent.com/gametimeakhtab/eternalnexus-extensions/main/default_torrent_filters/plugin.js",
+                        "jsonUrl":  "https://raw.githubusercontent.com/gametimeakhtab/eternalnexus-extensions/main/default_torrent_filters/plugin.json"
                     },
                     {
                         "packageName":  "com.eternalnexus.dev_akash_stars_4khd",
@@ -760,8 +760,8 @@
                         "icon":  "icon.png",
                         "manifestVersion":  1,
                         "iconUrl":  "./icon.png",
-                        "downloadUrl":  "https://raw.githubusercontent.com/eternalnexus/eternalnexus_extensions/master/dev_akash_stars_4khd/plugin.js",
-                        "jsonUrl":  "https://raw.githubusercontent.com/eternalnexus/eternalnexus_extensions/master/dev_akash_stars_4khd/plugin.json"
+                        "downloadUrl":  "https://raw.githubusercontent.com/gametimeakhtab/eternalnexus-extensions/main/dev_akash_stars_4khd/plugin.js",
+                        "jsonUrl":  "https://raw.githubusercontent.com/gametimeakhtab/eternalnexus-extensions/main/dev_akash_stars_4khd/plugin.json"
                     },
                     {
                         "packageName":  "com.eternalnexus.dev_akash_stars_anichi",
@@ -783,8 +783,8 @@
                         "icon":  "icon.png",
                         "manifestVersion":  1,
                         "iconUrl":  "./icon.png",
-                        "downloadUrl":  "https://raw.githubusercontent.com/eternalnexus/eternalnexus_extensions/master/dev_akash_stars_anichi/plugin.js",
-                        "jsonUrl":  "https://raw.githubusercontent.com/eternalnexus/eternalnexus_extensions/master/dev_akash_stars_anichi/plugin.json"
+                        "downloadUrl":  "https://raw.githubusercontent.com/gametimeakhtab/eternalnexus-extensions/main/dev_akash_stars_anichi/plugin.js",
+                        "jsonUrl":  "https://raw.githubusercontent.com/gametimeakhtab/eternalnexus-extensions/main/dev_akash_stars_anichi/plugin.json"
                     },
                     {
                         "packageName":  "com.eternalnexus.dev_akash_stars_animedekho",
@@ -806,8 +806,8 @@
                         "icon":  "icon.png",
                         "manifestVersion":  1,
                         "iconUrl":  "./icon.png",
-                        "downloadUrl":  "https://raw.githubusercontent.com/eternalnexus/eternalnexus_extensions/master/dev_akash_stars_animedekho/plugin.js",
-                        "jsonUrl":  "https://raw.githubusercontent.com/eternalnexus/eternalnexus_extensions/master/dev_akash_stars_animedekho/plugin.json"
+                        "downloadUrl":  "https://raw.githubusercontent.com/gametimeakhtab/eternalnexus-extensions/main/dev_akash_stars_animedekho/plugin.js",
+                        "jsonUrl":  "https://raw.githubusercontent.com/gametimeakhtab/eternalnexus-extensions/main/dev_akash_stars_animedekho/plugin.json"
                     },
                     {
                         "packageName":  "com.eternalnexus.dev_akash_stars_animesalt",
@@ -829,8 +829,8 @@
                         "icon":  "icon.png",
                         "manifestVersion":  1,
                         "iconUrl":  "./icon.png",
-                        "downloadUrl":  "https://raw.githubusercontent.com/eternalnexus/eternalnexus_extensions/master/dev_akash_stars_animesalt/plugin.js",
-                        "jsonUrl":  "https://raw.githubusercontent.com/eternalnexus/eternalnexus_extensions/master/dev_akash_stars_animesalt/plugin.json"
+                        "downloadUrl":  "https://raw.githubusercontent.com/gametimeakhtab/eternalnexus-extensions/main/dev_akash_stars_animesalt/plugin.js",
+                        "jsonUrl":  "https://raw.githubusercontent.com/gametimeakhtab/eternalnexus-extensions/main/dev_akash_stars_animesalt/plugin.json"
                     },
                     {
                         "packageName":  "com.eternalnexus.dev_akash_stars_bollyflix",
@@ -852,8 +852,8 @@
                         "icon":  "icon.png",
                         "manifestVersion":  1,
                         "iconUrl":  "./icon.png",
-                        "downloadUrl":  "https://raw.githubusercontent.com/eternalnexus/eternalnexus_extensions/master/dev_akash_stars_bollyflix/plugin.js",
-                        "jsonUrl":  "https://raw.githubusercontent.com/eternalnexus/eternalnexus_extensions/master/dev_akash_stars_bollyflix/plugin.json"
+                        "downloadUrl":  "https://raw.githubusercontent.com/gametimeakhtab/eternalnexus-extensions/main/dev_akash_stars_bollyflix/plugin.js",
+                        "jsonUrl":  "https://raw.githubusercontent.com/gametimeakhtab/eternalnexus-extensions/main/dev_akash_stars_bollyflix/plugin.json"
                     },
                     {
                         "packageName":  "com.eternalnexus.dev_akash_stars_hdhub4u",
@@ -875,8 +875,8 @@
                         "icon":  "icon.png",
                         "manifestVersion":  1,
                         "iconUrl":  "./icon.png",
-                        "downloadUrl":  "https://raw.githubusercontent.com/eternalnexus/eternalnexus_extensions/master/dev_akash_stars_hdhub4u/plugin.js",
-                        "jsonUrl":  "https://raw.githubusercontent.com/eternalnexus/eternalnexus_extensions/master/dev_akash_stars_hdhub4u/plugin.json"
+                        "downloadUrl":  "https://raw.githubusercontent.com/gametimeakhtab/eternalnexus-extensions/main/dev_akash_stars_hdhub4u/plugin.js",
+                        "jsonUrl":  "https://raw.githubusercontent.com/gametimeakhtab/eternalnexus-extensions/main/dev_akash_stars_hdhub4u/plugin.json"
                     },
                     {
                         "packageName":  "com.eternalnexus.dev_akash_stars_moviesdrive",
@@ -898,8 +898,8 @@
                         "icon":  "icon.png",
                         "manifestVersion":  1,
                         "iconUrl":  "./icon.png",
-                        "downloadUrl":  "https://raw.githubusercontent.com/eternalnexus/eternalnexus_extensions/master/dev_akash_stars_moviesdrive/plugin.js",
-                        "jsonUrl":  "https://raw.githubusercontent.com/eternalnexus/eternalnexus_extensions/master/dev_akash_stars_moviesdrive/plugin.json"
+                        "downloadUrl":  "https://raw.githubusercontent.com/gametimeakhtab/eternalnexus-extensions/main/dev_akash_stars_moviesdrive/plugin.js",
+                        "jsonUrl":  "https://raw.githubusercontent.com/gametimeakhtab/eternalnexus-extensions/main/dev_akash_stars_moviesdrive/plugin.json"
                     },
                     {
                         "packageName":  "com.eternalnexus.dev_akash_stars_ringz",
@@ -921,8 +921,8 @@
                         "icon":  "icon.png",
                         "manifestVersion":  1,
                         "iconUrl":  "./icon.png",
-                        "downloadUrl":  "https://raw.githubusercontent.com/eternalnexus/eternalnexus_extensions/master/dev_akash_stars_ringz/plugin.js",
-                        "jsonUrl":  "https://raw.githubusercontent.com/eternalnexus/eternalnexus_extensions/master/dev_akash_stars_ringz/plugin.json"
+                        "downloadUrl":  "https://raw.githubusercontent.com/gametimeakhtab/eternalnexus-extensions/main/dev_akash_stars_ringz/plugin.js",
+                        "jsonUrl":  "https://raw.githubusercontent.com/gametimeakhtab/eternalnexus-extensions/main/dev_akash_stars_ringz/plugin.json"
                     },
                     {
                         "packageName":  "com.eternalnexus.dev_akash_stars_streamflix",
@@ -944,8 +944,8 @@
                         "icon":  "icon.png",
                         "manifestVersion":  1,
                         "iconUrl":  "./icon.png",
-                        "downloadUrl":  "https://raw.githubusercontent.com/eternalnexus/eternalnexus_extensions/master/dev_akash_stars_streamflix/plugin.js",
-                        "jsonUrl":  "https://raw.githubusercontent.com/eternalnexus/eternalnexus_extensions/master/dev_akash_stars_streamflix/plugin.json"
+                        "downloadUrl":  "https://raw.githubusercontent.com/gametimeakhtab/eternalnexus-extensions/main/dev_akash_stars_streamflix/plugin.js",
+                        "jsonUrl":  "https://raw.githubusercontent.com/gametimeakhtab/eternalnexus-extensions/main/dev_akash_stars_streamflix/plugin.json"
                     },
                     {
                         "packageName":  "com.eternalnexus.dev_akash_stars_yflix",
@@ -967,8 +967,8 @@
                         "icon":  "icon.png",
                         "manifestVersion":  1,
                         "iconUrl":  "./icon.png",
-                        "downloadUrl":  "https://raw.githubusercontent.com/eternalnexus/eternalnexus_extensions/master/dev_akash_stars_yflix/plugin.js",
-                        "jsonUrl":  "https://raw.githubusercontent.com/eternalnexus/eternalnexus_extensions/master/dev_akash_stars_yflix/plugin.json"
+                        "downloadUrl":  "https://raw.githubusercontent.com/gametimeakhtab/eternalnexus-extensions/main/dev_akash_stars_yflix/plugin.js",
+                        "jsonUrl":  "https://raw.githubusercontent.com/gametimeakhtab/eternalnexus-extensions/main/dev_akash_stars_yflix/plugin.json"
                     },
                     {
                         "packageName":  "com.eternalnexus.dev_akash_stars_yts",
@@ -990,8 +990,8 @@
                         "icon":  "icon.png",
                         "manifestVersion":  1,
                         "iconUrl":  "./icon.png",
-                        "downloadUrl":  "https://raw.githubusercontent.com/eternalnexus/eternalnexus_extensions/master/dev_akash_stars_yts/plugin.js",
-                        "jsonUrl":  "https://raw.githubusercontent.com/eternalnexus/eternalnexus_extensions/master/dev_akash_stars_yts/plugin.json"
+                        "downloadUrl":  "https://raw.githubusercontent.com/gametimeakhtab/eternalnexus-extensions/main/dev_akash_stars_yts/plugin.js",
+                        "jsonUrl":  "https://raw.githubusercontent.com/gametimeakhtab/eternalnexus-extensions/main/dev_akash_stars_yts/plugin.json"
                     },
                     {
                         "packageName":  "com.eternalnexus.dev_nivincnc_cncverse_cncverse",
@@ -1013,8 +1013,8 @@
                         "icon":  "icon.png",
                         "manifestVersion":  1,
                         "iconUrl":  "./icon.png",
-                        "downloadUrl":  "https://raw.githubusercontent.com/eternalnexus/eternalnexus_extensions/master/dev_nivincnc_cncverse_cncverse/plugin.js",
-                        "jsonUrl":  "https://raw.githubusercontent.com/eternalnexus/eternalnexus_extensions/master/dev_nivincnc_cncverse_cncverse/plugin.json"
+                        "downloadUrl":  "https://raw.githubusercontent.com/gametimeakhtab/eternalnexus-extensions/main/dev_nivincnc_cncverse_cncverse/plugin.js",
+                        "jsonUrl":  "https://raw.githubusercontent.com/gametimeakhtab/eternalnexus-extensions/main/dev_nivincnc_cncverse_cncverse/plugin.json"
                     },
                     {
                         "packageName":  "com.eternalnexus.dipland_mangafire",
@@ -1036,8 +1036,8 @@
                         "icon":  "icon.png",
                         "manifestVersion":  1,
                         "iconUrl":  "./icon.png",
-                        "downloadUrl":  "https://raw.githubusercontent.com/eternalnexus/eternalnexus_extensions/master/dipland_mangafire/plugin.js",
-                        "jsonUrl":  "https://raw.githubusercontent.com/eternalnexus/eternalnexus_extensions/master/dipland_mangafire/plugin.json"
+                        "downloadUrl":  "https://raw.githubusercontent.com/gametimeakhtab/eternalnexus-extensions/main/dipland_mangafire/plugin.js",
+                        "jsonUrl":  "https://raw.githubusercontent.com/gametimeakhtab/eternalnexus-extensions/main/dipland_mangafire/plugin.json"
                     },
                     {
                         "packageName":  "com.eternalnexus.dipland_name",
@@ -1059,8 +1059,8 @@
                         "icon":  "icon.png",
                         "manifestVersion":  1,
                         "iconUrl":  "./icon.png",
-                        "downloadUrl":  "https://raw.githubusercontent.com/eternalnexus/eternalnexus_extensions/master/dipland_name/plugin.js",
-                        "jsonUrl":  "https://raw.githubusercontent.com/eternalnexus/eternalnexus_extensions/master/dipland_name/plugin.json"
+                        "downloadUrl":  "https://raw.githubusercontent.com/gametimeakhtab/eternalnexus-extensions/main/dipland_name/plugin.js",
+                        "jsonUrl":  "https://raw.githubusercontent.com/gametimeakhtab/eternalnexus-extensions/main/dipland_name/plugin.json"
                     },
                     {
                         "packageName":  "com.eternalnexus.donghuastream",
@@ -1082,8 +1082,8 @@
                         "icon":  "icon.png",
                         "manifestVersion":  1,
                         "iconUrl":  "./icon.png",
-                        "downloadUrl":  "https://raw.githubusercontent.com/eternalnexus/eternalnexus_extensions/master/donghuastream/plugin.js",
-                        "jsonUrl":  "https://raw.githubusercontent.com/eternalnexus/eternalnexus_extensions/master/donghuastream/plugin.json"
+                        "downloadUrl":  "https://raw.githubusercontent.com/gametimeakhtab/eternalnexus-extensions/main/donghuastream/plugin.js",
+                        "jsonUrl":  "https://raw.githubusercontent.com/gametimeakhtab/eternalnexus-extensions/main/donghuastream/plugin.json"
                     },
                     {
                         "packageName":  "com.eternalnexus.ext",
@@ -1105,8 +1105,8 @@
                         "icon":  "icon.png",
                         "manifestVersion":  1,
                         "iconUrl":  "./icon.png",
-                        "downloadUrl":  "https://raw.githubusercontent.com/eternalnexus/eternalnexus_extensions/master/ext/plugin.js",
-                        "jsonUrl":  "https://raw.githubusercontent.com/eternalnexus/eternalnexus_extensions/master/ext/plugin.json"
+                        "downloadUrl":  "https://raw.githubusercontent.com/gametimeakhtab/eternalnexus-extensions/main/ext/plugin.js",
+                        "jsonUrl":  "https://raw.githubusercontent.com/gametimeakhtab/eternalnexus-extensions/main/ext/plugin.json"
                     },
                     {
                         "packageName":  "com.eternalnexus.eztv",
@@ -1128,8 +1128,8 @@
                         "icon":  "icon.png",
                         "manifestVersion":  1,
                         "iconUrl":  "./icon.png",
-                        "downloadUrl":  "https://raw.githubusercontent.com/eternalnexus/eternalnexus_extensions/master/eztv/plugin.js",
-                        "jsonUrl":  "https://raw.githubusercontent.com/eternalnexus/eternalnexus_extensions/master/eztv/plugin.json"
+                        "downloadUrl":  "https://raw.githubusercontent.com/gametimeakhtab/eternalnexus-extensions/main/eztv/plugin.js",
+                        "jsonUrl":  "https://raw.githubusercontent.com/gametimeakhtab/eternalnexus-extensions/main/eztv/plugin.json"
                     },
                     {
                         "packageName":  "com.eternalnexus.hentaila",
@@ -1151,8 +1151,8 @@
                         "icon":  "icon.png",
                         "manifestVersion":  1,
                         "iconUrl":  "./icon.png",
-                        "downloadUrl":  "https://raw.githubusercontent.com/eternalnexus/eternalnexus_extensions/master/hentaila/plugin.js",
-                        "jsonUrl":  "https://raw.githubusercontent.com/eternalnexus/eternalnexus_extensions/master/hentaila/plugin.json"
+                        "downloadUrl":  "https://raw.githubusercontent.com/gametimeakhtab/eternalnexus-extensions/main/hentaila/plugin.js",
+                        "jsonUrl":  "https://raw.githubusercontent.com/gametimeakhtab/eternalnexus-extensions/main/hentaila/plugin.json"
                     },
                     {
                         "packageName":  "com.eternalnexus.hentaisaturn",
@@ -1174,8 +1174,8 @@
                         "icon":  "icon.png",
                         "manifestVersion":  1,
                         "iconUrl":  "./icon.png",
-                        "downloadUrl":  "https://raw.githubusercontent.com/eternalnexus/eternalnexus_extensions/master/hentaisaturn/plugin.js",
-                        "jsonUrl":  "https://raw.githubusercontent.com/eternalnexus/eternalnexus_extensions/master/hentaisaturn/plugin.json"
+                        "downloadUrl":  "https://raw.githubusercontent.com/gametimeakhtab/eternalnexus-extensions/main/hentaisaturn/plugin.js",
+                        "jsonUrl":  "https://raw.githubusercontent.com/gametimeakhtab/eternalnexus-extensions/main/hentaisaturn/plugin.json"
                     },
                     {
                         "packageName":  "com.eternalnexus.hentaiworld",
@@ -1197,8 +1197,8 @@
                         "icon":  "icon.png",
                         "manifestVersion":  1,
                         "iconUrl":  "./icon.png",
-                        "downloadUrl":  "https://raw.githubusercontent.com/eternalnexus/eternalnexus_extensions/master/hentaiworld/plugin.js",
-                        "jsonUrl":  "https://raw.githubusercontent.com/eternalnexus/eternalnexus_extensions/master/hentaiworld/plugin.json"
+                        "downloadUrl":  "https://raw.githubusercontent.com/gametimeakhtab/eternalnexus-extensions/main/hentaiworld/plugin.js",
+                        "jsonUrl":  "https://raw.githubusercontent.com/gametimeakhtab/eternalnexus-extensions/main/hentaiworld/plugin.json"
                     },
                     {
                         "packageName":  "com.eternalnexus.jkanime",
@@ -1220,8 +1220,8 @@
                         "icon":  "icon.png",
                         "manifestVersion":  1,
                         "iconUrl":  "./icon.png",
-                        "downloadUrl":  "https://raw.githubusercontent.com/eternalnexus/eternalnexus_extensions/master/jkanime/plugin.js",
-                        "jsonUrl":  "https://raw.githubusercontent.com/eternalnexus/eternalnexus_extensions/master/jkanime/plugin.json"
+                        "downloadUrl":  "https://raw.githubusercontent.com/gametimeakhtab/eternalnexus-extensions/main/jkanime/plugin.js",
+                        "jsonUrl":  "https://raw.githubusercontent.com/gametimeakhtab/eternalnexus-extensions/main/jkanime/plugin.json"
                     },
                     {
                         "packageName":  "com.eternalnexus.kai_delta_anichin",
@@ -1243,8 +1243,8 @@
                         "icon":  "icon.png",
                         "manifestVersion":  1,
                         "iconUrl":  "./icon.png",
-                        "downloadUrl":  "https://raw.githubusercontent.com/eternalnexus/eternalnexus_extensions/master/kai_delta_anichin/plugin.js",
-                        "jsonUrl":  "https://raw.githubusercontent.com/eternalnexus/eternalnexus_extensions/master/kai_delta_anichin/plugin.json"
+                        "downloadUrl":  "https://raw.githubusercontent.com/gametimeakhtab/eternalnexus-extensions/main/kai_delta_anichin/plugin.js",
+                        "jsonUrl":  "https://raw.githubusercontent.com/gametimeakhtab/eternalnexus-extensions/main/kai_delta_anichin/plugin.json"
                     },
                     {
                         "packageName":  "com.eternalnexus.kai_delta_dizigom104",
@@ -1266,8 +1266,8 @@
                         "icon":  "icon.png",
                         "manifestVersion":  1,
                         "iconUrl":  "./icon.png",
-                        "downloadUrl":  "https://raw.githubusercontent.com/eternalnexus/eternalnexus_extensions/master/kai_delta_dizigom104/plugin.js",
-                        "jsonUrl":  "https://raw.githubusercontent.com/eternalnexus/eternalnexus_extensions/master/kai_delta_dizigom104/plugin.json"
+                        "downloadUrl":  "https://raw.githubusercontent.com/gametimeakhtab/eternalnexus-extensions/main/kai_delta_dizigom104/plugin.js",
+                        "jsonUrl":  "https://raw.githubusercontent.com/gametimeakhtab/eternalnexus-extensions/main/kai_delta_dizigom104/plugin.json"
                     },
                     {
                         "packageName":  "com.eternalnexus.kai_delta_lk21",
@@ -1289,8 +1289,8 @@
                         "icon":  "icon.png",
                         "manifestVersion":  1,
                         "iconUrl":  "./icon.png",
-                        "downloadUrl":  "https://raw.githubusercontent.com/eternalnexus/eternalnexus_extensions/master/kai_delta_lk21/plugin.js",
-                        "jsonUrl":  "https://raw.githubusercontent.com/eternalnexus/eternalnexus_extensions/master/kai_delta_lk21/plugin.json"
+                        "downloadUrl":  "https://raw.githubusercontent.com/gametimeakhtab/eternalnexus-extensions/main/kai_delta_lk21/plugin.js",
+                        "jsonUrl":  "https://raw.githubusercontent.com/gametimeakhtab/eternalnexus-extensions/main/kai_delta_lk21/plugin.json"
                     },
                     {
                         "packageName":  "com.eternalnexus.kai_delta_missav",
@@ -1312,8 +1312,8 @@
                         "icon":  "icon.png",
                         "manifestVersion":  1,
                         "iconUrl":  "./icon.png",
-                        "downloadUrl":  "https://raw.githubusercontent.com/eternalnexus/eternalnexus_extensions/master/kai_delta_missav/plugin.js",
-                        "jsonUrl":  "https://raw.githubusercontent.com/eternalnexus/eternalnexus_extensions/master/kai_delta_missav/plugin.json"
+                        "downloadUrl":  "https://raw.githubusercontent.com/gametimeakhtab/eternalnexus-extensions/main/kai_delta_missav/plugin.js",
+                        "jsonUrl":  "https://raw.githubusercontent.com/gametimeakhtab/eternalnexus-extensions/main/kai_delta_missav/plugin.json"
                     },
                     {
                         "packageName":  "com.eternalnexus.komikcast",
@@ -1335,8 +1335,8 @@
                         "icon":  "icon.png",
                         "manifestVersion":  1,
                         "iconUrl":  "./icon.png",
-                        "downloadUrl":  "https://raw.githubusercontent.com/eternalnexus/eternalnexus_extensions/master/komikcast/plugin.js",
-                        "jsonUrl":  "https://raw.githubusercontent.com/eternalnexus/eternalnexus_extensions/master/komikcast/plugin.json"
+                        "downloadUrl":  "https://raw.githubusercontent.com/gametimeakhtab/eternalnexus-extensions/main/komikcast/plugin.js",
+                        "jsonUrl":  "https://raw.githubusercontent.com/gametimeakhtab/eternalnexus-extensions/main/komikcast/plugin.json"
                     },
                     {
                         "packageName":  "com.eternalnexus.komiku",
@@ -1358,8 +1358,8 @@
                         "icon":  "icon.png",
                         "manifestVersion":  1,
                         "iconUrl":  "./icon.png",
-                        "downloadUrl":  "https://raw.githubusercontent.com/eternalnexus/eternalnexus_extensions/master/komiku/plugin.js",
-                        "jsonUrl":  "https://raw.githubusercontent.com/eternalnexus/eternalnexus_extensions/master/komiku/plugin.json"
+                        "downloadUrl":  "https://raw.githubusercontent.com/gametimeakhtab/eternalnexus-extensions/main/komiku/plugin.js",
+                        "jsonUrl":  "https://raw.githubusercontent.com/gametimeakhtab/eternalnexus-extensions/main/komiku/plugin.json"
                     },
                     {
                         "packageName":  "com.eternalnexus.l337x",
@@ -1381,8 +1381,8 @@
                         "icon":  "icon.png",
                         "manifestVersion":  1,
                         "iconUrl":  "./icon.png",
-                        "downloadUrl":  "https://raw.githubusercontent.com/eternalnexus/eternalnexus_extensions/master/l337x/plugin.js",
-                        "jsonUrl":  "https://raw.githubusercontent.com/eternalnexus/eternalnexus_extensions/master/l337x/plugin.json"
+                        "downloadUrl":  "https://raw.githubusercontent.com/gametimeakhtab/eternalnexus-extensions/main/l337x/plugin.js",
+                        "jsonUrl":  "https://raw.githubusercontent.com/gametimeakhtab/eternalnexus-extensions/main/l337x/plugin.json"
                     },
                     {
                         "packageName":  "com.eternalnexus.leermangaesp",
@@ -1404,8 +1404,8 @@
                         "icon":  "icon.png",
                         "manifestVersion":  1,
                         "iconUrl":  "./icon.png",
-                        "downloadUrl":  "https://raw.githubusercontent.com/eternalnexus/eternalnexus_extensions/master/leermangaesp/plugin.js",
-                        "jsonUrl":  "https://raw.githubusercontent.com/eternalnexus/eternalnexus_extensions/master/leermangaesp/plugin.json"
+                        "downloadUrl":  "https://raw.githubusercontent.com/gametimeakhtab/eternalnexus-extensions/main/leermangaesp/plugin.js",
+                        "jsonUrl":  "https://raw.githubusercontent.com/gametimeakhtab/eternalnexus-extensions/main/leermangaesp/plugin.json"
                     },
                     {
                         "packageName":  "com.eternalnexus.lelmanga",
@@ -1427,8 +1427,8 @@
                         "icon":  "icon.png",
                         "manifestVersion":  1,
                         "iconUrl":  "./icon.png",
-                        "downloadUrl":  "https://raw.githubusercontent.com/eternalnexus/eternalnexus_extensions/master/lelmanga/plugin.js",
-                        "jsonUrl":  "https://raw.githubusercontent.com/eternalnexus/eternalnexus_extensions/master/lelmanga/plugin.json"
+                        "downloadUrl":  "https://raw.githubusercontent.com/gametimeakhtab/eternalnexus-extensions/main/lelmanga/plugin.js",
+                        "jsonUrl":  "https://raw.githubusercontent.com/gametimeakhtab/eternalnexus-extensions/main/lelmanga/plugin.json"
                     },
                     {
                         "packageName":  "com.eternalnexus.listsync",
@@ -1450,8 +1450,8 @@
                         "icon":  "icon.png",
                         "manifestVersion":  1,
                         "iconUrl":  "./icon.png",
-                        "downloadUrl":  "https://raw.githubusercontent.com/eternalnexus/eternalnexus_extensions/master/listsync/plugin.js",
-                        "jsonUrl":  "https://raw.githubusercontent.com/eternalnexus/eternalnexus_extensions/master/listsync/plugin.json"
+                        "downloadUrl":  "https://raw.githubusercontent.com/gametimeakhtab/eternalnexus-extensions/main/listsync/plugin.js",
+                        "jsonUrl":  "https://raw.githubusercontent.com/gametimeakhtab/eternalnexus-extensions/main/listsync/plugin.json"
                     },
                     {
                         "manifest_version":  1,
@@ -1470,8 +1470,8 @@
                         "homepage":  "https://www.livechart.me",
                         "manifestVersion":  1,
                         "iconUrl":  "./icon.png",
-                        "downloadUrl":  "https://raw.githubusercontent.com/eternalnexus/eternalnexus_extensions/master/livechart_schedule/plugin.js",
-                        "jsonUrl":  "https://raw.githubusercontent.com/eternalnexus/eternalnexus_extensions/master/livechart_schedule/plugin.json"
+                        "downloadUrl":  "https://raw.githubusercontent.com/gametimeakhtab/eternalnexus-extensions/main/livechart_schedule/plugin.js",
+                        "jsonUrl":  "https://raw.githubusercontent.com/gametimeakhtab/eternalnexus-extensions/main/livechart_schedule/plugin.json"
                     },
                     {
                         "packageName":  "com.eternalnexus.ln_reader",
@@ -1493,8 +1493,8 @@
                         "icon":  "icon.png",
                         "manifestVersion":  1,
                         "iconUrl":  "./icon.png",
-                        "downloadUrl":  "https://raw.githubusercontent.com/eternalnexus/eternalnexus_extensions/master/ln_reader/plugin.js",
-                        "jsonUrl":  "https://raw.githubusercontent.com/eternalnexus/eternalnexus_extensions/master/ln_reader/plugin.json"
+                        "downloadUrl":  "https://raw.githubusercontent.com/gametimeakhtab/eternalnexus-extensions/main/ln_reader/plugin.js",
+                        "jsonUrl":  "https://raw.githubusercontent.com/gametimeakhtab/eternalnexus-extensions/main/ln_reader/plugin.json"
                     },
                     {
                         "packageName":  "com.eternalnexus.malsync_bidir",
@@ -1516,8 +1516,8 @@
                         "icon":  "icon.png",
                         "manifestVersion":  1,
                         "iconUrl":  "./icon.png",
-                        "downloadUrl":  "https://raw.githubusercontent.com/eternalnexus/eternalnexus_extensions/master/malsync_bidir/plugin.js",
-                        "jsonUrl":  "https://raw.githubusercontent.com/eternalnexus/eternalnexus_extensions/master/malsync_bidir/plugin.json"
+                        "downloadUrl":  "https://raw.githubusercontent.com/gametimeakhtab/eternalnexus-extensions/main/malsync_bidir/plugin.js",
+                        "jsonUrl":  "https://raw.githubusercontent.com/gametimeakhtab/eternalnexus-extensions/main/malsync_bidir/plugin.json"
                     },
                     {
                         "packageName":  "com.eternalnexus.mal_friend_stats",
@@ -1539,8 +1539,8 @@
                         "icon":  "icon.png",
                         "manifestVersion":  1,
                         "iconUrl":  "./icon.png",
-                        "downloadUrl":  "https://raw.githubusercontent.com/eternalnexus/eternalnexus_extensions/master/mal_friend_stats/plugin.js",
-                        "jsonUrl":  "https://raw.githubusercontent.com/eternalnexus/eternalnexus_extensions/master/mal_friend_stats/plugin.json"
+                        "downloadUrl":  "https://raw.githubusercontent.com/gametimeakhtab/eternalnexus-extensions/main/mal_friend_stats/plugin.js",
+                        "jsonUrl":  "https://raw.githubusercontent.com/gametimeakhtab/eternalnexus-extensions/main/mal_friend_stats/plugin.json"
                     },
                     {
                         "packageName":  "com.eternalnexus.mangabats",
@@ -1562,8 +1562,8 @@
                         "icon":  "icon.png",
                         "manifestVersion":  1,
                         "iconUrl":  "./icon.png",
-                        "downloadUrl":  "https://raw.githubusercontent.com/eternalnexus/eternalnexus_extensions/master/mangabats/plugin.js",
-                        "jsonUrl":  "https://raw.githubusercontent.com/eternalnexus/eternalnexus_extensions/master/mangabats/plugin.json"
+                        "downloadUrl":  "https://raw.githubusercontent.com/gametimeakhtab/eternalnexus-extensions/main/mangabats/plugin.js",
+                        "jsonUrl":  "https://raw.githubusercontent.com/gametimeakhtab/eternalnexus-extensions/main/mangabats/plugin.json"
                     },
                     {
                         "packageName":  "com.eternalnexus.mangabuddy",
@@ -1585,8 +1585,8 @@
                         "icon":  "icon.png",
                         "manifestVersion":  1,
                         "iconUrl":  "./icon.png",
-                        "downloadUrl":  "https://raw.githubusercontent.com/eternalnexus/eternalnexus_extensions/master/mangabuddy/plugin.js",
-                        "jsonUrl":  "https://raw.githubusercontent.com/eternalnexus/eternalnexus_extensions/master/mangabuddy/plugin.json"
+                        "downloadUrl":  "https://raw.githubusercontent.com/gametimeakhtab/eternalnexus-extensions/main/mangabuddy/plugin.js",
+                        "jsonUrl":  "https://raw.githubusercontent.com/gametimeakhtab/eternalnexus-extensions/main/mangabuddy/plugin.json"
                     },
                     {
                         "packageName":  "com.eternalnexus.mangacloud",
@@ -1608,8 +1608,8 @@
                         "icon":  "icon.png",
                         "manifestVersion":  1,
                         "iconUrl":  "./icon.png",
-                        "downloadUrl":  "https://raw.githubusercontent.com/eternalnexus/eternalnexus_extensions/master/mangacloud/plugin.js",
-                        "jsonUrl":  "https://raw.githubusercontent.com/eternalnexus/eternalnexus_extensions/master/mangacloud/plugin.json"
+                        "downloadUrl":  "https://raw.githubusercontent.com/gametimeakhtab/eternalnexus-extensions/main/mangacloud/plugin.js",
+                        "jsonUrl":  "https://raw.githubusercontent.com/gametimeakhtab/eternalnexus-extensions/main/mangacloud/plugin.json"
                     },
                     {
                         "packageName":  "com.eternalnexus.mangadot",
@@ -1631,8 +1631,8 @@
                         "icon":  "icon.png",
                         "manifestVersion":  1,
                         "iconUrl":  "./icon.png",
-                        "downloadUrl":  "https://raw.githubusercontent.com/eternalnexus/eternalnexus_extensions/master/mangadot/plugin.js",
-                        "jsonUrl":  "https://raw.githubusercontent.com/eternalnexus/eternalnexus_extensions/master/mangadot/plugin.json"
+                        "downloadUrl":  "https://raw.githubusercontent.com/gametimeakhtab/eternalnexus-extensions/main/mangadot/plugin.js",
+                        "jsonUrl":  "https://raw.githubusercontent.com/gametimeakhtab/eternalnexus-extensions/main/mangadot/plugin.json"
                     },
                     {
                         "packageName":  "com.eternalnexus.mangafreak",
@@ -1654,8 +1654,8 @@
                         "icon":  "icon.png",
                         "manifestVersion":  1,
                         "iconUrl":  "./icon.png",
-                        "downloadUrl":  "https://raw.githubusercontent.com/eternalnexus/eternalnexus_extensions/master/mangafreak/plugin.js",
-                        "jsonUrl":  "https://raw.githubusercontent.com/eternalnexus/eternalnexus_extensions/master/mangafreak/plugin.json"
+                        "downloadUrl":  "https://raw.githubusercontent.com/gametimeakhtab/eternalnexus-extensions/main/mangafreak/plugin.js",
+                        "jsonUrl":  "https://raw.githubusercontent.com/gametimeakhtab/eternalnexus-extensions/main/mangafreak/plugin.json"
                     },
                     {
                         "packageName":  "com.eternalnexus.mangahub",
@@ -1677,8 +1677,8 @@
                         "icon":  "icon.png",
                         "manifestVersion":  1,
                         "iconUrl":  "./icon.png",
-                        "downloadUrl":  "https://raw.githubusercontent.com/eternalnexus/eternalnexus_extensions/master/mangahub/plugin.js",
-                        "jsonUrl":  "https://raw.githubusercontent.com/eternalnexus/eternalnexus_extensions/master/mangahub/plugin.json"
+                        "downloadUrl":  "https://raw.githubusercontent.com/gametimeakhtab/eternalnexus-extensions/main/mangahub/plugin.js",
+                        "jsonUrl":  "https://raw.githubusercontent.com/gametimeakhtab/eternalnexus-extensions/main/mangahub/plugin.json"
                     },
                     {
                         "packageName":  "com.eternalnexus.mangakatana",
@@ -1700,8 +1700,8 @@
                         "icon":  "icon.png",
                         "manifestVersion":  1,
                         "iconUrl":  "./icon.png",
-                        "downloadUrl":  "https://raw.githubusercontent.com/eternalnexus/eternalnexus_extensions/master/mangakatana/plugin.js",
-                        "jsonUrl":  "https://raw.githubusercontent.com/eternalnexus/eternalnexus_extensions/master/mangakatana/plugin.json"
+                        "downloadUrl":  "https://raw.githubusercontent.com/gametimeakhtab/eternalnexus-extensions/main/mangakatana/plugin.js",
+                        "jsonUrl":  "https://raw.githubusercontent.com/gametimeakhtab/eternalnexus-extensions/main/mangakatana/plugin.json"
                     },
                     {
                         "packageName":  "com.eternalnexus.mangaoni",
@@ -1723,8 +1723,8 @@
                         "icon":  "icon.png",
                         "manifestVersion":  1,
                         "iconUrl":  "./icon.png",
-                        "downloadUrl":  "https://raw.githubusercontent.com/eternalnexus/eternalnexus_extensions/master/mangaoni/plugin.js",
-                        "jsonUrl":  "https://raw.githubusercontent.com/eternalnexus/eternalnexus_extensions/master/mangaoni/plugin.json"
+                        "downloadUrl":  "https://raw.githubusercontent.com/gametimeakhtab/eternalnexus-extensions/main/mangaoni/plugin.js",
+                        "jsonUrl":  "https://raw.githubusercontent.com/gametimeakhtab/eternalnexus-extensions/main/mangaoni/plugin.json"
                     },
                     {
                         "packageName":  "com.eternalnexus.mangaworldadult",
@@ -1746,8 +1746,8 @@
                         "icon":  "icon.png",
                         "manifestVersion":  1,
                         "iconUrl":  "./icon.png",
-                        "downloadUrl":  "https://raw.githubusercontent.com/eternalnexus/eternalnexus_extensions/master/mangaworldadult/plugin.js",
-                        "jsonUrl":  "https://raw.githubusercontent.com/eternalnexus/eternalnexus_extensions/master/mangaworldadult/plugin.json"
+                        "downloadUrl":  "https://raw.githubusercontent.com/gametimeakhtab/eternalnexus-extensions/main/mangaworldadult/plugin.js",
+                        "jsonUrl":  "https://raw.githubusercontent.com/gametimeakhtab/eternalnexus-extensions/main/mangaworldadult/plugin.json"
                     },
                     {
                         "packageName":  "com.eternalnexus.manhwaweb",
@@ -1769,8 +1769,8 @@
                         "icon":  "icon.png",
                         "manifestVersion":  1,
                         "iconUrl":  "./icon.png",
-                        "downloadUrl":  "https://raw.githubusercontent.com/eternalnexus/eternalnexus_extensions/master/manhwaweb/plugin.js",
-                        "jsonUrl":  "https://raw.githubusercontent.com/eternalnexus/eternalnexus_extensions/master/manhwaweb/plugin.json"
+                        "downloadUrl":  "https://raw.githubusercontent.com/gametimeakhtab/eternalnexus-extensions/main/manhwaweb/plugin.js",
+                        "jsonUrl":  "https://raw.githubusercontent.com/gametimeakhtab/eternalnexus-extensions/main/manhwaweb/plugin.json"
                     },
                     {
                         "packageName":  "com.eternalnexus.mynimeku",
@@ -1792,8 +1792,8 @@
                         "icon":  "icon.png",
                         "manifestVersion":  1,
                         "iconUrl":  "./icon.png",
-                        "downloadUrl":  "https://raw.githubusercontent.com/eternalnexus/eternalnexus_extensions/master/mynimeku/plugin.js",
-                        "jsonUrl":  "https://raw.githubusercontent.com/eternalnexus/eternalnexus_extensions/master/mynimeku/plugin.json"
+                        "downloadUrl":  "https://raw.githubusercontent.com/gametimeakhtab/eternalnexus-extensions/main/mynimeku/plugin.js",
+                        "jsonUrl":  "https://raw.githubusercontent.com/gametimeakhtab/eternalnexus-extensions/main/mynimeku/plugin.json"
                     },
                     {
                         "packageName":  "com.eternalnexus.mynimekumanga",
@@ -1815,8 +1815,8 @@
                         "icon":  "icon.png",
                         "manifestVersion":  1,
                         "iconUrl":  "./icon.png",
-                        "downloadUrl":  "https://raw.githubusercontent.com/eternalnexus/eternalnexus_extensions/master/mynimekumanga/plugin.js",
-                        "jsonUrl":  "https://raw.githubusercontent.com/eternalnexus/eternalnexus_extensions/master/mynimekumanga/plugin.json"
+                        "downloadUrl":  "https://raw.githubusercontent.com/gametimeakhtab/eternalnexus-extensions/main/mynimekumanga/plugin.js",
+                        "jsonUrl":  "https://raw.githubusercontent.com/gametimeakhtab/eternalnexus-extensions/main/mynimekumanga/plugin.json"
                     },
                     {
                         "packageName":  "com.eternalnexus.nontonanime",
@@ -1838,8 +1838,8 @@
                         "icon":  "icon.png",
                         "manifestVersion":  1,
                         "iconUrl":  "./icon.png",
-                        "downloadUrl":  "https://raw.githubusercontent.com/eternalnexus/eternalnexus_extensions/master/nontonanime/plugin.js",
-                        "jsonUrl":  "https://raw.githubusercontent.com/eternalnexus/eternalnexus_extensions/master/nontonanime/plugin.json"
+                        "downloadUrl":  "https://raw.githubusercontent.com/gametimeakhtab/eternalnexus-extensions/main/nontonanime/plugin.js",
+                        "jsonUrl":  "https://raw.githubusercontent.com/gametimeakhtab/eternalnexus-extensions/main/nontonanime/plugin.json"
                     },
                     {
                         "packageName":  "com.eternalnexus.oneko",
@@ -1861,8 +1861,8 @@
                         "icon":  "icon.png",
                         "manifestVersion":  1,
                         "iconUrl":  "./icon.png",
-                        "downloadUrl":  "https://raw.githubusercontent.com/eternalnexus/eternalnexus_extensions/master/oneko/plugin.js",
-                        "jsonUrl":  "https://raw.githubusercontent.com/eternalnexus/eternalnexus_extensions/master/oneko/plugin.json"
+                        "downloadUrl":  "https://raw.githubusercontent.com/gametimeakhtab/eternalnexus-extensions/main/oneko/plugin.js",
+                        "jsonUrl":  "https://raw.githubusercontent.com/gametimeakhtab/eternalnexus-extensions/main/oneko/plugin.json"
                     },
                     {
                         "packageName":  "com.eternalnexus.ravenscans",
@@ -1884,8 +1884,8 @@
                         "icon":  "icon.png",
                         "manifestVersion":  1,
                         "iconUrl":  "./icon.png",
-                        "downloadUrl":  "https://raw.githubusercontent.com/eternalnexus/eternalnexus_extensions/master/ravenscans/plugin.js",
-                        "jsonUrl":  "https://raw.githubusercontent.com/eternalnexus/eternalnexus_extensions/master/ravenscans/plugin.json"
+                        "downloadUrl":  "https://raw.githubusercontent.com/gametimeakhtab/eternalnexus-extensions/main/ravenscans/plugin.js",
+                        "jsonUrl":  "https://raw.githubusercontent.com/gametimeakhtab/eternalnexus-extensions/main/ravenscans/plugin.json"
                     },
                     {
                         "packageName":  "com.eternalnexus.reanime",
@@ -1907,8 +1907,8 @@
                         "icon":  "icon.png",
                         "manifestVersion":  1,
                         "iconUrl":  "./icon.png",
-                        "downloadUrl":  "https://raw.githubusercontent.com/eternalnexus/eternalnexus_extensions/master/reanime/plugin.js",
-                        "jsonUrl":  "https://raw.githubusercontent.com/eternalnexus/eternalnexus_extensions/master/reanime/plugin.json"
+                        "downloadUrl":  "https://raw.githubusercontent.com/gametimeakhtab/eternalnexus-extensions/main/reanime/plugin.js",
+                        "jsonUrl":  "https://raw.githubusercontent.com/gametimeakhtab/eternalnexus-extensions/main/reanime/plugin.json"
                     },
                     {
                         "manifest_version":  1,
@@ -1927,8 +1927,8 @@
                         "homepage":  "https://www.livechart.me",
                         "manifestVersion":  1,
                         "iconUrl":  "./icon.png",
-                        "downloadUrl":  "https://raw.githubusercontent.com/eternalnexus/eternalnexus_extensions/master/schedule_editor/plugin.js",
-                        "jsonUrl":  "https://raw.githubusercontent.com/eternalnexus/eternalnexus_extensions/master/schedule_editor/plugin.json"
+                        "downloadUrl":  "https://raw.githubusercontent.com/gametimeakhtab/eternalnexus-extensions/main/schedule_editor/plugin.js",
+                        "jsonUrl":  "https://raw.githubusercontent.com/gametimeakhtab/eternalnexus-extensions/main/schedule_editor/plugin.json"
                     },
                     {
                         "packageName":  "com.eternalnexus.seatags",
@@ -1950,8 +1950,8 @@
                         "icon":  "icon.png",
                         "manifestVersion":  1,
                         "iconUrl":  "./icon.png",
-                        "downloadUrl":  "https://raw.githubusercontent.com/eternalnexus/eternalnexus_extensions/master/seatags/plugin.js",
-                        "jsonUrl":  "https://raw.githubusercontent.com/eternalnexus/eternalnexus_extensions/master/seatags/plugin.json"
+                        "downloadUrl":  "https://raw.githubusercontent.com/gametimeakhtab/eternalnexus-extensions/main/seatags/plugin.js",
+                        "jsonUrl":  "https://raw.githubusercontent.com/gametimeakhtab/eternalnexus-extensions/main/seatags/plugin.json"
                     },
                     {
                         "packageName":  "com.eternalnexus.simklv2",
@@ -1973,8 +1973,8 @@
                         "icon":  "icon.png",
                         "manifestVersion":  1,
                         "iconUrl":  "./icon.png",
-                        "downloadUrl":  "https://raw.githubusercontent.com/eternalnexus/eternalnexus_extensions/master/simklv2/plugin.js",
-                        "jsonUrl":  "https://raw.githubusercontent.com/eternalnexus/eternalnexus_extensions/master/simklv2/plugin.json"
+                        "downloadUrl":  "https://raw.githubusercontent.com/gametimeakhtab/eternalnexus-extensions/main/simklv2/plugin.js",
+                        "jsonUrl":  "https://raw.githubusercontent.com/gametimeakhtab/eternalnexus-extensions/main/simklv2/plugin.json"
                     },
                     {
                         "packageName":  "com.eternalnexus.simkl_matcher",
@@ -1996,8 +1996,8 @@
                         "icon":  "icon.png",
                         "manifestVersion":  1,
                         "iconUrl":  "./icon.png",
-                        "downloadUrl":  "https://raw.githubusercontent.com/eternalnexus/eternalnexus_extensions/master/simkl_matcher/plugin.js",
-                        "jsonUrl":  "https://raw.githubusercontent.com/eternalnexus/eternalnexus_extensions/master/simkl_matcher/plugin.json"
+                        "downloadUrl":  "https://raw.githubusercontent.com/gametimeakhtab/eternalnexus-extensions/main/simkl_matcher/plugin.js",
+                        "jsonUrl":  "https://raw.githubusercontent.com/gametimeakhtab/eternalnexus-extensions/main/simkl_matcher/plugin.json"
                     },
                     {
                         "packageName":  "com.eternalnexus.skip_ahead_video_player",
@@ -2019,8 +2019,8 @@
                         "icon":  "icon.png",
                         "manifestVersion":  1,
                         "iconUrl":  "./icon.png",
-                        "downloadUrl":  "https://raw.githubusercontent.com/eternalnexus/eternalnexus_extensions/master/skip_ahead_video_player/plugin.js",
-                        "jsonUrl":  "https://raw.githubusercontent.com/eternalnexus/eternalnexus_extensions/master/skip_ahead_video_player/plugin.json"
+                        "downloadUrl":  "https://raw.githubusercontent.com/gametimeakhtab/eternalnexus-extensions/main/skip_ahead_video_player/plugin.js",
+                        "jsonUrl":  "https://raw.githubusercontent.com/gametimeakhtab/eternalnexus-extensions/main/skip_ahead_video_player/plugin.json"
                     },
                     {
                         "packageName":  "com.eternalnexus.snow_effect",
@@ -2042,8 +2042,8 @@
                         "icon":  "icon.png",
                         "manifestVersion":  1,
                         "iconUrl":  "./icon.png",
-                        "downloadUrl":  "https://raw.githubusercontent.com/eternalnexus/eternalnexus_extensions/master/snow_effect/plugin.js",
-                        "jsonUrl":  "https://raw.githubusercontent.com/eternalnexus/eternalnexus_extensions/master/snow_effect/plugin.json"
+                        "downloadUrl":  "https://raw.githubusercontent.com/gametimeakhtab/eternalnexus-extensions/main/snow_effect/plugin.js",
+                        "jsonUrl":  "https://raw.githubusercontent.com/gametimeakhtab/eternalnexus-extensions/main/snow_effect/plugin.json"
                     },
                     {
                         "packageName":  "com.eternalnexus.streamdownloader",
@@ -2065,8 +2065,8 @@
                         "icon":  "icon.png",
                         "manifestVersion":  1,
                         "iconUrl":  "./icon.png",
-                        "downloadUrl":  "https://raw.githubusercontent.com/eternalnexus/eternalnexus_extensions/master/streamdownloader/plugin.js",
-                        "jsonUrl":  "https://raw.githubusercontent.com/eternalnexus/eternalnexus_extensions/master/streamdownloader/plugin.json"
+                        "downloadUrl":  "https://raw.githubusercontent.com/gametimeakhtab/eternalnexus-extensions/main/streamdownloader/plugin.js",
+                        "jsonUrl":  "https://raw.githubusercontent.com/gametimeakhtab/eternalnexus-extensions/main/streamdownloader/plugin.json"
                     },
                     {
                         "packageName":  "com.eternalnexus.streamed",
@@ -2088,8 +2088,8 @@
                         "icon":  "icon.png",
                         "manifestVersion":  1,
                         "iconUrl":  "./icon.png",
-                        "downloadUrl":  "https://raw.githubusercontent.com/eternalnexus/eternalnexus_extensions/master/streamed/plugin.js",
-                        "jsonUrl":  "https://raw.githubusercontent.com/eternalnexus/eternalnexus_extensions/master/streamed/plugin.json"
+                        "downloadUrl":  "https://raw.githubusercontent.com/gametimeakhtab/eternalnexus-extensions/main/streamed/plugin.js",
+                        "jsonUrl":  "https://raw.githubusercontent.com/gametimeakhtab/eternalnexus-extensions/main/streamed/plugin.json"
                     },
                     {
                         "packageName":  "com.eternalnexus.streamedprovider",
@@ -2111,8 +2111,8 @@
                         "icon":  "icon.png",
                         "manifestVersion":  1,
                         "iconUrl":  "./icon.png",
-                        "downloadUrl":  "https://raw.githubusercontent.com/eternalnexus/eternalnexus_extensions/master/streamedprovider/plugin.js",
-                        "jsonUrl":  "https://raw.githubusercontent.com/eternalnexus/eternalnexus_extensions/master/streamedprovider/plugin.json"
+                        "downloadUrl":  "https://raw.githubusercontent.com/gametimeakhtab/eternalnexus-extensions/main/streamedprovider/plugin.js",
+                        "jsonUrl":  "https://raw.githubusercontent.com/gametimeakhtab/eternalnexus-extensions/main/streamedprovider/plugin.json"
                     },
                     {
                         "packageName":  "com.eternalnexus.taiyo",
@@ -2134,8 +2134,8 @@
                         "icon":  "icon.png",
                         "manifestVersion":  1,
                         "iconUrl":  "./icon.png",
-                        "downloadUrl":  "https://raw.githubusercontent.com/eternalnexus/eternalnexus_extensions/master/taiyo/plugin.js",
-                        "jsonUrl":  "https://raw.githubusercontent.com/eternalnexus/eternalnexus_extensions/master/taiyo/plugin.json"
+                        "downloadUrl":  "https://raw.githubusercontent.com/gametimeakhtab/eternalnexus-extensions/main/taiyo/plugin.js",
+                        "jsonUrl":  "https://raw.githubusercontent.com/gametimeakhtab/eternalnexus-extensions/main/taiyo/plugin.json"
                     },
                     {
                         "packageName":  "com.eternalnexus.thepiratebayv2",
@@ -2157,8 +2157,8 @@
                         "icon":  "icon.png",
                         "manifestVersion":  1,
                         "iconUrl":  "./icon.png",
-                        "downloadUrl":  "https://raw.githubusercontent.com/eternalnexus/eternalnexus_extensions/master/thepiratebayv2/plugin.js",
-                        "jsonUrl":  "https://raw.githubusercontent.com/eternalnexus/eternalnexus_extensions/master/thepiratebayv2/plugin.json"
+                        "downloadUrl":  "https://raw.githubusercontent.com/gametimeakhtab/eternalnexus-extensions/main/thepiratebayv2/plugin.js",
+                        "jsonUrl":  "https://raw.githubusercontent.com/gametimeakhtab/eternalnexus-extensions/main/thepiratebayv2/plugin.json"
                     },
                     {
                         "packageName":  "com.eternalnexus.tioanime",
@@ -2180,8 +2180,8 @@
                         "icon":  "icon.png",
                         "manifestVersion":  1,
                         "iconUrl":  "./icon.png",
-                        "downloadUrl":  "https://raw.githubusercontent.com/eternalnexus/eternalnexus_extensions/master/tioanime/plugin.js",
-                        "jsonUrl":  "https://raw.githubusercontent.com/eternalnexus/eternalnexus_extensions/master/tioanime/plugin.json"
+                        "downloadUrl":  "https://raw.githubusercontent.com/gametimeakhtab/eternalnexus-extensions/main/tioanime/plugin.js",
+                        "jsonUrl":  "https://raw.githubusercontent.com/gametimeakhtab/eternalnexus-extensions/main/tioanime/plugin.json"
                     },
                     {
                         "packageName":  "com.eternalnexus.tmdbv2",
@@ -2203,8 +2203,8 @@
                         "icon":  "icon.png",
                         "manifestVersion":  1,
                         "iconUrl":  "./icon.png",
-                        "downloadUrl":  "https://raw.githubusercontent.com/eternalnexus/eternalnexus_extensions/master/tmdbv2/plugin.js",
-                        "jsonUrl":  "https://raw.githubusercontent.com/eternalnexus/eternalnexus_extensions/master/tmdbv2/plugin.json"
+                        "downloadUrl":  "https://raw.githubusercontent.com/gametimeakhtab/eternalnexus-extensions/main/tmdbv2/plugin.js",
+                        "jsonUrl":  "https://raw.githubusercontent.com/gametimeakhtab/eternalnexus-extensions/main/tmdbv2/plugin.json"
                     },
                     {
                         "packageName":  "com.eternalnexus.toongod",
@@ -2226,8 +2226,8 @@
                         "icon":  "icon.png",
                         "manifestVersion":  1,
                         "iconUrl":  "./icon.png",
-                        "downloadUrl":  "https://raw.githubusercontent.com/eternalnexus/eternalnexus_extensions/master/toongod/plugin.js",
-                        "jsonUrl":  "https://raw.githubusercontent.com/eternalnexus/eternalnexus_extensions/master/toongod/plugin.json"
+                        "downloadUrl":  "https://raw.githubusercontent.com/gametimeakhtab/eternalnexus-extensions/main/toongod/plugin.js",
+                        "jsonUrl":  "https://raw.githubusercontent.com/gametimeakhtab/eternalnexus-extensions/main/toongod/plugin.json"
                     },
                     {
                         "packageName":  "com.eternalnexus.torrentiov2",
@@ -2249,8 +2249,8 @@
                         "icon":  "icon.png",
                         "manifestVersion":  1,
                         "iconUrl":  "./icon.png",
-                        "downloadUrl":  "https://raw.githubusercontent.com/eternalnexus/eternalnexus_extensions/master/torrentiov2/plugin.js",
-                        "jsonUrl":  "https://raw.githubusercontent.com/eternalnexus/eternalnexus_extensions/master/torrentiov2/plugin.json"
+                        "downloadUrl":  "https://raw.githubusercontent.com/gametimeakhtab/eternalnexus-extensions/main/torrentiov2/plugin.js",
+                        "jsonUrl":  "https://raw.githubusercontent.com/gametimeakhtab/eternalnexus-extensions/main/torrentiov2/plugin.json"
                     },
                     {
                         "packageName":  "com.eternalnexus.ui_translation",
@@ -2272,8 +2272,8 @@
                         "icon":  "icon.png",
                         "manifestVersion":  1,
                         "iconUrl":  "./icon.png",
-                        "downloadUrl":  "https://raw.githubusercontent.com/eternalnexus/eternalnexus_extensions/master/ui_translation/plugin.js",
-                        "jsonUrl":  "https://raw.githubusercontent.com/eternalnexus/eternalnexus_extensions/master/ui_translation/plugin.json"
+                        "downloadUrl":  "https://raw.githubusercontent.com/gametimeakhtab/eternalnexus-extensions/main/ui_translation/plugin.js",
+                        "jsonUrl":  "https://raw.githubusercontent.com/gametimeakhtab/eternalnexus-extensions/main/ui_translation/plugin.json"
                     },
                     {
                         "packageName":  "com.eternalnexus.vidsrc",
@@ -2295,8 +2295,8 @@
                         "icon":  "icon.png",
                         "manifestVersion":  1,
                         "iconUrl":  "./icon.png",
-                        "downloadUrl":  "https://raw.githubusercontent.com/eternalnexus/eternalnexus_extensions/master/vidsrc/plugin.js",
-                        "jsonUrl":  "https://raw.githubusercontent.com/eternalnexus/eternalnexus_extensions/master/vidsrc/plugin.json"
+                        "downloadUrl":  "https://raw.githubusercontent.com/gametimeakhtab/eternalnexus-extensions/main/vidsrc/plugin.js",
+                        "jsonUrl":  "https://raw.githubusercontent.com/gametimeakhtab/eternalnexus-extensions/main/vidsrc/plugin.json"
                     },
                     {
                         "packageName":  "com.eternalnexus.webtor_downloader",
@@ -2318,8 +2318,8 @@
                         "icon":  "icon.png",
                         "manifestVersion":  1,
                         "iconUrl":  "./icon.png",
-                        "downloadUrl":  "https://raw.githubusercontent.com/eternalnexus/eternalnexus_extensions/master/webtor_downloader/plugin.js",
-                        "jsonUrl":  "https://raw.githubusercontent.com/eternalnexus/eternalnexus_extensions/master/webtor_downloader/plugin.json"
+                        "downloadUrl":  "https://raw.githubusercontent.com/gametimeakhtab/eternalnexus-extensions/main/webtor_downloader/plugin.js",
+                        "jsonUrl":  "https://raw.githubusercontent.com/gametimeakhtab/eternalnexus-extensions/main/webtor_downloader/plugin.json"
                     },
                     {
                         "packageName":  "com.eternalnexus.xanime",
@@ -2341,8 +2341,8 @@
                         "icon":  "icon.png",
                         "manifestVersion":  1,
                         "iconUrl":  "./icon.png",
-                        "downloadUrl":  "https://raw.githubusercontent.com/eternalnexus/eternalnexus_extensions/master/xanime/plugin.js",
-                        "jsonUrl":  "https://raw.githubusercontent.com/eternalnexus/eternalnexus_extensions/master/xanime/plugin.json"
+                        "downloadUrl":  "https://raw.githubusercontent.com/gametimeakhtab/eternalnexus-extensions/main/xanime/plugin.js",
+                        "jsonUrl":  "https://raw.githubusercontent.com/gametimeakhtab/eternalnexus-extensions/main/xanime/plugin.json"
                     },
                     {
                         "packageName":  "com.eternalnexus.yts",
@@ -2364,8 +2364,8 @@
                         "icon":  "icon.png",
                         "manifestVersion":  1,
                         "iconUrl":  "./icon.png",
-                        "downloadUrl":  "https://raw.githubusercontent.com/eternalnexus/eternalnexus_extensions/master/yts/plugin.js",
-                        "jsonUrl":  "https://raw.githubusercontent.com/eternalnexus/eternalnexus_extensions/master/yts/plugin.json"
+                        "downloadUrl":  "https://raw.githubusercontent.com/gametimeakhtab/eternalnexus-extensions/main/yts/plugin.js",
+                        "jsonUrl":  "https://raw.githubusercontent.com/gametimeakhtab/eternalnexus-extensions/main/yts/plugin.json"
                     },
                     {
                         "packageName":  "com.eternalnexus.anime_master",
@@ -2387,8 +2387,8 @@
                         "icon":  "icon.png",
                         "manifestVersion":  1,
                         "iconUrl":  "./icon.png",
-                        "downloadUrl":  "https://raw.githubusercontent.com/eternalnexus/eternalnexus_extensions/master/anime_master/plugin.js",
-                        "jsonUrl":  "https://raw.githubusercontent.com/eternalnexus/eternalnexus_extensions/master/anime_master/plugin.json"
+                        "downloadUrl":  "https://raw.githubusercontent.com/gametimeakhtab/eternalnexus-extensions/main/anime_master/plugin.js",
+                        "jsonUrl":  "https://raw.githubusercontent.com/gametimeakhtab/eternalnexus-extensions/main/anime_master/plugin.json"
                     }
                 ],
     "version":  "2.0.0"
